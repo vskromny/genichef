@@ -21,42 +21,24 @@
       <div class="food-icon" style="top: 85%; left: 15%;">🥕</div>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container navbar-container">
-        <div class="logo">
-          <i data-lucide="chef-hat"></i>
-          <span>GeniChef</span>
-        </div>
-        <div class="nav-links">
-          <a href="#features" class="nav-link">Features</a>
-          <a href="#how-it-works" class="nav-link">How It Works</a>
-          <a href="#join" class="nav-link">Join Waitlist</a>
-        </div>
-        <button class="mobile-menu-btn">
-          <i data-lucide="menu"></i>
-        </button>
-      </div>
-    </nav>
+    <!-- No navbar as requested -->
     
     <!-- Hero Section -->
     <header class="container">
       <div class="hero-content">
         <div class="hero-text" data-aos="fade-right" data-aos-delay="100">
-          <div class="badge">Coming Soon</div>
           <h1>Cook Smarter with <span class="text-gradient">GeniChef</span></h1>
           <p>Turn your ingredients into delicious meals instantly with AI-powered recipe suggestions.</p>
           <div class="hero-btns">
             <button class="btn-primary pulse-animation">Join Waitlist</button>
-            <a href="#how-it-works" class="btn-text">Learn More <i data-lucide="arrow-right" class="btn-icon"></i></a>
           </div>
         </div>
         <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-          <div class="hero-image-container">
+          <div class="hero-image-container floating">
             <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&q=80&w=800" alt="Cooking ingredients" class="parallax-img">
             <div class="floating-card">
               <div class="card-icon">
-                <i data-lucide="sparkles"></i>
+                <i data-lucide="sparkles" style="color: #425E71;"></i>
               </div>
               <div class="card-text">
                 <h4>Recipe Found!</h4>
@@ -79,29 +61,43 @@
       <div class="section-blob"></div>
       <div class="container">
         <h2 data-aos="fade-up">How GeniChef Works</h2>
-        <div class="process-timeline">
-          <div class="timeline-line"></div>
-          <div class="features-grid">
-            <div class="feature" data-aos="fade-up" data-aos-delay="100">
-              <div class="feature-number">1</div>
-              <div class="icon-wrapper">
-                <i data-lucide="camera"></i>
+        <div class="steps-container">
+          <div class="step-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <div class="step-image">
+                <img src="/api/placeholder/300/250" alt="Take a photo of ingredients">
+              </div>
+              <div class="step-icon-wrapper">
+                <i data-lucide="camera" style="color: #425E71;"></i>
               </div>
               <h3>Snap a Photo</h3>
               <p>Take a picture of your available ingredients</p>
             </div>
-            <div class="feature" data-aos="fade-up" data-aos-delay="300">
-              <div class="feature-number">2</div>
-              <div class="icon-wrapper">
-                <i data-lucide="brain"></i>
+          </div>
+          
+          <div class="step-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <div class="step-image">
+                <img src="/api/placeholder/300/250" alt="AI analyzes ingredients">
+              </div>
+              <div class="step-icon-wrapper">
+                <i data-lucide="brain" style="color: #425E71;"></i>
               </div>
               <h3>AI Magic</h3>
               <p>Our AI analyzes and suggests perfect recipes</p>
             </div>
-            <div class="feature" data-aos="fade-up" data-aos-delay="500">
-              <div class="feature-number">3</div>
-              <div class="icon-wrapper">
-                <i data-lucide="utensils"></i>
+          </div>
+          
+          <div class="step-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <div class="step-image">
+                <img src="/api/placeholder/300/250" alt="Start cooking">
+              </div>
+              <div class="step-icon-wrapper">
+                <i data-lucide="utensils" style="color: #425E71;"></i>
               </div>
               <h3>Start Cooking</h3>
               <p>Follow easy step-by-step instructions</p>
@@ -151,24 +147,38 @@
         <div class="features-grid">
           <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-wrapper shimmer">
-              <i data-lucide="filter"></i>
+              <i data-lucide="sliders" style="color: #425E71;"></i>
             </div>
-            <h3>Smart Filters</h3>
+            <h3>Meal Configuration</h3>
             <p>Filter recipes by meal type, dietary restrictions, and fitness goals</p>
           </div>
           <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-wrapper shimmer">
-              <i data-lucide="apple"></i>
+              <i data-lucide="apple" style="color: #425E71;"></i>
             </div>
             <h3>Nutritional Insights</h3>
             <p>Get detailed nutritional information for every recipe</p>
           </div>
           <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-wrapper shimmer">
-              <i data-lucide="clock"></i>
+              <i data-lucide="clock" style="color: #425E71;"></i>
             </div>
             <h3>Time Saver</h3>
             <p>Quick recipes based on your available time and ingredients</p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-wrapper shimmer">
+              <i data-lucide="recycle" style="color: #425E71;"></i>
+            </div>
+            <h3>Reduce Food Waste</h3>
+            <p>Use ingredients you already have and minimize waste with smart suggestions</p>
+          </div>
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-wrapper shimmer">
+              <i data-lucide="lightbulb" style="color: #425E71;"></i>
+            </div>
+            <h3>Get Inspiration</h3>
+            <p>Discover new recipes and culinary ideas based on your preferences</p>
           </div>
         </div>
         
@@ -284,6 +294,28 @@
                 </div>
               </div>
             </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="quote-icon">❝</div>
+              <p class="testimonial-text">Being able to snap a photo of random ingredients and get recipe suggestions feels like magic. It's saved me so much time!</p>
+              <div class="testimonial-author">
+                <div class="author-avatar"></div>
+                <div class="author-info">
+                  <h4>Michael R.</h4>
+                  <p>Busy Parent</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="500">
+              <div class="quote-icon">❝</div>
+              <p class="testimonial-text">I've reduced my food waste dramatically since using GeniChef. Now I use ingredients before they go bad by finding creative recipes.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar"></div>
+                <div class="author-info">
+                  <h4>Lisa T.</h4>
+                  <p>Sustainability Advocate</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="carousel-controls">
             <button class="carousel-btn prev"><i data-lucide="chevron-left"></i></button>
@@ -298,57 +330,25 @@
       </div>
     </section>
 
-    <!-- CTA -->
-    <section id="join" class="cta">
-      <div class="container">
-        <div class="cta-content" data-aos="fade-up">
-          <h2>Ready to Transform Your Cooking?</h2>
-          <p>Join our waitlist to be the first to know when GeniChef launches.</p>
-          <div class="email-signup">
-            <input type="email" placeholder="Enter your email">
-            <button class="btn-secondary">Join Now</button>
-          </div>
-          <div class="launch-counter">
-            <div class="counter-item">
-              <div class="counter-number">28</div>
-              <div class="counter-label">Days</div>
-            </div>
-            <div class="counter-item">
-              <div class="counter-number">14</div>
-              <div class="counter-label">Hours</div>
-            </div>
-            <div class="counter-item">
-              <div class="counter-number">53</div>
-              <div class="counter-label">Mins</div>
-            </div>
-            <div class="counter-item">
-              <div class="counter-number">09</div>
-              <div class="counter-label">Secs</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- CTA Section removed as requested -->
 
     <!-- Footer -->
     <footer>
       <div class="container">
         <div class="footer-content">
           <div class="logo">
-            <i data-lucide="chef-hat"></i>
-            <span>GeniChef</span>
+            <img src="/api/placeholder/120/80" alt="GeniChef Logo" class="footer-logo">
           </div>
           <nav>
-            <a href="#">About</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Contact</a>
+            <a href="/privacy.html" target="_blank">Privacy</a>
+            <a href="/terms.html" target="_blank">Terms</a>
+            <a href="/contact.html" target="_blank">Contact</a>
           </nav>
         </div>
         <div class="social-links">
-          <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
-          <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
-          <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+          <a href="#" class="social-link"><i data-lucide="twitter" style="color: #425E71;"></i></a>
+          <a href="#" class="social-link"><i data-lucide="instagram" style="color: #425E71;"></i></a>
+          <a href="#" class="social-link"><i data-lucide="facebook" style="color: #425E71;"></i></a>
         </div>
         <div class="copyright">
           © <span id="year"></span> GeniChef. All rights reserved.

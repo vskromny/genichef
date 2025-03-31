@@ -153,7 +153,7 @@ if (testimonialTrack && testimonialCards.length) {
     } else {
       scrollToSlide(currentIndex + 1);
     }
-  }, 5000);
+  }, 7000);
 }
 
 // Email validation for the signup form
