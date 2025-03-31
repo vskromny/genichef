@@ -5,92 +5,327 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GeniChef - Smart Cooking Assistant</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-parallax-js/5.5.1/simpleParallax.min.js"></script>
 </head>
 <body>
   <div class="min-h-screen bg-gradient">
+    <!-- Floating Food Icons Background -->
+    <div class="food-icons-bg">
+      <div class="food-icon" style="top: 15%; left: 10%;">🥦</div>
+      <div class="food-icon" style="top: 25%; left: 85%;">🍅</div>
+      <div class="food-icon" style="top: 60%; left: 5%;">🥑</div>
+      <div class="food-icon" style="top: 75%; left: 90%;">🍎</div>
+      <div class="food-icon" style="top: 40%; left: 95%;">🍋</div>
+      <div class="food-icon" style="top: 85%; left: 15%;">🥕</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <div class="logo">
+          <i data-lucide="chef-hat"></i>
+          <span>GeniChef</span>
+        </div>
+        <div class="nav-links">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+          <a href="#join" class="nav-link">Join Waitlist</a>
+        </div>
+        <button class="mobile-menu-btn">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+    
     <!-- Hero Section -->
     <header class="container">
       <div class="hero-content">
-        <div class="hero-text">
-          <h1>Cook Smarter with <span class="text-primary">GeniChef</span></h1>
+        <div class="hero-text" data-aos="fade-right" data-aos-delay="100">
+          <div class="badge">Coming Soon</div>
+          <h1>Cook Smarter with <span class="text-gradient">GeniChef</span></h1>
           <p>Turn your ingredients into delicious meals instantly with AI-powered recipe suggestions.</p>
-          <button class="btn-primary">Join Waitlist</button>
+          <div class="hero-btns">
+            <button class="btn-primary pulse-animation">Join Waitlist</button>
+            <a href="#how-it-works" class="btn-text">Learn More <i data-lucide="arrow-right" class="btn-icon"></i></a>
+          </div>
         </div>
-        <div class="hero-image">
-          <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&q=80&w=800" alt="Cooking ingredients">
+        <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+          <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&q=80&w=800" alt="Cooking ingredients" class="parallax-img">
+            <div class="floating-card">
+              <div class="card-icon">
+                <i data-lucide="sparkles"></i>
+              </div>
+              <div class="card-text">
+                <h4>Recipe Found!</h4>
+                <p>Perfect Pasta Primavera</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll down</span>
       </div>
     </header>
 
     <!-- How It Works -->
-    <section class="how-it-works">
+    <section id="how-it-works" class="how-it-works">
+      <div class="section-blob"></div>
       <div class="container">
-        <h2>How GeniChef Works</h2>
-        <div class="features-grid">
-          <div class="feature">
-            <div class="icon-wrapper">
-              <i data-lucide="camera"></i>
+        <h2 data-aos="fade-up">How GeniChef Works</h2>
+        <div class="process-timeline">
+          <div class="timeline-line"></div>
+          <div class="features-grid">
+            <div class="feature" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-number">1</div>
+              <div class="icon-wrapper">
+                <i data-lucide="camera"></i>
+              </div>
+              <h3>Snap a Photo</h3>
+              <p>Take a picture of your available ingredients</p>
             </div>
-            <h3>Snap a Photo</h3>
-            <p>Take a picture of your available ingredients</p>
+            <div class="feature" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-number">2</div>
+              <div class="icon-wrapper">
+                <i data-lucide="brain"></i>
+              </div>
+              <h3>AI Magic</h3>
+              <p>Our AI analyzes and suggests perfect recipes</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="500">
+              <div class="feature-number">3</div>
+              <div class="icon-wrapper">
+                <i data-lucide="utensils"></i>
+              </div>
+              <h3>Start Cooking</h3>
+              <p>Follow easy step-by-step instructions</p>
+            </div>
           </div>
-          <div class="feature">
-            <div class="icon-wrapper">
-              <i data-lucide="brain"></i>
+        </div>
+        <div class="app-preview" data-aos="fade-up">
+          <div class="phone-mockup">
+            <div class="mockup-screen">
+              <div class="mockup-header">
+                <div class="mockup-status-bar"></div>
+                <div class="mockup-title">GeniChef</div>
+              </div>
+              <div class="mockup-content">
+                <div class="mockup-ingredients">
+                  <div class="ingredient ingredient-1"></div>
+                  <div class="ingredient ingredient-2"></div>
+                  <div class="ingredient ingredient-3"></div>
+                </div>
+                <div class="mockup-results">
+                  <div class="result-item">
+                    <div class="result-img"></div>
+                    <div class="result-text">
+                      <div class="result-title"></div>
+                      <div class="result-desc"></div>
+                    </div>
+                  </div>
+                  <div class="result-item">
+                    <div class="result-img"></div>
+                    <div class="result-text">
+                      <div class="result-title"></div>
+                      <div class="result-desc"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3>AI Magic</h3>
-            <p>Our AI analyzes and suggests perfect recipes</p>
-          </div>
-          <div class="feature">
-            <div class="icon-wrapper">
-              <i data-lucide="utensils"></i>
-            </div>
-            <h3>Start Cooking</h3>
-            <p>Follow easy step-by-step instructions</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Features -->
-    <section class="smart-features">
+    <section id="features" class="smart-features">
       <div class="container">
-        <h2>Smart Features</h2>
+        <h2 data-aos="fade-up">Smart Features</h2>
         <div class="features-grid">
-          <div class="feature-card">
-            <div class="icon-wrapper">
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-wrapper shimmer">
               <i data-lucide="filter"></i>
             </div>
             <h3>Smart Filters</h3>
             <p>Filter recipes by meal type, dietary restrictions, and fitness goals</p>
           </div>
-          <div class="feature-card">
-            <div class="icon-wrapper">
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-wrapper shimmer">
               <i data-lucide="apple"></i>
             </div>
             <h3>Nutritional Insights</h3>
             <p>Get detailed nutritional information for every recipe</p>
           </div>
-          <div class="feature-card">
-            <div class="icon-wrapper">
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-wrapper shimmer">
               <i data-lucide="clock"></i>
             </div>
             <h3>Time Saver</h3>
             <p>Quick recipes based on your available time and ingredients</p>
           </div>
         </div>
+        
+        <div class="feature-details">
+          <div class="detail-tabs">
+            <button class="tab-btn active" data-tab="meal-types">Meal Types</button>
+            <button class="tab-btn" data-tab="dietary">Dietary Options</button>
+            <button class="tab-btn" data-tab="fitness">Fitness Goals</button>
+          </div>
+          
+          <div class="detail-content">
+            <div class="tab-content active" id="meal-types">
+              <div class="tab-grid">
+                <div class="tab-item" data-aos="fade-up" data-aos-delay="100">
+                  <div class="tab-icon">🍳</div>
+                  <h4>Breakfast</h4>
+                </div>
+                <div class="tab-item" data-aos="fade-up" data-aos-delay="200">
+                  <div class="tab-icon">🥪</div>
+                  <h4>Lunch</h4>
+                </div>
+                <div class="tab-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="tab-icon">🍝</div>
+                  <h4>Dinner</h4>
+                </div>
+                <div class="tab-item" data-aos="fade-up" data-aos-delay="400">
+                  <div class="tab-icon">🧁</div>
+                  <h4>Desserts</h4>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="dietary">
+              <div class="tab-grid">
+                <div class="tab-item">
+                  <div class="tab-icon">🥬</div>
+                  <h4>Vegetarian</h4>
+                </div>
+                <div class="tab-item">
+                  <div class="tab-icon">🌱</div>
+                  <h4>Vegan</h4>
+                </div>
+                <div class="tab-item">
+                  <div class="tab-icon">🥛</div>
+                  <h4>Dairy-free</h4>
+                </div>
+                <div class="tab-item">
+                  <div class="tab-icon">🌾</div>
+                  <h4>Gluten-free</h4>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="fitness">
+              <div class="tab-grid">
+                <div class="tab-item">
+                  <div class="tab-icon">💪</div>
+                  <h4>High Protein</h4>
+                </div>
+                <div class="tab-item">
+                  <div class="tab-icon">🏃</div>
+                  <h4>Low Carb</h4>
+                </div>
+                <div class="tab-item">
+                  <div class="tab-icon">🥗</div>
+                  <h4>Low Calorie</h4>
+                </div>
+                <div class="tab-item">
+                  <div class="tab-icon">❤️</div>
+                  <h4>Heart Healthy</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 data-aos="fade-up">What Early Testers Say</h2>
+        <div class="testimonial-carousel">
+          <div class="testimonial-track">
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="quote-icon">❝</div>
+              <p class="testimonial-text">GeniChef has transformed my weeknight cooking. No more staring at the fridge wondering what to make!</p>
+              <div class="testimonial-author">
+                <div class="author-avatar"></div>
+                <div class="author-info">
+                  <h4>Sarah M.</h4>
+                  <p>Home Cook</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="quote-icon">❝</div>
+              <p class="testimonial-text">I've discovered so many new recipes based on ingredients I already had. This app is genius!</p>
+              <div class="testimonial-author">
+                <div class="author-avatar"></div>
+                <div class="author-info">
+                  <h4>John D.</h4>
+                  <p>Food Enthusiast</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="quote-icon">❝</div>
+              <p class="testimonial-text">The nutritional insights have helped me stick to my fitness goals while enjoying delicious meals.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar"></div>
+                <div class="author-info">
+                  <h4>Emma L.</h4>
+                  <p>Fitness Coach</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn prev"><i data-lucide="chevron-left"></i></button>
+            <div class="carousel-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="carousel-btn next"><i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="cta">
+    <section id="join" class="cta">
       <div class="container">
-        <h2>Ready to Transform Your Cooking?</h2>
-        <p>Join our waitlist to be the first to know when GeniChef launches.</p>
-        <div class="email-signup">
-          <input type="email" placeholder="Enter your email">
-          <button class="btn-secondary">Join Now</button>
+        <div class="cta-content" data-aos="fade-up">
+          <h2>Ready to Transform Your Cooking?</h2>
+          <p>Join our waitlist to be the first to know when GeniChef launches.</p>
+          <div class="email-signup">
+            <input type="email" placeholder="Enter your email">
+            <button class="btn-secondary">Join Now</button>
+          </div>
+          <div class="launch-counter">
+            <div class="counter-item">
+              <div class="counter-number">28</div>
+              <div class="counter-label">Days</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-number">14</div>
+              <div class="counter-label">Hours</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-number">53</div>
+              <div class="counter-label">Mins</div>
+            </div>
+            <div class="counter-item">
+              <div class="counter-number">09</div>
+              <div class="counter-label">Secs</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -100,7 +335,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="logo">
-            <i data-lucide="phone"></i>
+            <i data-lucide="chef-hat"></i>
             <span>GeniChef</span>
           </div>
           <nav>
@@ -110,12 +345,18 @@
             <a href="#">Contact</a>
           </nav>
         </div>
+        <div class="social-links">
+          <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+          <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
+          <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+        </div>
         <div class="copyright">
           © <span id="year"></span> GeniChef. All rights reserved.
         </div>
       </div>
     </footer>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
