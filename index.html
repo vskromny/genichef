@@ -1,13 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeniChef - Smart Cooking Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-gradient">
+    <!-- Hero Section -->
+    <header class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Cook Smarter with <span class="text-primary">GeniChef</span></h1>
+          <p>Turn your ingredients into delicious meals instantly with AI-powered recipe suggestions.</p>
+          <button class="btn-primary">Join Waitlist</button>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&q=80&w=800" alt="Cooking ingredients">
+        </div>
+      </div>
+    </header>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+      <div class="container">
+        <h2>How GeniChef Works</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="icon-wrapper">
+              <i data-lucide="camera"></i>
+            </div>
+            <h3>Snap a Photo</h3>
+            <p>Take a picture of your available ingredients</p>
+          </div>
+          <div class="feature">
+            <div class="icon-wrapper">
+              <i data-lucide="brain"></i>
+            </div>
+            <h3>AI Magic</h3>
+            <p>Our AI analyzes and suggests perfect recipes</p>
+          </div>
+          <div class="feature">
+            <div class="icon-wrapper">
+              <i data-lucide="utensils"></i>
+            </div>
+            <h3>Start Cooking</h3>
+            <p>Follow easy step-by-step instructions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="smart-features">
+      <div class="container">
+        <h2>Smart Features</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="icon-wrapper">
+              <i data-lucide="filter"></i>
+            </div>
+            <h3>Smart Filters</h3>
+            <p>Filter recipes by meal type, dietary restrictions, and fitness goals</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrapper">
+              <i data-lucide="apple"></i>
+            </div>
+            <h3>Nutritional Insights</h3>
+            <p>Get detailed nutritional information for every recipe</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrapper">
+              <i data-lucide="clock"></i>
+            </div>
+            <h3>Time Saver</h3>
+            <p>Quick recipes based on your available time and ingredients</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Transform Your Cooking?</h2>
+        <p>Join our waitlist to be the first to know when GeniChef launches.</p>
+        <div class="email-signup">
+          <input type="email" placeholder="Enter your email">
+          <button class="btn-secondary">Join Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo">
+            <i data-lucide="phone"></i>
+            <span>GeniChef</span>
+          </div>
+          <nav>
+            <a href="#">About</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+        <div class="copyright">
+          © <span id="year"></span> GeniChef. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
 </html>
