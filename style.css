@@ -324,11 +324,11 @@ section h2::after {
 
 .tab-btn {
   padding: 0.75rem 1.5rem;
-  background: white;
+  background: #F9FFED;
   border: none;
   border-radius: 9999px;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: #334C00;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: var(--shadow-sm);
@@ -339,8 +339,8 @@ section h2::after {
 }
 
 .tab-btn.active {
-  background: var(--primary-200);
-  color: var(--button-text);
+  background: #F9FFED;
+  color: #334C00;
   box-shadow: var(--shadow-md);
 }
 
@@ -1219,18 +1219,18 @@ header {
 .steps-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   margin: 3rem 0;
-  max-width: 800px;
+  max-width: 400px; /* Reduced to 1/4 size */
   margin-left: auto;
   margin-right: auto;
 }
 
 .step-item {
   position: relative;
-  padding: 2rem;
+  padding: 1.5rem;
   background: white;
-  border-radius: 1.5rem;
+  border-radius: 1.25rem;
   box-shadow: var(--shadow-lg);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1242,10 +1242,10 @@ header {
 
 .step-number {
   position: absolute;
-  top: -20px;
-  left: 40px;
-  width: 40px;
-  height: 40px;
+  top: -15px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
   background: var(--primary-600);
   color: white;
   border-radius: 50%;
@@ -1253,6 +1253,7 @@ header {
   align-items: center;
   justify-content: center;
   font-weight: 700;
+  font-size: 0.9rem;
   box-shadow: var(--shadow-md);
   z-index: 2;
 }
@@ -1266,15 +1267,17 @@ header {
 
 .step-image {
   width: 100%;
+  max-width: 150px; /* Reduced size */
+  height: 150px; /* Fixed height for consistency */
   border-radius: 1rem;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   box-shadow: var(--shadow-md);
 }
 
 .step-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -1284,14 +1287,14 @@ header {
 }
 
 .step-icon-wrapper {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem; /* Reduced size */
+  height: 4rem; /* Reduced size */
   background: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   box-shadow: var(--shadow-lg);
   position: relative;
   z-index: 1;
@@ -1303,7 +1306,7 @@ header {
 }
 
 .step-icon-wrapper i {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Reduced size */
 }
 
 /* Updated Features Grid Layout */
@@ -1392,6 +1395,21 @@ header {
   margin-top: 2rem;
   color: #425E71;
   font-weight: 600;
+}
+
+.app-store-badge {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.app-store-badge:hover {
+  transform: scale(1.05);
+}
+
+.hero-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .standalone-page .back-link i {
