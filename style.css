@@ -225,7 +225,7 @@ section h2::after {
 
 /* Smart Features */
 .smart-features {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('resources/mockups/mockuuups-smartphone-mockup-surrounded-by-fruits.jpeg');
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('resources/mockups/mockuuups-phone-mockup-with-vegetables.jpeg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -270,9 +270,30 @@ section h2::after {
   background-position: center;
 }
 
+.food-waste-card {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('resources/foodWaste.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.inspiration-card {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('resources/getInspiration.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.library-card {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('resources/libraryScreen.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .meal-config-card h3, .meal-config-card p,
 .nutrition-card h3, .nutrition-card p,
-.time-saver-card h3, .time-saver-card p {
+.time-saver-card h3, .time-saver-card p,
+.food-waste-card h3, .food-waste-card p,
+.inspiration-card h3, .inspiration-card p,
+.library-card h3, .library-card p {
   position: relative;
   z-index: 2;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
@@ -280,7 +301,10 @@ section h2::after {
 
 .meal-config-card .icon-wrapper,
 .nutrition-card .icon-wrapper,
-.time-saver-card .icon-wrapper {
+.time-saver-card .icon-wrapper,
+.food-waste-card .icon-wrapper,
+.inspiration-card .icon-wrapper,
+.library-card .icon-wrapper {
   background-color: rgba(255, 255, 255, 0.9);
   position: relative;
   z-index: 2;
