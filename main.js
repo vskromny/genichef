@@ -7,7 +7,8 @@ AOS.init({
   easing: 'ease-out',
   once: false,
   mirror: false,
-  offset: 120
+  offset: 120,
+  delay: 100
 });
 
 // Update copyright year
@@ -156,29 +157,31 @@ if (testimonialTrack && testimonialCards.length) {
   }, 7000);
 }
 
-// Email validation for the signup form
+// Email validation for the signup form (if exists)
 const emailForm = document.querySelector('.email-signup');
-const emailInput = emailForm.querySelector('input[type="email"]');
-const submitButton = emailForm.querySelector('button');
+if (emailForm) {
+  const emailInput = emailForm.querySelector('input[type="email"]');
+  const submitButton = emailForm.querySelector('button');
 
-submitButton.addEventListener('click', (e) => {
-  e.preventDefault();
-  const email = emailInput.value.trim();
-  
-  if (!email) {
-    showNotification('Please enter your email address', 'error');
-    return;
-  }
-  
-  if (!isValidEmail(email)) {
-    showNotification('Please enter a valid email address', 'error');
-    return;
-  }
-  
-  // Here you would typically send the email to your server
-  showNotification('Thank you for joining our waitlist! We\'ll notify you when GeniChef launches.', 'success');
-  emailInput.value = '';
-});
+  submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const email = emailInput.value.trim();
+    
+    if (!email) {
+      showNotification('Please enter your email address', 'error');
+      return;
+    }
+    
+    if (!isValidEmail(email)) {
+      showNotification('Please enter a valid email address', 'error');
+      return;
+    }
+    
+    // Here you would typically send the email to your server
+    showNotification('Thank you for joining our waitlist! We\'ll notify you when GeniChef launches.', 'success');
+    emailInput.value = '';
+  });
+}
 
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -225,7 +228,7 @@ function showNotification(message, type = 'info') {
   }, 3000);
 }
 
-// Launch countdown timer
+// Launch countdown timer (if exists)
 const countdownElements = document.querySelectorAll('.counter-number');
 if (countdownElements.length) {
   // Set the launch date (today + 28 days)
@@ -245,10 +248,13 @@ if (countdownElements.length) {
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
     
-    countdownElements[0].textContent = days.toString().padStart(2, '0');
-    countdownElements[1].textContent = hours.toString().padStart(2, '0');
-    countdownElements[2].textContent = minutes.toString().padStart(2, '0');
-    countdownElements[3].textContent = seconds.toString().padStart(2, '0');
+    // Make sure all elements exist before updating
+    if (countdownElements.length >= 4) {
+      countdownElements[0].textContent = days.toString().padStart(2, '0');
+      countdownElements[1].textContent = hours.toString().padStart(2, '0');
+      countdownElements[2].textContent = minutes.toString().padStart(2, '0');
+      countdownElements[3].textContent = seconds.toString().padStart(2, '0');
+    }
   }
   
   // Update countdown every second
