@@ -1394,14 +1394,14 @@ header::before {
 
 /* Add these styles to your style.css file */
 
-/* Horizontal Steps Layout */
+/* Updated Steps Container Layout */
 .steps-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
   margin: 3rem auto;
-  max-width: 900px;
+  max-width: 1000px; /* Increased from 900px to accommodate larger boxes */
 }
 
 .step-item {
@@ -1411,7 +1411,7 @@ header::before {
   border-radius: 1.25rem;
   box-shadow: var(--shadow-lg);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 180px;
+  width: 240px; /* Increased from 180px */
   flex-shrink: 0;
 }
 
@@ -1445,13 +1445,31 @@ header::before {
   text-align: center;
 }
 
+/* Updated step image to maintain 3:4 aspect ratio */
 .step-image {
   width: 100%;
-  height: 120px;
+  height: 180px; /* Increased from 120px to maintain 3:4 ratio with width of 240px */
   border-radius: 1rem;
   overflow: hidden;
   margin-bottom: 1.5rem;
   box-shadow: var(--shadow-md);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step-item {
+    width: 100%;
+    max-width: 320px; /* Increased from 280px */
+  }
+  
+  .step-image {
+    height: 240px; /* Adjusted to maintain 3:4 ratio with max-width of 320px */
+  }
 }
 
 .step-image img {
