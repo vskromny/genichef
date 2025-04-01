@@ -114,7 +114,7 @@ section h2::after {
 
 .icon-wrapper i {
   font-size: 2rem;
-  color: #425E71;
+  color: var(--accent-green);
 }
 
 .feature h3 {
@@ -130,138 +130,83 @@ section h2::after {
   margin: 0 auto;
 }
 
-/* App Preview Mockup */
-.app-preview {
+/* App Screens Showcase */
+.app-screens-container {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
-}
-
-.phone-mockup {
-  width: 300px;
-  height: 600px;
-  background: var(--gray-900);
-  border-radius: 40px;
-  padding: 15px;
-  box-shadow: var(--shadow-2xl);
-  position: relative;
-  z-index: 1;
-  transform: perspective(1000px) rotateY(-15deg) rotateX(5deg);
-  transition: all 0.5s ease;
-}
-
-.phone-mockup:hover {
-  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
-}
-
-.mockup-screen {
   width: 100%;
-  height: 100%;
-  background: white;
-  border-radius: 30px;
   overflow: hidden;
+  padding: 2rem 0;
+}
+
+.app-screens {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 100%;
+}
+
+.app-screen {
   position: relative;
+  width: 250px;
+  border-radius: 36px;
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  transform: perspective(1000px) rotateY(-5deg) scale(0.9);
 }
 
-.mockup-header {
-  height: 60px;
-  background: var(--primary-50);
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.app-screen:hover {
+  transform: perspective(1000px) rotateY(0deg) scale(0.95);
+  z-index: 10;
 }
 
-.mockup-status-bar {
-  height: 10px;
-  width: 70%;
-  background: var(--primary-200);
-  border-radius: 5px;
+.featured-screen {
+  width: 280px;
+  z-index: 5;
+  transform: perspective(1000px) scale(1);
+  box-shadow: var(--shadow-2xl);
 }
 
-.mockup-title {
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--primary-800);
+.featured-screen:hover {
+  transform: perspective(1000px) scale(1.05);
 }
 
-.mockup-content {
-  padding: 20px;
+.screen-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: inherit;
 }
 
-.mockup-ingredients {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+.screen-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  transition: all 0.3s ease;
+  transform: translateY(100%);
+  backdrop-filter: blur(5px);
 }
 
-.ingredient {
-  width: 80px;
-  height: 80px;
-  border-radius: 15px;
-  background: var(--primary-100);
+.app-screen:hover .screen-overlay {
+  transform: translateY(0);
 }
 
-.ingredient-1 {
-  animation: pulse-subtle 4s infinite;
+.screen-overlay h3 {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
 }
 
-.ingredient-2 {
-  animation: pulse-subtle 4s infinite 1s;
-}
-
-.ingredient-3 {
-  animation: pulse-subtle 4s infinite 2s;
-}
-
-@keyframes pulse-subtle {
-  0%, 100% {
-    opacity: 0.7;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-.mockup-results {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.result-item {
-  display: flex;
-  gap: 15px;
-  padding: 10px;
-  border-radius: 15px;
-  background: #f9f9f9;
-  box-shadow: var(--shadow-sm);
-}
-
-.result-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  background: var(--primary-200);
-}
-
-.result-text {
-  flex: 1;
-}
-
-.result-title {
-  height: 12px;
-  width: 80%;
-  background: var(--primary-100);
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-.result-desc {
-  height: 8px;
-  width: 60%;
-  background: var(--gray-400);
-  border-radius: 4px;
+.screen-overlay p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
 }
 
 /* Smart Features */
@@ -1055,15 +1000,15 @@ header {
 .feature-pill {
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.8);
+  background: #F9FFED;
   border: 1px solid var(--primary-100);
   border-radius: 50px;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--text-primary);
+  color: var(--accent-green);
   gap: 0.5rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
 }
 
@@ -1075,6 +1020,7 @@ header {
 
 .feature-pill i {
   font-size: 1rem;
+  color: var(--accent-green) !important;
 }
 
 .hero-btns {
@@ -1095,7 +1041,7 @@ header {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: var(--shadow-md), 0 0 0 0 rgba(255, 224, 144, 0.7);
+  box-shadow: var(--shadow-xl), 0 0 0 0 rgba(255, 224, 144, 0.7);
 }
 
 .btn-primary:hover {
@@ -1387,6 +1333,7 @@ header {
 
 .step-icon-wrapper i {
   font-size: 1.5rem;
+  color: var(--accent-green) !important;
 }
 
 .step-item h3 {
@@ -1519,5 +1466,19 @@ header {
   
   .features-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .app-screens {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .app-screen, .featured-screen {
+    width: 280px;
+    transform: none;
+  }
+  
+  .app-screen:hover, .featured-screen:hover {
+    transform: scale(1.05);
   }
 }
