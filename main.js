@@ -14,14 +14,40 @@ AOS.init({
 // Update copyright year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Parallax effect for hero image
+// 3D effect for hero image that follows mouse cursor
 document.addEventListener('DOMContentLoaded', function() {
   const parallaxImage = document.querySelector('.parallax-img');
-  if (parallaxImage) {
+  const heroContainer = document.querySelector('.hero-image-container');
+  
+  if (parallaxImage && heroContainer) {
+    // Initial parallax effect
     new simpleParallax(parallaxImage, {
-      scale: 1.1,
+      scale: 1.05,
       delay: .6,
       transition: 'cubic-bezier(0,0,0,1)'
+    });
+    
+    // Mouse-following 3D effect
+    heroContainer.addEventListener('mousemove', function(e) {
+      // Get position of the container
+      const rect = heroContainer.getBoundingClientRect();
+      
+      // Calculate mouse position relative to the container center
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      
+      // Calculate the rotation angle based on mouse position
+      // Further from center = more rotation
+      const rotateY = ((e.clientX - centerX) / (rect.width / 2)) * 15; // Max 15 degrees
+      const rotateX = ((centerY - e.clientY) / (rect.height / 2)) * 10; // Max 10 degrees
+      
+      // Apply the transform
+      parallaxImage.style.transform = `perspective(1000px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+    });
+    
+    // Reset on mouse leave
+    heroContainer.addEventListener('mouseleave', function() {
+      parallaxImage.style.transform = 'perspective(1000px) rotateY(-5deg) rotateX(2deg)';
     });
   }
 });
