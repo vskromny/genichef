@@ -138,6 +138,7 @@ section h2::after {
   width: 100%;
   overflow: hidden;
   padding: 2rem 0;
+  position: relative;
 }
 
 .app-screens {
@@ -147,6 +148,7 @@ section h2::after {
   align-items: center;
   gap: 1.5rem;
   max-width: 100%;
+  animation: scroll-x 30s linear infinite alternate;
 }
 
 .app-screen {
@@ -207,6 +209,18 @@ section h2::after {
 .screen-overlay p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.8rem;
+}
+
+@keyframes scroll-x {
+  0% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
 }
 
 /* Smart Features */
@@ -556,10 +570,10 @@ section h2::after {
 
 /* Footer */
 footer {
-  background: rgba(17, 24, 39, 0.85);
+  background: #F9FFED;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  color: white;
+  color: var(--accent-green);
   padding: 4rem 0;
 }
 
@@ -589,13 +603,13 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: var(--accent-green);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: var(--primary-200);
+  color: var(--primary-600);
 }
 
 .social-links {
@@ -609,22 +623,24 @@ nav a:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--gray-800);
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--accent-green);
   transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
 }
 
 .social-link:hover {
-  background: var(--primary-600);
+  background: var(--primary-100);
   transform: translateY(-3px);
 }
 
 .copyright {
   text-align: center;
-  color: var(--gray-400);
+  color: var(--accent-green);
+  opacity: 0.7;
 }
 
 /* Responsive Design */
