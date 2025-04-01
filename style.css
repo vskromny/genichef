@@ -225,7 +225,9 @@ section h2::after {
 
 /* Smart Features */
 .smart-features {
-  background: var(--primary-50);
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('resources/mockups/mockuuups-smartphone-mockup-surrounded-by-fruits.jpeg');
+  background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
@@ -242,6 +244,30 @@ section h2::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.meal-config-card {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('resources/mealConfiguration.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.meal-config-card h3, .meal-config-card p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.meal-config-card .icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 2;
 }
 
 .feature-card:hover {
@@ -293,14 +319,16 @@ section h2::after {
 
 .tab-btn {
   padding: 0.75rem 1.5rem;
-  background: #F9FFED;
-  border: none;
+  background: rgba(249, 255, 237, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 9999px;
   font-weight: 600;
   color: #334C00;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .tab-btn:hover {
@@ -328,7 +356,7 @@ section h2::after {
 }
 
 .tab-item {
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 1rem;
   padding: 1.5rem;
   display: flex;
@@ -337,6 +365,9 @@ section h2::after {
   text-align: center;
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .tab-item:hover {
@@ -975,6 +1006,29 @@ header::before {
   max-width: 550px;
 }
 
+.app-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.app-icon {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  animation: subtle-float 4s ease-in-out infinite;
+}
+
+@keyframes subtle-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 .badge {
   display: inline-block;
   background-color: var(--primary-100);
@@ -983,7 +1037,6 @@ header::before {
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
-  margin-bottom: 1.5rem;
   box-shadow: var(--shadow-sm);
 }
 
@@ -1409,6 +1462,12 @@ header::before {
 .footer-logo {
   max-height: 80px;
   width: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1) rotate(5deg);
 }
 
 /* Change testimonial carousel animation speed */
