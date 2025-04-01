@@ -258,13 +258,29 @@ section h2::after {
   background-position: center;
 }
 
-.meal-config-card h3, .meal-config-card p {
+.nutrition-card {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('resources/nutritionInfo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.time-saver-card {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('resources/timeSaver.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.meal-config-card h3, .meal-config-card p,
+.nutrition-card h3, .nutrition-card p,
+.time-saver-card h3, .time-saver-card p {
   position: relative;
   z-index: 2;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
-.meal-config-card .icon-wrapper {
+.meal-config-card .icon-wrapper,
+.nutrition-card .icon-wrapper,
+.time-saver-card .icon-wrapper {
   background-color: rgba(255, 255, 255, 0.9);
   position: relative;
   z-index: 2;
