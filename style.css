@@ -137,7 +137,7 @@ section h2::after {
   justify-content: center;
   width: 100%;
   overflow: hidden;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem 0; /* Doubled bottom padding from 2rem to 4rem */
   position: relative;
 }
 
