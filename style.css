@@ -622,6 +622,7 @@ footer {
   gap: 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 0 auto;
 }
 
 .logo i {
@@ -1014,10 +1015,13 @@ header::before {
 }
 
 .app-icon {
-  width: 60px;
-  height: 60px;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  width: 45px;
+  height: 45px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 224, 144, 0.3);
   animation: subtle-float 4s ease-in-out infinite;
+  object-fit: cover;
 }
 
 @keyframes subtle-float {
@@ -1460,14 +1464,19 @@ header::before {
 
 /* Logo in Footer */
 .footer-logo {
-  max-height: 80px;
-  width: auto;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
-  transition: transform 0.3s ease;
+  height: 50px;
+  width: 50px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 224, 144, 0.3);
+  transition: all 0.3s ease;
+  object-fit: cover;
+  display: block;
 }
 
 .footer-logo:hover {
   transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2), 0 0 0 2px rgba(255, 224, 144, 0.5);
 }
 
 /* Change testimonial carousel animation speed */
