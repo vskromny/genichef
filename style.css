@@ -1096,12 +1096,12 @@ header::before {
   display: flex;
   align-items: center;
   background: #F9FFED;
-  border: 1px solid var(--primary-100);
+  border: 1px solid #334C00;
   border-radius: 50px;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--accent-green);
+  color: #334C00;
   gap: 0.5rem;
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
@@ -1115,7 +1115,7 @@ header::before {
 
 .feature-pill i {
   font-size: 1rem;
-  color: var(--accent-green) !important;
+  color: #334C00 !important;
 }
 
 .hero-btns {
@@ -1137,6 +1137,10 @@ header::before {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: var(--shadow-xl), 0 0 0 0 rgba(255, 224, 144, 0.7);
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
 }
 
 .btn-primary:hover {
