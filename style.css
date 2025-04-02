@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 :root {
   --primary-50: #fff9e6;
   --primary-100: #fff3cc;
@@ -27,7 +29,7 @@
 
 section h2 {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
@@ -119,7 +121,7 @@ section h2::after {
 
 .feature h3 {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 1rem;
   color: var(--text-primary);
 }
@@ -225,7 +227,7 @@ section h2::after {
 
 /* Smart Features */
 .smart-features {
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)), url('resources/mockups/mockuuups-phone-mockup-with-vegetables.jpeg');
+  background: #F5F5F5;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -863,14 +865,17 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   color: var(--text-primary);
-  background-color: #F5F5F5;
+  background-color: var(--bg-primary);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 400;
 }
 
 .container {
@@ -881,7 +886,7 @@ body {
 }
 
 .bg-gradient {
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.7)), url('resources/mockups/mockuuups-phone-mockup-with-vegetables.jpeg');
+  background: #F5F5F5;
   background-size: contain;
   background-position: center;
   position: relative;
@@ -957,6 +962,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
+  letter-spacing: -0.01em;
 }
 
 .logo i {
@@ -976,6 +982,7 @@ body {
   position: relative;
   padding: 0.5rem 0;
   transition: color 0.3s ease;
+  letter-spacing: 0.01em;
 }
 
 .nav-link:hover {
@@ -1014,20 +1021,6 @@ header {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-}
-
-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  z-index: 0;
-  border-radius: 20px;
 }
 
 .hero-content {
@@ -1086,7 +1079,7 @@ header::before {
 
 .hero-text h1 {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 1.5rem;
   letter-spacing: -0.025em;
@@ -1122,6 +1115,8 @@ header::before {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 .feature-pill-container {
@@ -1181,6 +1176,7 @@ header::before {
   display: block;
   margin: 0 auto;
   min-width: 200px;
+  letter-spacing: 0.01em;
 }
 
 .btn-primary:hover {
@@ -1240,9 +1236,7 @@ header::before {
   transition: transform 0.6s ease;
 }
 
-.hero-image-container.floating {
-  animation: float 6s ease-in-out infinite;
-}
+/* Removed floating animation */
 
 .parallax-img {
   width: 50%;
@@ -1582,12 +1576,14 @@ header::before {
   color: #425E71;
   margin-bottom: 2rem;
   text-align: center;
+  font-weight: 700;
 }
 
 .standalone-page h2 {
   font-size: 1.8rem;
   color: #425E71;
   margin: 2rem 0 1rem;
+  font-weight: 600;
 }
 
 .standalone-page p {
