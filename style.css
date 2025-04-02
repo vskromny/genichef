@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* Add these font imports at the top of your style.css file */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 
 :root {
   --primary-50: #fff9e6;
@@ -46,6 +48,38 @@ section h2::after {
   height: 4px;
   background: var(--primary-400);
   border-radius: 2px;
+}
+
+/* Define a new class for the Agbalumo font */
+.agbalumo-regular {
+  font-family: "Agbalumo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Apply the font to specific headings */
+header .hero-text h1,
+.how-it-works h2,
+.smart-features h2,
+.testimonials h2 {
+  font-family: "Agbalumo", system-ui;
+}
+
+/* Adjust font size and spacing for better readability with this font */
+header .hero-text h1 {
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.how-it-works h2,
+.smart-features h2,
+.testimonials h2 {
+  letter-spacing: 0.01em;
+}
+
+/* Optional: Enhance the text-gradient effect for better display with this font */
+.text-gradient {
+  padding-bottom: 5px;
 }
 
 .process-timeline {
