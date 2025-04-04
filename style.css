@@ -999,6 +999,18 @@ body {
   letter-spacing: -0.01em;
 }
 
+.download-link {
+  margin-right: 1rem;
+  color: var(--accent-green);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.download-link:hover {
+  color: var(--primary-600);
+}
+
 .logo i {
   color: var(--primary-600);
   margin-right: 0.5rem;
