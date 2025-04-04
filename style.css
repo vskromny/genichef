@@ -896,7 +896,8 @@ nav a:hover {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* Removed smooth scroll behavior as we're using custom JS implementation */
+  scroll-behavior: auto;
 }
 
 
@@ -1186,6 +1187,8 @@ header {
   gap: 0.5rem;
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .feature-pill:hover {
