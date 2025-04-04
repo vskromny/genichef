@@ -65,9 +65,36 @@
     <a href="index.html" class="back-link"><i data-lucide="arrow-left"></i>Back to Home</a>
   </div>
   
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo">
+          <a href="https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018" class="download-link">Download App</a>
+          <img src="resources/appIcon.png" alt="GeniChef Logo" class="footer-logo">
+        </div>
+        <nav>
+          <a href="privacy-page.html">Privacy</a>
+          <a href="terms-page.html">Terms</a>
+          <a href="contact-page.html">Contact</a>
+        </nav>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link"><i data-lucide="twitter" style="color: var(--accent-green);"></i></a>
+        <a href="#" class="social-link"><i data-lucide="instagram" style="color: var(--accent-green);"></i></a>
+        <a href="#" class="social-link"><i data-lucide="facebook" style="color: var(--accent-green);"></i></a>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> GeniChef. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  
   <script>
     // Initialize Lucide icons
     lucide.createIcons();
+    // Update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
