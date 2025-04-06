@@ -27,7 +27,7 @@
       padding: 0.75rem 1rem;
       font-size: 1rem;
       border: 1px solid #e2e8f0;
-      border-radius: 0.5rem;
+      border-radius: 16px;
       transition: all 0.3s ease;
     }
     
@@ -46,7 +46,7 @@
       margin-top: 3rem;
       padding: 2rem;
       background-color: #f9f9f9;
-      border-radius: 1rem;
+      border-radius: 16px;
     }
     
     .contact-method {
@@ -76,7 +76,7 @@
     }
   </style>
 </head>
-<body>
+<body style="background: #F5F5F5;">
   <div class="standalone-page">
     <div class="logo">
       <img src="resources/appIcon.png" alt="GeniChef Logo" class="footer-logo">
@@ -87,7 +87,7 @@
     <p>We'd love to hear from you! Whether you have a question about our app, need technical support, or want to provide feedback, our team is ready to help.</p>
     
     <div class="contact-form">
-      <form id="contactForm">
+      <form id="contactForm" style="padding: 2rem; background-color: #ffffff; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); margin-bottom: 2rem;">
         <div class="form-group">
           <label for="name">Your Name</label>
           <input type="text" id="name" class="form-control" required>
@@ -127,6 +127,16 @@
         <div class="contact-text">
           <strong>Email</strong>
           v.skromny@bluewin.ch
+        </div>
+      </div>
+      
+      <div class="contact-method">
+        <div class="contact-icon">
+          <i data-lucide="phone" style="color: #425E71;"></i>
+        </div>
+        <div class="contact-text">
+          <strong>Phone</strong>
+          +41 78 308 77 07
         </div>
       </div>
       
