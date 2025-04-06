@@ -64,16 +64,43 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Add smooth scroll behavior for navigation links
+// Add custom smooth scroll behavior for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const targetId = this.getAttribute('href');
+    const target = document.querySelector(targetId);
+    
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+      // Get the target's position
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      const startPosition = window.pageYOffset;
+      const distance = targetPosition - startPosition;
+      
+      // Smoother scroll animation (1000ms = 1 second duration)
+      const duration = 1000;
+      let startTime = null;
+      
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        
+        // Easing function: easeInOutQuad
+        const easeInOutQuad = progress => {
+          return progress < 0.5
+            ? 2 * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+        };
+        
+        window.scrollTo(0, startPosition + distance * easeInOutQuad(progress));
+        
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        }
+      }
+      
+      requestAnimationFrame(animation);
     }
   });
 });
