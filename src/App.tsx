@@ -22,7 +22,7 @@ function App() {
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Cook Smarter with
-              <span className="text-primary-600"> GeniChef</span>
+              <span className="text-primary-600"> ReciPics</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
               Turn your ingredients into delicious meals instantly with AI-powered recipe suggestions.
@@ -44,7 +44,7 @@ function App() {
       {/* How It Works */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">How GeniChef Works</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">How ReciPics Works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="flex justify-center mb-6">
@@ -102,7 +102,7 @@ function App() {
             Ready to Transform Your Cooking?
           </h2>
           <p className="text-xl text-gray-700 mb-8">
-            Join our waitlist to be the first to know when GeniChef launches.
+            Join our waitlist to be the first to know when ReciPics launches.
           </p>
           <div className="max-w-md mx-auto">
             <div className="flex gap-4">
@@ -125,7 +125,7 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-6 md:mb-0">
               <Phone className="w-8 h-8 text-primary-200 mr-2" />
-              <span className="text-2xl font-bold">GeniChef</span>
+              <span className="text-2xl font-bold">ReciPics</span>
             </div>
             <div className="flex gap-8">
               <a href="#" className="hover:text-primary-200 transition-colors">About</a>
@@ -135,7 +135,7 @@ function App() {
             </div>
           </div>
           <div className="text-center mt-8 text-gray-400">
-            © {new Date().getFullYear()} GeniChef. All rights reserved.
+            © {new Date().getFullYear()} ReciPics. All rights reserved.
           </div>
         </div>
       </footer>
