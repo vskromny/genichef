@@ -231,7 +231,7 @@ if (emailForm) {
     }
     
     // Here you would typically send the email to your server
-    showNotification('Thank you for joining our waitlist! We\'ll notify you when GeniChef launches.', 'success');
+    showNotification('Thank you for joining our waitlist! We\'ll notify you when ReciPics launches.', 'success');
     emailInput.value = '';
   });
 }
