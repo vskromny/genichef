@@ -13,7 +13,7 @@
   <style>
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;overflow-x:hidden;}
   @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
   @keyframes bobS{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-12px) rotate(-3deg)}}
   @keyframes bobR{0%,100%{transform:translateY(0) rotate(7deg)}50%{transform:translateY(-13px) rotate(4deg)}}
@@ -21,6 +21,12 @@
   @keyframes panGrad{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
   @keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(255,122,0,.45)}70%{box-shadow:0 0 0 16px rgba(255,122,0,0)}100%{box-shadow:0 0 0 0 rgba(255,122,0,0)}}
   @keyframes wiggle{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+  @media (max-width:760px){
+    #top{grid-template-columns:1fr!important;padding-top:104px!important;}
+    #top>div:last-child{min-height:auto!important;margin-top:8px;}
+    .g-stack{grid-template-columns:1fr!important;}
+    .g-half,[data-panel]{grid-template-columns:repeat(2,1fr)!important;}
+  }
 </style>
 </head>
 <body>
@@ -37,6 +43,7 @@
     <div style="display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;">
       <a href="#how" style="text-decoration:none;color:inherit;">How it works</a>
       <a href="#features" style="text-decoration:none;color:inherit;">Features</a>
+      <a href="#plan" style="text-decoration:none;color:inherit;">Plan &amp; shop</a>
       <a href="#loved" style="text-decoration:none;color:inherit;">Reviews</a>
       <a href="https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#fff;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);">Get the app</a>
     </div>
@@ -101,7 +108,7 @@
       <span style="font-family:'Caveat',cursive;font-weight:700;font-size:27px;color:#3B5A00;">three easy steps</span>
       <h2 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(32px,4.5vw,44px);margin-top:2px;">How ReciPics works</h2>
     </div>
-    <div data-reveal style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+    <div data-reveal class="g-stack" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
       <div style="position:relative;background:#fff;border-radius:24px;padding:28px;box-shadow:0 18px 40px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;transform:rotate(-1deg);">
         <span style="position:absolute;top:-13px;left:24px;background:linear-gradient(135deg,#FFD37A,#FFB02E);color:#5b3b00;font-weight:800;padding:5px 14px;border-radius:6px;transform:rotate(-7deg);box-shadow:0 6px 12px -6px rgba(0,0,0,.3);font-size:13px;">STEP 1</span>
         <div style="width:66px;height:66px;border-radius:18px;background:#FFF1DC;display:flex;align-items:center;justify-content:center;font-size:32px;margin:16px 0 16px;">&#128247;</div>
@@ -130,7 +137,7 @@
         <span style="font-family:'Caveat',cursive;font-weight:700;font-size:27px;color:#3B5A00;">a kitchen full of smarts</span>
         <h2 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(32px,4.5vw,44px);margin-top:2px;">Smart features</h2>
       </div>
-      <div data-reveal style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;">
+      <div data-reveal class="g-stack" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;">
         <div style="background:#fff;border-radius:22px;padding:26px;box-shadow:0 16px 36px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;">
           <div style="width:58px;height:58px;border-radius:16px;background:#FFF1DC;display:flex;align-items:center;justify-content:center;font-size:27px;margin-bottom:14px;">&#129529;</div>
           <h3 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:22px;">Meal Configuration</h3>
@@ -193,6 +200,64 @@
     </div>
   </div>
 
+  <!-- PLAN & SHOP -->
+  <div id="plan" style="position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:60px clamp(20px,5vw,40px);">
+    <div data-reveal style="text-align:center;margin-bottom:50px;">
+      <span style="font-family:'Caveat',cursive;font-weight:700;font-size:27px;color:#3B5A00;">more than recipes</span>
+      <h2 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(32px,4.5vw,44px);margin-top:2px;">From fridge to full week</h2>
+    </div>
+
+    <!-- Meal Planner -->
+    <div data-reveal style="display:flex;align-items:center;gap:clamp(28px,5vw,64px);flex-wrap:wrap;margin-bottom:70px;">
+      <div style="flex:1 1 240px;min-width:0;display:flex;justify-content:center;">
+        <div style="position:relative;">
+          <div style="position:relative;width:min(248px,72vw);aspect-ratio:9/19.5;background:#15110c;border-radius:42px;padding:10px;box-shadow:0 40px 64px -24px rgba(80,50,10,.55);transform:rotate(-4deg);">
+            <img src="resources/meal-planner.png" style="width:100%;height:100%;object-fit:cover;border-radius:33px;display:block;">
+          </div>
+          <div style="position:absolute;bottom:-14px;right:-12px;background:#fff;border-radius:16px;padding:11px 15px;box-shadow:0 18px 34px -14px rgba(80,50,10,.45);display:flex;align-items:center;gap:10px;transform:rotate(4deg);">
+            <span style="width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#A7C24B,#7C9628);display:flex;align-items:center;justify-content:center;font-size:17px;">&#128197;</span>
+            <div style="line-height:1.15;"><div style="font-weight:800;font-size:13px;">Week planned</div><div style="font-size:11px;color:#8a7860;">21 meals ready</div></div>
+          </div>
+        </div>
+      </div>
+      <div style="flex:1 1 320px;min-width:0;">
+        <span style="font-family:'Caveat',cursive;font-weight:700;font-size:24px;color:#3B5A00;">meal planner</span>
+        <h3 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(26px,3.4vw,34px);margin:2px 0 12px;">Plan every meal, the easy way</h3>
+        <p style="color:#6B5847;font-weight:500;font-size:17px;line-height:1.6;max-width:440px;">Map out breakfast, lunch and dinner across your whole week. Drop any saved recipe onto a day in a tap &mdash; ReciPics keeps the week organized so you always know what&rsquo;s next.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;">
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#128197; Weekly calendar</span>
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#128072; Add in one tap</span>
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#9878;&#65039; Balanced days</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grocery List -->
+    <div data-reveal style="display:flex;align-items:center;gap:clamp(28px,5vw,64px);flex-wrap:wrap-reverse;">
+      <div style="flex:1 1 320px;min-width:0;">
+        <span style="font-family:'Caveat',cursive;font-weight:700;font-size:24px;color:#3B5A00;">grocery list</span>
+        <h3 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(26px,3.4vw,34px);margin:2px 0 12px;">Your shopping list, auto-magically</h3>
+        <p style="color:#6B5847;font-weight:500;font-size:17px;line-height:1.6;max-width:440px;">Every recipe you plan rolls its ingredients into one smart grocery list. Quantities are combined, nothing&rsquo;s forgotten &mdash; just check things off as you move through the aisles.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;">
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#10024; Auto-generated</span>
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#129518; Smart quantities</span>
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#9989; Check as you shop</span>
+        </div>
+      </div>
+      <div style="flex:1 1 240px;min-width:0;display:flex;justify-content:center;">
+        <div style="position:relative;">
+          <div style="position:relative;width:min(248px,72vw);aspect-ratio:9/19.5;background:#15110c;border-radius:42px;padding:10px;box-shadow:0 40px 64px -24px rgba(214,103,0,.5);transform:rotate(4deg);">
+            <img src="resources/grocery-list.png" style="width:100%;height:100%;object-fit:cover;border-radius:33px;display:block;">
+          </div>
+          <div style="position:absolute;bottom:-14px;left:-12px;background:#fff;border-radius:16px;padding:11px 15px;box-shadow:0 18px 34px -14px rgba(80,50,10,.45);display:flex;align-items:center;gap:10px;transform:rotate(-4deg);">
+            <span style="width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#FFB02E,#FF7A00);display:flex;align-items:center;justify-content:center;font-size:17px;">&#128722;</span>
+            <div style="line-height:1.15;"><div style="font-weight:800;font-size:13px;">Cart ready</div><div style="font-size:11px;color:#8a7860;">12 items &middot; sorted</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- APP SHOWCASE -->
   <div style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:70px clamp(20px,5vw,40px);text-align:center;">
     <div data-reveal>
@@ -219,7 +284,7 @@
         <span style="font-family:'Caveat',cursive;font-weight:700;font-size:27px;color:#3B5A00;">straight from the kitchen</span>
         <h2 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(32px,4.5vw,44px);margin-top:2px;">Home cooks love ReciPics</h2>
       </div>
-      <div data-reveal style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px;">
+      <div data-reveal class="g-half" style="display:grid;grid-template-columns:repeat(4,1fr);gap:22px;">
 
         <div style="background:#fff;border-radius:24px;padding:26px;box-shadow:0 18px 40px -24px rgba(80,50,10,.45);border:1.5px solid #F4E6CE;transform:rotate(-1deg);">
           <span style="position:absolute;top:-9px;left:34px;background:linear-gradient(135deg,#FFD37A,#FFB02E);width:54px;height:20px;border-radius:4px;transform:rotate(-6deg);opacity:.85;box-shadow:0 4px 8px -4px rgba(0,0,0,.25);"></span>
