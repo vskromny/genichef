@@ -3,98 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - ReciPics</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- Favicon -->
+  <title>Privacy Policy — ReciPics</title>
+  <meta name="description" content="How ReciPics collects, uses, and safeguards your data.">
   <link rel="icon" href="resources/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="favicon.png">
-  <link rel="shortcut icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600;700;800&family=Nunito:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#fff !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card a{color:#E86A00;font-weight:700;text-decoration:none;}
+  .back{display:inline-flex;align-items:center;gap:9px;margin-top:30px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#fff;padding:14px 26px;border-radius:14px;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#9a8870;font-size:14px;font-weight:600;}
+  /* contact form */
+  .form-group{margin-bottom:18px;}
+  .form-group label{display:block;margin-bottom:7px;font-weight:800;color:#3B5A00;font-size:15px;}
+  .form-control{width:100%;padding:13px 16px;font-size:16px;font-family:'Nunito',sans-serif;background:#FFFDF8;border:1.5px solid #EFDFC4;border-radius:14px;transition:all .25s ease;color:#2A1E12;}
+  .form-control:focus{outline:none;border-color:#FF9A2E;box-shadow:0 0 0 4px rgba(255,154,46,.18);background:#fff;}
+  textarea.form-control{min-height:150px;resize:vertical;}
+  .submit-btn{cursor:pointer;border:none;font-family:'Nunito',sans-serif;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#fff;padding:15px 30px;border-radius:14px;font-weight:800;font-size:17px;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .contact-info{margin-top:24px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+  .contact-method{display:flex;align-items:flex-start;gap:14px;background:#FFF8EC;border:1.5px solid #F4E6CE;border-radius:18px;padding:18px;}
+  .contact-icon{flex-shrink:0;width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#FFF1DC,#FFE7D2);display:flex;align-items:center;justify-content:center;font-size:22px;}
+  .contact-text{font-size:15px;color:#5b4a38;font-weight:600;}
+  .contact-text strong{display:block;color:#2A1E12;font-weight:800;margin-bottom:2px;}
+  @media (max-width:560px){.contact-info{grid-template-columns:1fr;}.footer{justify-content:center;text-align:center;}}
+</style>
 </head>
-<body style="background: #F5F5F5;">
-  <div class="standalone-page">
-    <div class="logo">
-      <img src="resources/appIcon.png" alt="ReciPics Logo" class="footer-logo">
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#loved">Reviews</a>
+      <a class="nav-cta" href="https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018">Get the app</a>
     </div>
-    
-<h1>Privacy Policy</h1>
-    
-    <p>Effective Date: April 1, 2025</p>
-    
-    <p>ReciPics is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your data.</p>
-    
-    <h2>1. Information We Collect</h2>
-    
-    <p>ReciPics does not store or collect personal data beyond the essential functionality of the app. The app may process the following:</p>
-    <ul>
-      <li>Camera images (processed directly on OpenAI servers)</li>
-      <li>Voice inputs (processed directly on OpenAI servers)</li>
-    </ul>
-    
-    <h2>2. Data Processing and Storage</h2>
-    
-    <ul>
-      <li>ReciPics does not store, transmit, or retain camera images or voice inputs after they are processed by OpenAI.</li>
-      <li>No data is used for analytics, advertising, or any other secondary purpose.</li>
-      <li>OpenAI servers process images and text strictly for generating recipe results.</li>
-    </ul>
-    
-    <h2>3. Third-Party Services</h2>
-    
-    <ul>
-      <li>OpenAI: ReciPics relies on OpenAI for AI-driven recipe generation. Data sent to OpenAI is processed but not stored by ReciPics.</li>
-      <li>Vercel: Our backend functions solely to forward API requests, without retaining or analyzing any user data.</li>
-    </ul>
-    
-    <h2>4. User Control and Data Rights</h2>
-    
-    <p>Since ReciPics does not store personal data, there is no need for data deletion requests. Users maintain full control over the device-stored aspects of the app.</p>
-    
-    <h2>5. Security Measures</h2>
-    
-    <p>ReciPics ensures that all API communications occur over encrypted channels to protect your privacy. We do not sell, share, or trade any user data with third parties.</p>
-    
-    <h2>6. Changes to This Policy</h2>
-    
-    <p>We may update this Privacy Policy periodically. Any changes will be reflected within the app.</p>
-    
-    <h2>7. Contact</h2>
-    
-    <p>For privacy-related inquiries, contact us at hello@recipics.app.</p>
-    
-    <a href="index.html" class="back-link"><i data-lucide="arrow-left"></i>Back to Home</a>
   </div>
-  
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="logo">
-          <a href="https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018" class="download-link">Download App</a>
-          <img src="resources/appIcon.png" alt="ReciPics Logo" class="footer-logo">
-        </div>
-        <nav>
-          <a href="privacy-page.html">Privacy</a>
-          <a href="terms-page.html">Terms</a>
-          <a href="contact-page.html">Contact</a>
-        </nav>
-      </div>
-      <div class="social-links">
-        <a href="#" class="social-link"><i data-lucide="twitter" style="color: var(--accent-green);"></i></a>
-        <a href="#" class="social-link"><i data-lucide="instagram" style="color: var(--accent-green);"></i></a>
-        <a href="#" class="social-link"><i data-lucide="facebook" style="color: var(--accent-green);"></i></a>
-      </div>
-      <div class="copyright">
-        © <span id="year"></span> ReciPics. All rights reserved.
-      </div>
+  <div class="wrap">
+    <span class="kicker">your data, your kitchen</span>
+    <h1>Privacy Policy</h1>
+    <p class="eff">Effective Date: April 1, 2025</p>
+    <div class="card">
+      <p>ReciPics is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your data.</p>
+      <h2>1. Information We Collect</h2>
+      <p>ReciPics does not store or collect personal data beyond the essential functionality of the app. The app may process the following:</p>
+      <ul><li>Camera images (processed directly on OpenAI servers)</li><li>Voice inputs (processed directly on OpenAI servers)</li></ul>
+      <h2>2. Data Processing and Storage</h2>
+      <ul><li>ReciPics does not store, transmit, or retain camera images or voice inputs after they are processed by OpenAI.</li><li>No data is used for analytics, advertising, or any other secondary purpose.</li><li>OpenAI servers process images and text strictly for generating recipe results.</li></ul>
+      <h2>3. Third-Party Services</h2>
+      <ul><li>OpenAI: ReciPics relies on OpenAI for AI-driven recipe generation. Data sent to OpenAI is processed but not stored by ReciPics.</li><li>Vercel: Our backend functions solely to forward API requests, without retaining or analyzing any user data.</li></ul>
+      <h2>4. User Control and Data Rights</h2>
+      <p>Since ReciPics does not store personal data, there is no need for data deletion requests. Users maintain full control over the device-stored aspects of the app.</p>
+      <h2>5. Security Measures</h2>
+      <p>ReciPics ensures that all API communications occur over encrypted channels to protect your privacy. We do not sell, share, or trade any user data with third parties.</p>
+      <h2>6. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy periodically. Any changes will be reflected within the app.</p>
+      <h2>7. Contact</h2>
+      <p>For privacy-related inquiries, contact us at <a href="mailto:hello@recipics.app">hello@recipics.app</a>.</p>
     </div>
+    <a class="back" href="index.html">&#8592; Back to Home</a>
+  </div>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page.html">Privacy</a><a href="terms-page.html">Terms</a><a href="contact-page.html">Contact</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved.</span>
   </footer>
-  
-  <script>
-    // Initialize Lucide icons
-    lucide.createIcons();
-    // Update copyright year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>

@@ -3,103 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - ReciPics</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <title>Contact Us — ReciPics</title>
+  <meta name="description" content="Get in touch with the ReciPics team.">
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600;700;800&family=Nunito:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    .contact-form {
-      margin-top: 2rem;
-    }
-    
-    .form-group {
-      margin-bottom: 1.5rem;
-    }
-    
-    .form-group label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-      color: #425E71;
-    }
-    
-    .form-control {
-      width: 100%;
-      padding: 0.75rem 1rem;
-      font-size: 1rem;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      transition: all 0.3s ease;
-    }
-    
-    .form-control:focus {
-      outline: none;
-      border-color: var(--primary-600);
-      box-shadow: 0 0 0 3px rgba(255, 167, 20, 0.1);
-    }
-    
-    textarea.form-control {
-      min-height: 150px;
-      resize: vertical;
-    }
-    
-    .contact-info {
-      margin-top: 3rem;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      border-radius: 16px;
-    }
-    
-    .contact-method {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-    
-    .contact-icon {
-      width: 40px;
-      height: 40px;
-      background: #F9FFED;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 1rem;
-    }
-    
-    .contact-text {
-      font-size: 1rem;
-    }
-    
-    .contact-text strong {
-      display: block;
-      color: #425E71;
-    }
-  </style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#fff !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card a{color:#E86A00;font-weight:700;text-decoration:none;}
+  .back{display:inline-flex;align-items:center;gap:9px;margin-top:30px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#fff;padding:14px 26px;border-radius:14px;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#9a8870;font-size:14px;font-weight:600;}
+  /* contact form */
+  .form-group{margin-bottom:18px;}
+  .form-group label{display:block;margin-bottom:7px;font-weight:800;color:#3B5A00;font-size:15px;}
+  .form-control{width:100%;padding:13px 16px;font-size:16px;font-family:'Nunito',sans-serif;background:#FFFDF8;border:1.5px solid #EFDFC4;border-radius:14px;transition:all .25s ease;color:#2A1E12;}
+  .form-control:focus{outline:none;border-color:#FF9A2E;box-shadow:0 0 0 4px rgba(255,154,46,.18);background:#fff;}
+  textarea.form-control{min-height:150px;resize:vertical;}
+  .submit-btn{cursor:pointer;border:none;font-family:'Nunito',sans-serif;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#fff;padding:15px 30px;border-radius:14px;font-weight:800;font-size:17px;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .contact-info{margin-top:24px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+  .contact-method{display:flex;align-items:flex-start;gap:14px;background:#FFF8EC;border:1.5px solid #F4E6CE;border-radius:18px;padding:18px;}
+  .contact-icon{flex-shrink:0;width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#FFF1DC,#FFE7D2);display:flex;align-items:center;justify-content:center;font-size:22px;}
+  .contact-text{font-size:15px;color:#5b4a38;font-weight:600;}
+  .contact-text strong{display:block;color:#2A1E12;font-weight:800;margin-bottom:2px;}
+  @media (max-width:560px){.contact-info{grid-template-columns:1fr;}.footer{justify-content:center;text-align:center;}}
+</style>
 </head>
-<body style="background: #F5F5F5;">
-  <div class="standalone-page">
-    <div class="logo">
-      <img src="resources/appIcon.png" alt="ReciPics Logo" class="footer-logo">
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#loved">Reviews</a>
+      <a class="nav-cta" href="https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018">Get the app</a>
     </div>
-    
-    <h1>Contact Us</h1>
-    
-    <p>We'd love to hear from you! Whether you have a question about our app, need technical support, or want to provide feedback, our team is ready to help.</p>
-    
-    <div class="contact-form">
-      <form id="contactForm" style="padding: 2rem; background-color: #ffffff; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); margin-bottom: 2rem;">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" class="form-control" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" class="form-control" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="subject">Subject</label>
+  </div>
+  <div class="wrap">
+    <span class="kicker">say hello</span>
+    <h1>Get in touch</h1>
+    <p class="eff" style="color:#5b4a38;font-weight:500;font-size:18px;max-width:560px;">We'd love to hear from you! Whether you have a question, need support, or just want to share what you cooked — our team is ready to help.</p>
+    <div class="card">
+      <form id="contactForm">
+        <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" class="form-control" required></div>
+        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" class="form-control" required></div>
+        <div class="form-group"><label for="subject">Subject</label>
           <select id="subject" class="form-control">
             <option value="general">General Inquiry</option>
             <option value="support">Technical Support</option>
@@ -107,103 +84,40 @@
             <option value="partnership">Partnership Opportunity</option>
           </select>
         </div>
-        
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" class="form-control" required></textarea>
-        </div>
-        
-        <button type="submit" class="btn-primary">Send Message</button>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" class="form-control" required></textarea></div>
+        <button type="submit" class="submit-btn">Send Message</button>
       </form>
     </div>
-    
-    <div class="contact-info">
-      <h2>Other Ways to Reach Us</h2>
-      
-      <div class="contact-method">
-        <div class="contact-icon">
-          <i data-lucide="mail" style="color: #425E71;"></i>
-        </div>
-        <div class="contact-text">
-          <strong>Email</strong>
-          hello@recipics.app
-        </div>
-      </div>
-      
-      <div class="contact-method">
-        <div class="contact-icon">
-          <i data-lucide="phone" style="color: #425E71;"></i>
-        </div>
-        <div class="contact-text">
-          <strong>Phone</strong>
-          +41 78 308 77 07
-        </div>
-      </div>
-      
-      <div class="contact-method">
-        <div class="contact-icon">
-          <i data-lucide="map-pin" style="color: #425E71;"></i>
-        </div>
-        <div class="contact-text">
-          <strong>Address</strong>
-          Im Gaessli 19<br>8162 Steinmaur<br>Switzerland
-        </div>
-      </div>
-      
-      <div class="contact-method">
-        <div class="contact-icon">
-          <i data-lucide="clock" style="color: #425E71;"></i>
-        </div>
-        <div class="contact-text">
-          <strong>Support Hours</strong>
-          Monday - Friday: 9AM - 6PM PST
-        </div>
+    <div class="card">
+      <h2>Other ways to reach us</h2>
+      <div class="contact-info">
+        <div class="contact-method"><div class="contact-icon">&#9993;&#65039;</div><div class="contact-text"><strong>Email</strong><a href="mailto:hello@recipics.app" style="color:#E86A00;font-weight:700;">hello@recipics.app</a></div></div>
+        <div class="contact-method"><div class="contact-icon">&#128222;</div><div class="contact-text"><strong>Phone</strong>+41 78 308 77 07</div></div>
+        <div class="contact-method"><div class="contact-icon">&#128205;</div><div class="contact-text"><strong>Address</strong>Im Gaessli 19<br>8162 Steinmaur<br>Switzerland</div></div>
+        <div class="contact-method"><div class="contact-icon">&#128336;</div><div class="contact-text"><strong>Support Hours</strong>Monday – Friday<br>9AM – 6PM CET</div></div>
       </div>
     </div>
-    
-    <a href="index.html" class="back-link"><i data-lucide="arrow-left"></i>Back to Home</a>
+    <a class="back" href="index.html">&#8592; Back to Home</a>
   </div>
-  
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="logo">
-          <a href="https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018" class="download-link">Download App</a>
-          <img src="resources/appIcon.png" alt="ReciPics Logo" class="footer-logo">
-        </div>
-        <nav>
-          <a href="privacy-page.html">Privacy</a>
-          <a href="terms-page.html">Terms</a>
-          <a href="contact-page.html">Contact</a>
-        </nav>
-      </div>
-      <div class="social-links">
-        <a href="#" class="social-link"><i data-lucide="twitter" style="color: var(--accent-green);"></i></a>
-        <a href="#" class="social-link"><i data-lucide="instagram" style="color: var(--accent-green);"></i></a>
-        <a href="#" class="social-link"><i data-lucide="facebook" style="color: var(--accent-green);"></i></a>
-      </div>
-      <div class="copyright">
-        © <span id="year"></span> ReciPics. All rights reserved.
-      </div>
-    </div>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page.html">Privacy</a><a href="terms-page.html">Terms</a><a href="contact-page.html">Contact</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved.</span>
   </footer>
-  
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
   <script>
-    // Initialize Lucide icons
-    lucide.createIcons();
-    
-    // Form submission handling
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
       e.preventDefault();
-      
-      // In a real implementation, you would send the form data to your server here
-      alert('Thank you for your message! We will get back to you soon.');
-      this.reset();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var subjectSel = document.getElementById('subject');
+      var subjectLabel = subjectSel.options[subjectSel.selectedIndex].text;
+      var message = document.getElementById('message').value.trim();
+      var subject = '[ReciPics] ' + subjectLabel + ' — ' + name;
+      var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+      window.location.href = 'mailto:hello@recipics.app?subject=' +
+        encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
     });
-    
-    // Update copyright year
-    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
