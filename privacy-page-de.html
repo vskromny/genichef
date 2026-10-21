@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung — ReciPics</title>
+  <meta name="description" content="Wie ReciPics Ihre Daten verarbeitet und schützt.">
+  <link rel="canonical" href="https://recipics.app/privacy-page-de.html">
+  <link rel="alternate" hreflang="en" href="https://recipics.app/privacy-page.html">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/privacy-page-de.html">
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600;700;800&family=Nunito:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#fff !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card a{color:#E86A00;font-weight:700;text-decoration:none;}
+  .back{display:inline-flex;align-items:center;gap:9px;margin-top:30px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#fff;padding:14px 26px;border-radius:14px;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#9a8870;font-size:14px;font-weight:600;}
+  /* contact form */
+  .form-group{margin-bottom:18px;}
+  .form-group label{display:block;margin-bottom:7px;font-weight:800;color:#3B5A00;font-size:15px;}
+  .form-control{width:100%;padding:13px 16px;font-size:16px;font-family:'Nunito',sans-serif;background:#FFFDF8;border:1.5px solid #EFDFC4;border-radius:14px;transition:all .25s ease;color:#2A1E12;}
+  .form-control:focus{outline:none;border-color:#FF9A2E;box-shadow:0 0 0 4px rgba(255,154,46,.18);background:#fff;}
+  textarea.form-control{min-height:150px;resize:vertical;}
+  .submit-btn{cursor:pointer;border:none;font-family:'Nunito',sans-serif;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#fff;padding:15px 30px;border-radius:14px;font-weight:800;font-size:17px;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .contact-info{margin-top:24px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+  .contact-method{display:flex;align-items:flex-start;gap:14px;background:#FFF8EC;border:1.5px solid #F4E6CE;border-radius:18px;padding:18px;}
+  .contact-icon{flex-shrink:0;width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#FFF1DC,#FFE7D2);display:flex;align-items:center;justify-content:center;font-size:22px;}
+  .contact-text{font-size:15px;color:#5b4a38;font-weight:600;}
+  .contact-text strong{display:block;color:#2A1E12;font-weight:800;margin-bottom:2px;}
+  @media (max-width:560px){.contact-info{grid-template-columns:1fr;}.footer{justify-content:center;text-align:center;}}
+</style>
+</head>
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#loved">Reviews</a>
+      <a class="nav-cta" href="https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018">Get the app</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <span class="kicker">Ihre Daten, Ihre Küche</span>
+    <h1>Datenschutzerklärung</h1>
+    <p class="eff">Gilt für die ReciPics-App ab Version 3.7.19 (Abschnitt 10 erläutert frühere Versionen). Wirksam mit der Veröffentlichung von Version 3.7.19. Stand: 21.10.2026.</p>
+    <p class="eff"><a href="privacy-page.html" hreflang="en">English</a></p>
+    <div class="card">
+      <p>ReciPics nimmt den Schutz Ihrer Privatsphäre ernst. Diese Datenschutzerklärung erläutert, welche Daten die App und unsere Dienste verarbeiten, wozu und welche Rechte Sie haben. Die Abschnitte 1 bis 10 gelten für Nutzerinnen und Nutzer der ReciPics-App. Abschnitt 11 gilt für Kreative und Geschäftskontakte.</p>
+      <h2>1. Verantwortlicher</h2>
+      <p>Verantwortlicher ist Vladimir Skromny, der ReciPics betreibt (Schweiz). Kontakt: <a href="mailto:hello@recipics.app">hello@recipics.app</a>.</p>
+      <h2>2. Welche Daten wir verarbeiten</h2>
+      <p>ReciPics hat keine Benutzerkonten und keine Anmeldung. In der App fragen wir weder nach Ihrem Namen noch nach Ihrer E-Mail-Adresse. Die App verarbeitet Folgendes:</p>
+      <ul>
+      <li><strong>Bilder.</strong> Kamera- und Mediathek-Bilder, die Sie zur Erstellung eines Rezepts übermitteln, werden über unser Backend an OpenAI gesendet.</li>
+      <li><strong>Sprachaufnahmen.</strong> Aufnahmen, die Sie für die Spracheingabe anfertigen, werden zur Transkription über unser Backend an OpenAI gesendet. Die Aufnahmedatei wird auf Ihrem Gerät nur vorübergehend gespeichert.</li>
+      <li><strong>Text.</strong> Text, den Sie eingeben oder einfügen (Zutaten, Mahlzeitenbeschreibungen, Rezepttexte, Fragen an den Rezeptassistenten), wird über unser Backend an OpenAI gesendet.</li>
+      <li><strong>Profilangaben (gesundheitsbezogen).</strong> Wenn Sie in einem Profil Allergien, Ernährungseinschränkungen oder Gesundheitszustände erfassen, können diese Angaben in die Anfrage an OpenAI aufgenommen werden, damit die Rezepte zu Ihnen passen. Dabei handelt es sich um gesundheitsbezogene Daten, die zudem zum Beispiel auf religiöse oder weltanschauliche Überzeugungen schließen lassen können. Sie werden erst gesendet, nachdem Sie in der App ausdrücklich eingewilligt haben, und es werden nur die Angaben übermittelt, die für das jeweilige Rezept erforderlich sind. Die App funktioniert auch ohne diese Angaben. Sie können Ihre Einwilligung jederzeit in der App widerrufen; danach werden diese Angaben nicht mehr gesendet. Der Profilname wird nicht übermittelt.</li>
+      <li><strong>Rezeptlinks.</strong> Ein Link, den Sie importieren (die vollständige Webadresse), wird an unser Backend gesendet, um das Rezept auszulesen.</li>
+      <li><strong>Nutzungs- und Gerätedaten (Analyse).</strong> Wenn die Analyse eingeschaltet ist (siehe Abschnitt 3), sendet die App an unseren Analyse-Dienstleister PostHog: eine zufällige Kennung, die bei der Installation erzeugt wird, die genutzten Bildschirme und Aktionen (zum Beispiel Onboarding-Schritte, Aufrufe des Abo-Angebots, Rezepterstellung und -import, Nutzung der Einkaufsliste), Kaufereignisse (Tarif, Preis, Währung), die Zahl der verbrauchten kostenlosen Token, Fehlerarten und Fehlercodes sowie die Dauer einzelner Aktionen, Gerätemodell, Version des Betriebssystems, Sprache, Zeitzone, Bildschirmgröße, Netzwerkart (WLAN oder Mobilfunk) und App-Version. Die Kennung ist zufällig und nicht mit Ihrem Namen, Ihrer E-Mail-Adresse oder Ihrer Apple-ID verknüpft. Titel importierter Rezepte und die Webdomains importierter Rezepte senden wir nicht an die Analyse, und wir erheben Ihren Standort nicht. Ihre IP-Adresse ist für die Server, die eine Anfrage erhalten, technisch zwangsläufig sichtbar; PostHog ist jedoch so eingerichtet, dass sie verworfen wird.</li>
+      <li><strong>Zuordnung von Apple Search Ads.</strong> Wenn Sie die App nach dem Tippen auf eine Search-Ads-Anzeige installiert haben, übermittelt Apple Kennungen für Kampagne, Anzeigengruppe und Suchbegriff. Wir speichern sie auf Ihrem Gerät und fügen sie, wenn die Analyse eingeschaltet ist, den Analyseereignissen hinzu.</li>
+      <li><strong>Käufe.</strong> Käufe werden von Apple (StoreKit) abgewickelt. Wir erhalten weder Ihre Zahlungsdaten noch Ihre Apple-ID.</li>
+      </ul>
+      <p>Die App zeigt keine Tracking-Abfrage und verfolgt Sie nicht über Apps und Websites anderer Unternehmen hinweg.</p>
+      <h2>3. Zwecke und Rechtsgrundlagen</h2>
+      <ul>
+      <li><strong>Rezepterstellung, Transkription, Rezeptimport und Antworten des Assistenten:</strong> Bereitstellung der von Ihnen gewünschten App (Art. 6 Abs. 1 lit. b DSGVO).</li>
+      <li><strong>Gesundheitsbezogene Profilangaben:</strong> nur mit Ihrer ausdrücklichen Einwilligung (Art. 9 Abs. 2 lit. a DSGVO; nach dem Schweizer Datenschutzgesetz Ihre ausdrückliche Einwilligung). Sie erteilen sie in der App, bevor diese Angaben erstmals gesendet werden, und können sie jederzeit widerrufen.</li>
+      <li><strong>Analyse (Messung, welche Funktionen genutzt werden, Erkennen und Beheben von Fehlern):</strong>
+      <ul>
+      <li>In der EU/im EWR (einschließlich Deutschland) und im Vereinigten Königreich ist die Analyse standardmäßig ausgeschaltet. Sie beginnt erst, nachdem Sie in der App zugestimmt haben (Art. 6 Abs. 1 lit. a DSGVO bzw. UK GDPR und die nationalen Vorschriften zum Zugriff auf Informationen auf Ihrem Gerät, in Deutschland § 25 TDDDG, im Vereinigten Königreich PECR). Sie können Ihre Einwilligung jederzeit in der App unter Profil (Personensymbol oben links auf dem Startbildschirm) &gt; Datenschutz widerrufen.</li>
+      <li>In der Schweiz ist die Analyse standardmäßig eingeschaltet, gestützt auf unser berechtigtes Interesse an der Verbesserung der App; Sie können sie jederzeit in der App unter Profil (Personensymbol oben links auf dem Startbildschirm) &gt; Datenschutz ausschalten.</li>
+      <li>In anderen Regionen können Sie die Analyse in der App unter Profil (Personensymbol oben links auf dem Startbildschirm) &gt; Datenschutz ausschalten.</li>
+      </ul></li>
+      <li><strong>Wir zeigen in der App keine Werbung, wir nutzen Ihre Daten nicht für gezielte Werbung, wir verkaufen sie nicht und wir verfolgen Sie nicht über Apps und Websites anderer Unternehmen hinweg.</strong></li>
+      </ul>
+      <h2>4. Empfänger und Dienstleister</h2>
+      <p>Diese Dienstleister verarbeiten Daten in unserem Auftrag (Auftragsverarbeiter) oder nach eigenen Bedingungen:</p>
+      <ul>
+      <li><strong>OpenAI (USA):</strong> erhält Bilder, Audio, Text und, mit Ihrer Einwilligung, gesundheitsbezogene Profilangaben, um Rezepte zu erstellen und Spracheingaben zu transkribieren. Die Daten werden verarbeitet, um die Funktion bereitzustellen; unsere Dienstleister können Daten nach ihren eigenen Bedingungen für begrenzte Zeit speichern.</li>
+      <li><strong>Vercel (USA):</strong> hostet unser Backend, das Anfragen an OpenAI weiterleitet und den Rezeptimport durchführt. Es verarbeitet den Inhalt der Anfragen und Ihre IP-Adresse, um die Funktion bereitzustellen; unsere Dienstleister können technische Daten nach ihren eigenen Bedingungen für begrenzte Zeit speichern.</li>
+      <li><strong>Rezeptimport:</strong> Der von Ihnen importierte Link wird von unserem Backend verarbeitet, das die Seite abruft. Bei einigen Quellen kann unser Backend dabei Apify Technologies s.r.o. (Tschechien) und einen KI-Modellanbieter einsetzen.</li>
+      <li><strong>PostHog (Hosting-Region EU):</strong> Produktanalyse, wenn die Analyse eingeschaltet ist. PostHog erhält die in Abschnitt 2 beschriebenen Ereignisse und Gerätedaten.</li>
+      <li><strong>Apple:</strong> Zuordnung von Search Ads (AdServices), Käufe im App Store sowie App-Store- und TestFlight-Dienste.</li>
+      <li><strong>Google Workspace (Gmail):</strong> Support-Korrespondenz per E-Mail.</li>
+      </ul>
+      <p>Wir verkaufen Ihre Daten nicht.</p>
+      <h2>5. Datenübermittlung ins Ausland</h2>
+      <p>OpenAI, Vercel und andere Dienstleister können Daten außerhalb der Schweiz und des EU/EWR verarbeiten, insbesondere in den USA. Vercel Inc. ist unter dem Data Privacy Framework EU-USA und Schweiz-USA zertifiziert (Register abgerufen am 21.10.2026, Status: aktiv); Übermittlungen an Vercel stützen sich auf diese Zertifizierung. OpenAI ist nicht unter dem Data Privacy Framework zertifiziert; für OpenAI und andere Empfänger in Ländern ohne Angemessenheitsbeschluss stützen wir uns auf andere gesetzlich vorgesehene Garantien, etwa Standardvertragsklauseln (für die Schweiz mit Schweizer Zusatz). Auskunft über die Garantien erhalten Sie unter <a href="mailto:hello@recipics.app">hello@recipics.app</a>.</p>
+      <h2>6. Speicherung und Aufbewahrung</h2>
+      <ul>
+      <li>Ihre Rezepte, Bibliothek, Einkaufsliste, Profile und der Verlauf werden auf Ihrem Gerät gespeichert und nicht mit uns synchronisiert. Sie werden gelöscht, wenn Sie die App löschen. Die App führt einen begrenzten Verlauf und entfernt die ältesten Einträge.</li>
+      <li>Bilder, Audio, Text und Profilangaben werden verarbeitet, um die Funktion bereitzustellen. Unsere Dienstleister können Daten nach ihren eigenen Bedingungen für begrenzte Zeit speichern.</li>
+      <li>Analysedaten bewahren wir nur so lange auf, wie es für die in dieser Erklärung beschriebenen Zwecke erforderlich ist.</li>
+      <li>Support-E-Mails bewahren wir nur so lange auf, wie es zur Beantwortung und zur Dokumentation der Korrespondenz erforderlich ist.</li>
+      </ul>
+      <h2>7. Sicherheit</h2>
+      <p>Die Kommunikation der App mit unserem Backend ist bei der Übertragung verschlüsselt (HTTPS). Keine Sicherheitsmaßnahme ist absolut.</p>
+      <h2>8. Ihre Rechte und deren Ausübung</h2>
+      <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit (soweit anwendbar) sowie auf Widerspruch gegen Verarbeitungen aufgrund berechtigten Interesses, und Sie können eine Einwilligung jederzeit widerrufen. Nach dem Schweizer Datenschutzgesetz stehen Ihnen die entsprechenden Rechte zu (Art. 25 ff.).</p>
+      <p>Analysedaten werden unter einer zufälligen Kennung gespeichert, die nicht mit Ihrem Namen verknüpft ist; wir können sie daher normalerweise nicht Ihnen zuordnen. Wenn Sie die Analyse in der App unter Profil (Personensymbol oben links auf dem Startbildschirm) &gt; Datenschutz ausschalten, werden keine weiteren Daten erhoben; wenn Sie die App löschen und neu installieren, wird eine neue zufällige Kennung erzeugt. Für Fragen oder Anliegen zu Daten, die wir verarbeiten, schreiben Sie an <a href="mailto:hello@recipics.app">hello@recipics.app</a>. Daten auf Ihrem Gerät löschen Sie, indem Sie die App oder Einträge in der App löschen. Für Daten, die OpenAI oder andere Dienstleister verarbeiten, gelten zusätzlich deren eigene Bedingungen (Abschnitt 4).</p>
+      <p>Sie können sich bei einer Aufsichtsbehörde beschweren, zum Beispiel beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB, edoeb.admin.ch) oder bei der Datenschutzbehörde Ihres EU-Landes.</p>
+      <h2>9. Kinder</h2>
+      <p>ReciPics richtet sich nicht an Kinder unter 16 Jahren in der EU/im EWR und nicht an Kinder unter 13 Jahren in anderen Regionen. Wir verarbeiten wissentlich keine Daten von Kindern.</p>
+      <h2>10. Änderungen dieser Erklärung und frühere App-Versionen</h2>
+      <p>Wir können diese Datenschutzerklärung aktualisieren. Die aktuelle Fassung finden Sie stets auf dieser Seite.</p>
+      <p>Diese Fassung beschreibt die App ab Version 3.7.19. Frühere Versionen der App arbeiteten anders: Sie zeigten eine Tracking-Abfrage, enthielten eine Google-Firebase-Komponente (mit ausgeschalteter Analyse konfiguriert), luden beim Öffnen des Rezeptimports Website-Symbole von einem Google-Dienst, sendeten Analysedaten ab dem ersten Start ohne Wahlmöglichkeit und einschließlich der Titel und Webdomains importierter Rezepte, und noch früher kam ein Drittanbieter zur Zuordnung von Werbekampagnen (AppsFlyer) zum Einsatz. Wenn Sie eine frühere Version nutzen, aktualisieren Sie die App bitte.</p>
+      <h2>11. Kreative und Geschäftskontakte (Partnerschaftsansprache)</h2>
+      <p>Dieser Abschnitt gilt für Kreative und Unternehmen, die wir wegen einer möglichen Partnerschaft mit ReciPics kontaktieren. Er gilt nicht für Nutzerinnen und Nutzer der App (siehe Abschnitte 1 bis 10). Er erfüllt die Informationspflicht nach Art. 14 der DSGVO (EU) und der UK GDPR sowie nach Art. 19 des Schweizer Datenschutzgesetzes (revDSG). Wir verweisen in unserer ersten Nachricht an Sie auf diese Information, jedenfalls aber innerhalb eines Monats nach Erhalt Ihrer Daten.</p>
+      <ul>
+      <li><strong>Verantwortlicher:</strong> Vladimir Skromny, der ReciPics betreibt, erreichbar unter <a href="mailto:hello@recipics.app">hello@recipics.app</a>.</li>
+      <li><strong>Was wir verarbeiten:</strong> Ihren Namen, Ihren öffentlichen Nutzernamen, die öffentliche geschäftliche Kontakt-E-Mail-Adresse, die Sie in Ihrem Profil, Ihrer Biografie oder auf Ihrer Website angeben, öffentliche Inhalte, die wir in unserer Nachricht an Sie zitieren (zum Beispiel Bildunterschriften oder Kommentare), unseren Nachrichtenverlauf und Ihre Antworten sowie Ihren Widerspruchsstatus (Opt-out).</li>
+      <li><strong>Woher die Daten stammen:</strong> aus Ihrem öffentlich zugänglichen Profil, Ihrer Biografie oder Ihrer Website (zum Beispiel auf Instagram, TikTok oder YouTube). Wir kaufen keine Kontaktdaten.</li>
+      <li><strong>Wozu:</strong> um Sie wegen einer App-Partnerschaft mit ReciPics zu kontaktieren und um Kontakte und Widersprüche zu dokumentieren, damit wir Sie nicht erneut anschreiben, nachdem Sie dies abgelehnt haben.</li>
+      <li><strong>Rechtsgrundlage:</strong> unser berechtigtes Interesse, Kreative und Unternehmen wegen einer Partnerschaft anzusprechen, die ReciPics bekannt macht (Art. 6 Abs. 1 lit. f DSGVO bzw. UK GDPR). Nach dem revDSG ist die Bearbeitung durch unser überwiegendes privates Interesse am selben Zweck gerechtfertigt (Art. 31 revDSG). Wir wägen dies gegen Ihre Rechte ab, kontaktieren Sie nur unter einer geschäftlichen oder öffentlichen Kontaktadresse und hören auf, wenn Sie widersprechen.</li>
+      <li><strong>Wie lange wir die Daten aufbewahren:</strong> Kontakte, die nicht antworten, werden 12 Monate nach unserer letzten Nachricht an Sie gelöscht. Wenn Sie antworten, bewahren wir die Unterhaltung nur auf, solange das Gespräch läuft, und danach bis zu 12 Monate. Wenn Sie widersprechen, behalten wir nur einen minimalen Sperreintrag (Ihren Nutzernamen und/oder Ihre E-Mail-Adresse), damit wir Ihren Wunsch beachten; unser berechtigtes Interesse besteht darin, Ihren Widerspruch zu respektieren, und wir speichern den Eintrag so lange, wie es für diesen Zweck erforderlich ist.</li>
+      <li><strong>Wer die Daten erhält:</strong> Wir verkaufen Ihre Daten nicht. Sie werden nur von den folgenden Dienstleistern verarbeitet, die nach unseren Weisungen als Auftragsverarbeiter handeln (bei den sozialen Plattformen: nach deren eigenen Bedingungen):
+      <ul>
+      <li>Google Ireland Limited / Google LLC (Gmail / Google Workspace): Versand und Speicherung unserer E-Mails.</li>
+      <li>Meta Platforms Ireland Limited (Instagram): Direktnachrichten über Instagram. Die Plattform verarbeitet sie nach ihren eigenen Bedingungen.</li>
+      <li>TikTok Technology Limited (Irland) / TikTok Pte. Ltd.: Direktnachrichten über TikTok. Die Plattform verarbeitet sie nach ihren eigenen Bedingungen.</li>
+      <li>Apify Technologies s.r.o. (Tschechien): Erhebung öffentlich zugänglicher Profilinformationen sowie öffentlicher Beiträge und Kommentare, um zu recherchieren, welche Kreativen für eine Partnerschaft in Frage kommen.</li>
+      <li>Anthropic PBC (USA): KI-Unterstützung, um die Eignung eines öffentlichen Profils zu beurteilen und Nachrichten zu entwerfen, auf Grundlage der oben beschriebenen öffentlichen Informationen.</li>
+      </ul></li>
+      <li><strong>Datenübermittlung ins Ausland:</strong> Befindet sich ein Dienstleister außerhalb des Vereinigten Königreichs, der EU/des EWR oder der Schweiz, stützen wir uns auf einen Angemessenheitsbeschluss oder auf Garantien. Google LLC erklärt, die Data Privacy Frameworks EU-USA und Schweiz-USA einzuhalten (policies.google.com/privacy/frameworks); Übermittlungen an Google in den USA beruhen daher auf diesen Frameworks. Anthropic PBC (USA) gibt keine Zertifizierung unter dem Data Privacy Framework an; sein Data Processing Addendum bezieht die Standardvertragsklauseln (Module Zwei und Drei) samt Schweizer Zusatz ein, und wir stützen uns darauf. Übermittlungen in den EU/EWR, etwa an Apify in Tschechien, sind durch die Angemessenheitsfeststellungen zwischen diesen Gebieten abgedeckt; das Data Processing Addendum von Apify weist darauf hin, dass Apify personenbezogene Daten in die USA und an eigene Unterauftragsverarbeiter übermitteln kann, und zwar nach eigenen Übermittlungsgarantien. Zu Instagram (Meta) und TikTok siehe den nächsten Absatz. Eine Kopie der Garantien erhalten Sie unter <a href="mailto:hello@recipics.app">hello@recipics.app</a>.</li>
+      <li><strong>Nachrichten über Instagram und TikTok:</strong> Für Nachrichten, die Sie über Instagram oder TikTok erhalten oder senden, verarbeiten diese Plattformen die Daten als eigenständig Verantwortliche nach ihren eigenen Datenschutzerklärungen, nicht in unserem Auftrag. Meta erklärt, Daten auf Grundlage der Standardvertragsklauseln der Europäischen Kommission zu übermitteln, und veröffentlicht eine gesonderte Erklärung zum Data Privacy Framework EU-USA/Schweiz-USA; TikTok erklärt, sich auf Angemessenheitsbeschlüsse und Standardvertragsklauseln (und, wenn diese fehlen, auf Art. 49 DSGVO) zu stützen, und erwähnt das Data Privacy Framework nicht.</li>
+      <li><strong>Ihre Rechte:</strong> Sie können von uns Auskunft über Ihre Daten, Berichtigung, Löschung oder Einschränkung der Verarbeitung verlangen. Sie können der Verarbeitung jederzeit aus Gründen widersprechen, die sich aus Ihrer besonderen Situation ergeben, und Sie haben ein uneingeschränktes Recht, der Direktwerbung zu widersprechen; danach hören wir auf. Nach dem revDSG sind diese Rechte in den Art. 25 und 32 geregelt. Die Datenübertragbarkeit gilt für diese Verarbeitung nicht. Um ein Recht auszuüben oder Ihren Widerspruch zu erklären, antworten Sie einfach „stop“ auf eine unserer Nachrichten oder schreiben Sie an <a href="mailto:hello@recipics.app">hello@recipics.app</a>. Sie können sich außerdem bei einer Aufsichtsbehörde beschweren: dem Information Commissioner's Office des Vereinigten Königreichs (ico.org.uk), dem Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB, edoeb.admin.ch) oder der Datenschutzbehörde Ihres EU-Landes. Wir treffen keine automatisierten Entscheidungen und betreiben kein Profiling mit rechtlicher Wirkung. In der Schweiz können Sie zudem Klage vor einem Zivilgericht erheben.</li>
+      </ul>
+      <h2>12. Kontakt</h2>
+      <p>Für Fragen zum Datenschutz erreichen Sie uns unter <a href="mailto:hello@recipics.app">hello@recipics.app</a>.</p>
+    </div>
+    <a class="back" href="index.html">&#8592; Zur Startseite</a>
+  </div>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page-de.html">Datenschutz</a><a href="terms-page.html">AGB</a><a href="contact-page.html">Kontakt</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved.</span>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
