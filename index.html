@@ -79,8 +79,11 @@
       <p style="font-size:clamp(17px,2vw,20px);line-height:1.5;color:#6B5847;margin:22px 0 0;max-width:470px;font-weight:500;">
         Point your camera at whatever you've got. ReciPics reads your ingredients and suggests recipes, so dinner starts with what&rsquo;s already in your fridge.
       </p>
+      <p data-hero-b hidden style="font-size:clamp(16px,1.8vw,18px);line-height:1.5;color:#3B5A00;margin:14px 0 0;max-width:470px;font-weight:700;">
+        Save recipes from websites via Share. New users get 5 free imports every month; Premium has unlimited imports.
+      </p>
       <div style="display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;align-items:center;">
-        <a href="https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018" style="position:relative;overflow:hidden;text-decoration:none;display:inline-flex;align-items:center;gap:11px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);">
+        <a data-hero-store href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=hero-a&mt=8" style="position:relative;overflow:hidden;text-decoration:none;display:inline-flex;align-items:center;gap:11px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);">
           <span style="font-size:24px;">&#63743;</span>
           <span style="display:flex;flex-direction:column;line-height:1.05;text-align:left;"><span style="font-size:11px;font-weight:600;opacity:.9;">Download on the</span>App Store</span>
           <span style="position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);animation:shimmer 4.5s infinite;"></span>
@@ -337,6 +340,16 @@
     <span style="color:#9a8870;font-size:14px;font-weight:600;">&copy; <span data-year>2026</span> ReciPics. All rights reserved.</span>
   </div>
 </div>
+<script>
+(function () {
+  // Hero A/B (dec 620/621): a fresh coin on every load; nothing is stored on the visitor's device.
+  var b = Math.random() < 0.5;
+  var line = document.querySelector('[data-hero-b]');
+  var link = document.querySelector('[data-hero-store]');
+  if (b && line) line.hidden = false;
+  if (b && link) link.href = link.href.replace('ct=hero-a', 'ct=hero-b');
+})();
+</script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var root = document.getElementById('rp');
