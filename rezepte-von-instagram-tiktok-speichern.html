@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezepte von Instagram und TikTok speichern – ReciPics</title>
+  <meta name="description" content="Link eines Instagram- oder TikTok-Beitrags kopieren und in ReciPics einfügen. Steht das Rezept in der Bildunterschrift, landet es mit Zutaten und Schritten in deinem Kochbuch. Für iPhone.">
+  <link rel="canonical" href="https://recipics.app/rezepte-von-instagram-tiktok-speichern.html">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/rezepte-von-instagram-tiktok-speichern.html">
+  <link rel="alternate" hreflang="en" href="https://recipics.app/save-recipes-from-instagram-tiktok.html">
+  <link rel="alternate" hreflang="x-default" href="https://recipics.app/save-recipes-from-instagram-tiktok.html">
+  <meta property="og:title" content="Rezepte von Instagram und TikTok speichern – ReciPics">
+  <meta property="og:description" content="Link eines Instagram- oder TikTok-Beitrags kopieren und in ReciPics einfügen. Steht das Rezept in der Bildunterschrift, landet es mit Zutaten und Schritten in deinem Kochbuch. Für iPhone.">
+  <meta property="og:image" content="https://recipics.app/resources/import-social-de-2.jpg">
+  <meta property="og:url" content="https://recipics.app/rezepte-von-instagram-tiktok-speichern.html">
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#fff !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card a{color:#E86A00;font-weight:700;text-decoration:none;}
+  .back{display:inline-flex;align-items:center;gap:9px;margin-top:30px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#fff;padding:14px 26px;border-radius:14px;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#9a8870;font-size:14px;font-weight:600;}
+  .lead{font-size:19px;color:#4a3a2a;font-weight:600;margin-top:14px;}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px;}
+  .shots figure{margin:0;}
+  .shots img{width:100%;height:auto;border-radius:22px;border:1.5px solid #F4E6CE;box-shadow:0 14px 30px -18px rgba(80,50,10,.45);display:block;}
+  .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
+  .note{font-size:14px;color:#8a7860;font-weight:600;margin-top:10px;}
+  .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
+  .card ol li{margin:8px 0;}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
+  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.footer{justify-content:center;text-align:center;}}
+</style>
+</head>
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">So funktioniert's</a>
+      <a href="index.html#features">Funktionen</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-social-de&mt=8">ReciPics laden</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <span class="kicker">Rezept-Import per Link</span>
+    <h1>Rezepte von Instagram und TikTok speichern</h1>
+    <p class="lead">Du hast ein Rezept in einem Reel oder TikTok-Video gesehen und willst es nicht in deinen gespeicherten Beiträgen verlieren? Kopiere den Link und füge ihn in ReciPics ein. Die App liest das Rezept aus der Bildunterschrift des Beitrags und legt es mit Zutaten und Schritten in deinem Kochbuch ab. Beides kannst du danach bearbeiten. Das klappt, wenn das Rezept in der Bildunterschrift steht; was im Video gesprochen wird, liest ReciPics nicht.</p>
+    <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-social-de&mt=8">Im App Store ansehen</a>
+    <p class="eff"><a href="save-recipes-from-instagram-tiktok.html" hreflang="en">English</a></p>
+    <div class="shots">
+      <figure><img src="resources/import-social-de-1.jpg" width="560" height="1218" alt="ReciPics: Fenster „Rezept importieren“ mit eingefügtem Instagram-Link"><figcaption>1. Link einfügen</figcaption></figure>
+      <figure><img src="resources/import-social-de-2.jpg" width="560" height="1218" alt="ReciPics: aus einem Instagram-Beitrag importiertes Rezept" loading="lazy"><figcaption>2. Rezept im Kochbuch</figcaption></figure>
+      <figure><img src="resources/import-social-de-3.jpg" width="560" height="1218" alt="ReciPics: aus einem TikTok-Video importiertes Rezept" loading="lazy"><figcaption>3. Genauso mit TikTok</figcaption></figure>
+    </div>
+    <p class="note">Echte Screens aus der App. Beispiel: Beiträge von unseren eigenen Konten @recipics.</p>
+    <div class="card">
+      <h2>So geht's</h2>
+      <ol><li>Tippe in Instagram oder TikTok beim Beitrag oder Video auf Teilen und wähle „Link kopieren“.</li><li>Tippe in ReciPics auf „Link einfügen“. Der kopierte Link ist schon eingetragen.</li><li>Tippe auf „Importieren“. ReciPics liest die Bildunterschrift mit KI aus und speichert Titel, Zutaten und Zubereitungsschritte in deinem Kochbuch. In unseren Tests dauerte das etwa eine halbe Minute, manchmal länger.</li></ol>
+      <h2>Welche Beiträge funktionieren?</h2>
+      <p>Es funktioniert mit öffentlichen Beiträgen, Reels und Videos, deren Bildunterschrift das Rezept enthält, also Zutaten und Schritte als Text. ReciPics liest die Bildunterschrift, nicht das, was im Video gesagt oder gezeigt wird. Steht im Beitrag nur „Rezept in den Kommentaren“ oder „Link in der Bio“, gibt es nichts zu importieren.</p><p>Private Konten und Beiträge, die eine Anmeldung brauchen, lassen sich nicht importieren. Klappt ein Import nicht, sagt dir die App das, und du kannst das Rezept stattdessen fotografieren oder als Text einfügen. Instagram und TikTok ändern sich oft, deshalb kann ein Import auch einmal fehlschlagen.</p><p>Am 13.11.2026 haben wir ein Rezept aus einem unserer eigenen Instagram-Beiträge und eines aus einem unserer eigenen TikTok-Videos importiert; beide kamen mit Zutaten und Schritten an.</p>
+      <h2>Was du danach damit machen kannst</h2>
+      <ul><li>Zutaten und Schritte nach dem Speichern bearbeiten, zum Beispiel wenn die Bildunterschrift knapp war.</li><li>Portionen umrechnen (1x, 2x, 4x).</li><li>Zutaten beim Kochen abhaken und dir die Schritte vorlesen lassen.</li><li>Prüfe Zutaten bei Allergien oder Unverträglichkeiten immer selbst.</li></ul>
+      <p class="note">Für neue Nutzer ohne bezahltes Paket ist die Zahl der Link-Importe pro Monat begrenzt. Die App zeigt dir, wie viele noch übrig sind.</p>
+      <p class="note">Rezept-Websites: <a href="rezepte-von-websites-speichern.html">Rezepte von Websites speichern</a></p>
+      <p class="note">ReciPics ist nicht mit Instagram, Meta oder TikTok verbunden und wird von ihnen weder unterstützt noch gesponsert. Die Namen nennen wir nur, um zu beschreiben, welche Links die App lesen kann. Rezepte, Bildunterschriften und Bilder gehören ihren Urhebern. Nutze ReciPics nur für dein privates Kochbuch und veröffentliche importierte Inhalte nicht weiter. Um einen Beitrag zu lesen, wird der Link an unsere Server und Dienstleister gesendet; siehe <a href="privacy-page-de.html">Datenschutz</a>.</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-social-de&mt=8">ReciPics im App Store laden</a>
+      <p class="note">Für iPhone mit iOS 26 oder neuer.</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page-de.html">Datenschutz</a><a href="terms-page.html">AGB</a><a href="contact-page.html">Kontakt</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. Alle Rechte vorbehalten.</span>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
