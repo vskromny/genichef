@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handgeschriebene Rezepte per Foto digitalisieren – ReciPics</title>
+  <meta name="description" content="Handgeschriebene Rezeptkarte abfotografieren, und ReciPics macht daraus ein Rezept mit Zutaten, Mengen und Schritten zum Bearbeiten. Klare Schrift klappt am besten; Mengen bitte prüfen. Für iPhone.">
+  <link rel="canonical" href="https://recipics.app/handgeschriebene-rezepte-digitalisieren.html">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/handgeschriebene-rezepte-digitalisieren.html">
+  <link rel="alternate" hreflang="en" href="https://recipics.app/digitize-handwritten-recipes.html">
+  <link rel="alternate" hreflang="x-default" href="https://recipics.app/digitize-handwritten-recipes.html">
+  <meta property="og:title" content="Handgeschriebene Rezepte per Foto digitalisieren – ReciPics">
+  <meta property="og:description" content="Handgeschriebene Rezeptkarte abfotografieren, und ReciPics macht daraus ein Rezept mit Zutaten, Mengen und Schritten zum Bearbeiten. Klare Schrift klappt am besten; Mengen bitte prüfen. Für iPhone.">
+  <meta property="og:image" content="https://recipics.app/resources/import-handwritten-de-2.jpg">
+  <meta property="og:url" content="https://recipics.app/handgeschriebene-rezepte-digitalisieren.html">
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#fff !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card a{color:#E86A00;font-weight:700;text-decoration:none;}
+  .back{display:inline-flex;align-items:center;gap:9px;margin-top:30px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#fff;padding:14px 26px;border-radius:14px;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#9a8870;font-size:14px;font-weight:600;}
+  .lead{font-size:19px;color:#4a3a2a;font-weight:600;margin-top:14px;}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px;}
+  .shots figure{margin:0;}
+  .shots img{width:100%;height:auto;border-radius:22px;border:1.5px solid #F4E6CE;box-shadow:0 14px 30px -18px rgba(80,50,10,.45);display:block;}
+  .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
+  .note{font-size:14px;color:#8a7860;font-weight:600;margin-top:10px;}
+  .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
+  .card ol li{margin:8px 0;}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
+  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.footer{justify-content:center;text-align:center;}}
+</style>
+</head>
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">So funktioniert's</a>
+      <a href="index.html#features">Funktionen</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-handwritten-de&mt=8">ReciPics laden</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <span class="kicker">Rezept-Import per Foto</span>
+    <h1>Handgeschriebene Rezepte digitalisieren</h1>
+    <p class="lead">Omas Rezeptkarten, ein Zettel von einer Freundin, dein eigenes Küchenheft: Ein handgeschriebenes Rezept einscannen heißt hier abfotografieren. ReciPics macht aus der Handschrift ein Rezept in deinem Kochbuch, mit Zutaten, Mengen und Schritten, die du bearbeiten kannst. Klare Schrift klappt am besten, Mengen solltest du immer prüfen. Das Papier bleibt in der Schublade, das Rezept ist auf deinem iPhone.</p>
+    <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-handwritten-de&mt=8">Im App Store ansehen</a>
+    <p class="eff"><a href="digitize-handwritten-recipes.html" hreflang="en">English</a></p>
+    <div class="shots">
+      <figure><img src="resources/import-handwritten-de-1.jpg" width="560" height="1218" alt="Beispiel-Rezeptkarte für Apfelkuchen in einer Handschrift-Schriftart"><figcaption>1. Unsere Beispielkarte</figcaption></figure>
+      <figure><img src="resources/import-handwritten-de-2.jpg" width="560" height="1218" alt="ReciPics: von der Karte gelesenes Rezept mit dem Hinweis, die Mengen zu prüfen" loading="lazy"><figcaption>2. Rezept in ReciPics</figcaption></figure>
+      <figure><img src="resources/import-handwritten-de-3.jpg" width="560" height="1218" alt="ReciPics: von der Karte gelesene Zutaten mit Mengen" loading="lazy"><figcaption>3. Zutaten und Schritte</figcaption></figure>
+    </div>
+    <p class="note">Echte Screens aus der App. Die Karte ist ein Beispiel, das wir zum Testen erstellt haben: ein digitales Bild in einer Handschrift-Schriftart, kein Foto von echtem Papier. Echte Handschrift ist schwerer zu lesen als diese.</p>
+    <div class="card">
+      <h2>So geht's</h2>
+      <ol><li>Tippe in ReciPics auf „Foto aufnehmen“ und fotografiere die Karte, oder wähle ein Foto davon aus deiner Mediathek.</li><li>ReciPics liest den Text auf dem Foto und zeigt das gefundene Rezept. Tippe darauf, um es zu öffnen.</li><li>Prüfe Zutaten, Mengen und Schritte und tippe dann auf „Zum Kochbuch hinzufügen“.</li></ol>
+      <h2>Was du erwarten kannst</h2>
+      <p>ReciPics ist darauf ausgelegt, die Mengen zu übernehmen, die auf der Karte stehen, und keine fehlenden zu erfinden. Steht bei einer Zutat keine Menge, soll sie leer bleiben, und du kannst sie selbst ergänzen. Die KI kann trotzdem Fehler machen.</p><p>Handschrift kann falsch gelesen werden. Nach einem Scan zeigt die App den Hinweis „Bitte Mengen prüfen – Handschrift kann falsch gelesen werden“. Vergleiche das Rezept vor dem Kochen mit der Karte, vor allem Mengen und Temperaturen.</p><p>Am besten funktionieren klare, flache und gut beleuchtete Fotos. Sehr blasse, verwischte oder eng geschriebene Karten sind schwerer zu lesen.</p><p>Prüfe Zutaten bei Allergien oder Unverträglichkeiten immer selbst; ReciPics kann eine Zutat falsch lesen oder auslassen.</p>
+      <h2>Was du danach damit machen kannst</h2>
+      <ul><li>Zutaten und Schritte nach dem Speichern bearbeiten, zum Beispiel wenn ein Wort falsch gelesen wurde.</li><li>Portionen umrechnen (1x, 2x, 4x).</li><li>Zutaten beim Kochen abhaken und dir die Schritte vorlesen lassen.</li></ul>
+      <p class="note">Jeder Foto-Scan zählt zum KI-Kontingent der App. Ohne Premium ist es begrenzt.</p>
+      <p class="note">Weitere Wege, Rezepte zu speichern: <a href="rezepte-aus-kochbuch-scannen.html">Rezepte aus dem Kochbuch scannen</a> · <a href="rezepte-von-instagram-tiktok-speichern.html">Rezepte von Instagram und TikTok speichern</a> · <a href="rezepte-von-websites-speichern.html">Rezepte von Websites speichern</a></p>
+      <p class="note">Über Rezepte von Familie und Freunden entscheiden sie selbst; frag, bevor du sie weitergibst. Nutze ReciPics nur für dein privates Kochbuch. Um das Foto zu lesen, werden das Foto und der auf deinem iPhone erkannte Text an unsere Server und an unseren KI-Anbieter OpenAI (USA) gesendet; siehe <a href="privacy-page-de.html">Datenschutz</a>.</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-handwritten-de&mt=8">ReciPics im App Store laden</a>
+      <p class="note">Für iPhone mit iOS 26 oder neuer.</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page-de.html">Datenschutz</a><a href="terms-page.html">AGB</a><a href="contact-page.html">Kontakt</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. Alle Rechte vorbehalten.</span>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
