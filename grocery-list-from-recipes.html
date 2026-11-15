@@ -11,7 +11,7 @@
   <link rel="alternate" hreflang="x-default" href="https://recipics.app/grocery-list-from-recipes.html">
   <meta property="og:title" content="Grocery list from your recipes on iPhone – ReciPics">
   <meta property="og:description" content="Add a recipe's ingredients to your grocery list in ReciPics, tick items off while you shop and share the list as text or PDF. For iPhone.">
-  <meta property="og:image" content="https://recipics.app/resources/grocery-list.jpg">
+  <meta property="og:image" content="https://recipics.app/resources/import-en-recipe.jpg">
   <meta property="og:url" content="https://recipics.app/grocery-list-from-recipes.html">
   <link rel="icon" href="resources/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="resources/favicon.png">
@@ -50,7 +50,7 @@
   .footer nav a{text-decoration:none;color:inherit;}
   .footer .cr{color:#9a8870;font-size:14px;font-weight:600;}
   .lead{font-size:19px;color:#4a3a2a;font-weight:600;margin-top:14px;}
-  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px;}
+  .shots{display:grid;grid-template-columns:repeat(2,minmax(0,280px));justify-content:center;gap:16px;margin-top:22px;}
   .shots figure{margin:0;}
   .shots img{width:100%;height:auto;border-radius:22px;border:1.5px solid #F4E6CE;box-shadow:0 14px 30px -18px rgba(80,50,10,.45);display:block;}
   .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
@@ -58,7 +58,7 @@
   .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
   .card ol li{margin:8px 0;}
   .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
-  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.footer{justify-content:center;text-align:center;}}
+  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.nav-links a:not(.nav-cta){display:none;}.footer{justify-content:center;text-align:center;}}
 </style>
   <!-- jsonld-884 -->
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "en", "description": "Copying ingredients from a recipe onto a shopping note, one by one, takes time. In ReciPics, open a recipe and add its ingredients to your grocery list from the recipe's menu. Tick items off while you shop and share the list as text or PDF.", "url": "https://recipics.app/grocery-list-from-recipes.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-intent3-en&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "A grocery list from your recipes", "item": "https://recipics.app/grocery-list-from-recipes.html"}]}]}</script>
@@ -80,10 +80,9 @@
     <p class="eff"><a href="einkaufsliste-aus-rezepten.html" hreflang="de">Deutsch</a></p>
     <div class="shots">
       <figure><img src="resources/import-en-recipe.jpg" width="560" height="1218" alt="ReciPics: recipe with ingredients, servings picker and menu button"><figcaption>1. Open a recipe</figcaption></figure>
-      <figure><img src="resources/grocery-list.jpg" width="460" height="1000" alt="ReciPics: grocery list with a recipe's ingredients grouped under the recipe name" loading="lazy"><figcaption>2. Its ingredients on the list</figcaption></figure>
-      <figure><img src="resources/import-en-sheet.jpg" width="560" height="1218" alt="ReciPics: Import Recipe sheet with a pasted link" loading="lazy"><figcaption>3. Add new recipes by link</figcaption></figure>
+      <figure><img src="resources/import-en-sheet.jpg" width="560" height="1218" alt="ReciPics: Import Recipe sheet with a pasted link" loading="lazy"><figcaption>2. Add new recipes by link</figcaption></figure>
     </div>
-    <p class="note">Real screens from the app. The grocery list screen was taken in dark mode. The example recipe is from our own site recipics.app.</p>
+    <p class="note">Real screens from the app. The example recipe is from our own site recipics.app.</p>
     <div class="card">
       <h2>From recipe to grocery list</h2>
       <ol><li>Open a recipe in ReciPics.</li><li>Tap the menu (···) and choose “Add to Grocery List”.</li><li>The recipe's ingredients appear in the Grocery List tab, grouped under the recipe name.</li></ol>
