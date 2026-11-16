@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe from a link: just the recipe, without the life story – ReciPics</title>
-  <meta name="description" content="Free tool: paste the link of a recipe page and see just the recipe: ingredients, steps, times and servings, without the long story around it. Works with recipe websites that publish structured recipe data.">
+  <title>Recipe from a Link: Just the Recipe, No Life Story – ReciPics</title>
+  <meta name="description" content="Free tool: paste a recipe link and get just the ingredients, steps, times and servings, without the life story. Works with many recipe sites. No account needed.">
   <meta name="referrer" content="no-referrer">
   <link rel="canonical" href="https://recipics.app/recipe-from-link.html">
-  <link rel="alternate" hreflang="de" href="https://recipics.app/rezept-von-link.html">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/rezept-aus-link.html">
   <link rel="alternate" hreflang="en" href="https://recipics.app/recipe-from-link.html">
   <link rel="alternate" hreflang="x-default" href="https://recipics.app/recipe-from-link.html">
-  <meta property="og:title" content="Recipe from a link: just the recipe, without the life story – ReciPics">
-  <meta property="og:description" content="Free tool: paste the link of a recipe page and see just the recipe: ingredients, steps, times and servings, without the long story around it. Works with recipe websites that publish structured recipe data.">
+  <meta property="og:title" content="Recipe from a Link: Just the Recipe, No Life Story – ReciPics">
+  <meta property="og:description" content="Free tool: paste a recipe link and get just the ingredients, steps, times and servings, without the life story. Works with many recipe sites. No account needed.">
   <meta property="og:image" content="https://recipics.app/resources/og/og-sites-en.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -34,11 +34,12 @@
   .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
   .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
   .nav-links a{text-decoration:none;color:inherit;}
-  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#fff !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#2A1E12 !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
   .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
   .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
   .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
-  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .eff{color:#766450;font-weight:700;margin-top:8px;}
+  .eff a{display:inline-block;padding:11px 0;}
   .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
   .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
   .card h2:first-child{margin-top:0;}
@@ -48,33 +49,35 @@
   .card li{margin:7px 0;}
   .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
   .card ol li{margin:8px 0;}
-  .card a{color:#E86A00;font-weight:700;text-decoration:none;}
+  .card a{color:#B04A00;font-weight:700;text-decoration:none;}
   .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
   .footer .fb{display:flex;align-items:center;gap:11px;}
   .footer .fb img{width:38px;height:38px;border-radius:11px;}
   .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
   .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
   .footer nav a{text-decoration:none;color:inherit;}
-  .footer .cr{color:#9a8870;font-size:14px;font-weight:600;}
+  .footer .cr{color:#766450;font-size:14px;font-weight:600;}
   .lead{font-size:19px;color:#4a3a2a;font-weight:600;margin-top:14px;}
-  .note{font-size:14px;color:#8a7860;font-weight:600;margin-top:10px;}
+  .note{font-size:14px;color:#766450;font-weight:600;margin-top:10px;}
   .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
-  @media (max-width:640px){.nav-links a:not(.nav-cta){display:none;}.footer{justify-content:center;text-align:center;}}
+  @media (max-width:640px){.nav-links a:not(.nav-cta){display:none;}.footer{justify-content:center;text-align:center;}.cta{display:flex;justify-content:center;width:100%;text-align:center;}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
 
   .tool label{display:block;font-weight:800;color:#2A1E12;margin:0 0 6px;font-size:16px;}
   .tool .urlrow{display:flex;gap:12px;align-items:stretch;}
-  .tool input{flex:1;width:100%;min-width:0;font:inherit;font-size:16px;color:#2A1E12;background:#FFFDF8;border:1.5px solid #E8D4B2;border-radius:12px;padding:12px 14px;}
+  .tool input{flex:1;width:100%;min-width:0;font:inherit;font-size:16px;color:#2A1E12;background:#FFFDF8;border:1.5px solid #9C7F55;border-radius:12px;padding:12px 14px;}
   .tool button{font:inherit;font-weight:800;font-size:17px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;border:0;border-radius:14px;padding:12px 24px;cursor:pointer;box-shadow:0 12px 24px -12px rgba(214,103,0,.8);white-space:nowrap;}
   .tool button[disabled]{opacity:.6;cursor:progress;}
   .tool input:focus-visible,.tool button:focus-visible,.card a:focus-visible,.cta:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
   .tool .msg{font-weight:700;color:#5b4a38;margin-top:14px;}
   .tool .msg:empty{display:none;}
-  .tool .msg.warn{background:#FFF8EC;border:1.5px dashed #E8D4B2;border-radius:12px;padding:12px 14px;}
+  .tool .note{font-size:16px;}
+  .tool .msg.warn{background:#FFF8EC;border:1.5px dashed #9C7F55;border-radius:12px;padding:12px 14px;}
   @media (max-width:640px){.tool .urlrow{flex-direction:column;}}
 
   .result{overflow-wrap:anywhere;scroll-margin-top:96px;}
-  .result .src{font-size:17px;font-weight:700;color:#2A1E12;margin:0;background:#FFF3DE;border:1.5px solid #F4E6CE;border-radius:14px;padding:12px 16px;}
-  .result .src a{color:#C85500;text-decoration:underline;text-underline-offset:3px;}
+  .result .src{font-size:18px;font-weight:700;color:#2A1E12;margin:0;background:#FFF3DE;border:1.5px solid #F4E6CE;border-radius:14px;padding:12px 16px;}
+  .result .src a{color:#A84400;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px;}
   .result .src.bottom{margin-top:22px;}
   .result .by{font-size:15px;color:#6B5847;font-weight:700;margin-top:10px;}
   .result h2.rt{font-size:clamp(24px,4vw,30px);line-height:1.2;margin-top:20px;}
@@ -82,9 +85,11 @@
   .result .facts li{margin:0;background:#FFF8EC;border:1.5px solid #F4E6CE;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:#5b4a38;}
   .result .ing li{margin:6px 0;}
   .result .steps li{margin:10px 0;font-weight:500;}
+  .result:focus{outline:none;}
+  .result:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
   .result .legal{border-top:1.5px dashed #E8D4B2;margin-top:22px;padding-top:6px;}
   </style>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Recipe from a link", "url": "https://recipics.app/recipe-from-link.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "inLanguage": "en", "isAccessibleForFree": true, "description": "Free tool: paste the link of a recipe page and see the recipe's ingredients, steps, times and servings, with a link to the source. Works with recipe websites that publish structured recipe data."}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Recipe from a link", "item": "https://recipics.app/recipe-from-link.html"}]}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Which recipe websites work?", "acceptedAnswer": {"@type": "Answer", "text": "Websites that publish structured recipe data (schema.org Recipe) in their pages. Many recipe websites and food blogs add this data so that search engines can show their recipes, but not every site does. If a page has no such data, the tool tells you and shows nothing."}}, {"@type": "Question", "name": "Why does a link say it is not supported?", "acceptedAnswer": {"@type": "Answer", "text": "Usually the page does not publish structured recipe data, or the page could not be reached. Some websites also ask not to be read by tools like this one, and we respect that. We don't use other methods to read a page. Links from social networks and video platforms are not supported."}}, {"@type": "Question", "name": "Is the recipe saved anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. The result exists only in this browser tab and is gone when you close or reload it. We don't store the link or the recipe. To keep a recipe, open the source or save it in the ReciPics app."}}, {"@type": "Question", "name": "Is there a limit?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The tool is free, without an account, and allows a limited number of lookups per day. If you reach the limit, try again tomorrow."}}, {"@type": "Question", "name": "Who owns the recipe?", "acceptedAnswer": {"@type": "Answer", "text": "The recipe belongs to its author and the website that published it. Each result links to the source, where you find the full article, photos and tips. Website owners and authors can ask to exclude a site at hello@recipics.app."}}]}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Recipe from a link", "url": "https://recipics.app/recipe-from-link.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "inLanguage": "en", "isAccessibleForFree": true, "description": "Free tool: paste a recipe link and get just the ingredients, steps, times and servings, without the life story. Works with many recipe sites. No account needed."}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Recipe from a link", "item": "https://recipics.app/recipe-from-link.html"}]}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Which recipe websites work?", "acceptedAnswer": {"@type": "Answer", "text": "Websites that publish structured recipe data (schema.org Recipe) in their pages. Many recipe websites and food blogs add this data so that search engines can show their recipes, but not every site does. If a page has no such data, the tool tells you and shows nothing."}}, {"@type": "Question", "name": "Why does a link say it is not supported?", "acceptedAnswer": {"@type": "Answer", "text": "Usually the page does not publish structured recipe data, or the page could not be reached. Some websites also ask not to be read by tools like this one, and we respect that. We don't use other methods to read a page. Links from social networks and video platforms are not supported."}}, {"@type": "Question", "name": "Is the recipe saved anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. The result exists only in this browser tab and is gone when you close or reload it. We don't store the link or the recipe. To keep a recipe, open the source or save it in the ReciPics app."}}, {"@type": "Question", "name": "Is there a limit?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The tool is free, without an account, and allows a limited number of lookups per day. If you reach the limit, try again tomorrow."}}, {"@type": "Question", "name": "Who owns the recipe?", "acceptedAnswer": {"@type": "Answer", "text": "The recipe belongs to its author and the website that published it. Each result links to the source, where you find the full article, photos and tips. Website owners and authors can ask to exclude a site at hello@recipics.app."}}]}]}</script>
 </head>
 <body>
   <div class="nav">
@@ -97,9 +102,9 @@
   </div>
   <main class="wrap">
     <span class="kicker">Free kitchen tool</span>
-    <h1>Just the recipe, from a link</h1>
-    <p class="lead">Paste the link of a recipe page and see only the recipe: ingredients, steps, times and servings, without the life story, pop-ups and ads around it. Works with recipe websites that publish structured recipe data.</p>
-    <p class="eff"><a href="rezept-von-link.html" hreflang="de">Deutsch</a></p>
+    <h1>Recipe from a link, without the life story</h1>
+    <p class="lead">Paste the link of a recipe page and see just the recipe: ingredients, steps, times and servings, without the life story, pop-ups and ads around it. Free, no account.</p>
+    <p class="eff"><a href="rezept-aus-link.html" hreflang="de">Deutsch</a></p>
     <div class="card tool">
       <form id="wt-form" novalidate>
         <label for="wt-url">Link of a recipe page</label>
@@ -113,7 +118,7 @@
         <p class="msg" id="wt-msg"></p>
       </div>
     </div>
-    <div class="card result" id="wt-result" hidden aria-labelledby="wt-title">
+    <section class="card result" id="wt-result" hidden aria-labelledby="wt-title" tabindex="-1">
       <p class="src" id="wt-src-top"></p>
       <p class="by" id="wt-by" hidden></p>
       <h2 class="rt" id="wt-title"></h2>
@@ -124,13 +129,14 @@
       <ol class="steps" id="wt-steps" aria-labelledby="wt-h-steps"></ol>
       <p class="src bottom" id="wt-src-bottom"></p>
       <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=webtool-en&amp;mt=8">Save it to your cookbook in ReciPics</a>
+      <p class="note">In the app, paste the same link or use Share.</p>
       <p class="note">For iPhone with iOS 26 or later.</p>
       <div class="legal">
         <p class="note">This recipe belongs to its author and the website that published it. We show the recipe data the site publishes for machines, once, for your personal use. Visit the source for the full article, photos and tips.</p>
         <p class="note">We don't store the link or the recipe. Details: <a href="privacy-page.html#section-12">Privacy Policy, section 12</a>.</p>
         <p class="note">Not affiliated with the website shown. Website owner or author? To exclude a site or report a problem, write to <a href="mailto:hello@recipics.app">hello@recipics.app</a> (we act within 3 working days).</p>
       </div>
-    </div>
+    </section>
     <div class="card">
       <h2>How it works</h2>
       <ol>

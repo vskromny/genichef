@@ -1,4 +1,4 @@
-/* Recipe-from-link tool (recipe-from-link.html, rezept-von-link.html).
+/* Recipe-from-link tool (recipe-from-link.html, rezept-aus-link.html).
    Privacy rules (dec 714, legal L2/L8, CTO 1g/5): the URL travels only in the POST body, the result is
    rendered with textContent only and lives in memory (no storage, no history, no URL hash), and the page
    never reads ?url= or any other prefill. No retries, so a third-party site gets at most one request per click. */
@@ -136,6 +136,7 @@
     if (url === null) { show(M.invalid, false); return; }
 
     btn.disabled = true;
+    btn.setAttribute('aria-busy', 'true');
     btn.textContent = M.busy;
     show(M.loading, false);
     var ctrl = typeof AbortController === 'function' ? new AbortController() : null;
@@ -160,7 +161,13 @@
       if (s === 'blocked') return show(M.blocked, true);
       if (s === 'unsupported') return show(M.unsupported, true);
       if (status >= 200 && status < 300 && s === 'ok') {
-        if (render(data)) { show('', false); card.scrollIntoView({behavior: 'smooth', block: 'start'}); return; }
+        if (render(data)) {
+          show('', false);
+          var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+          card.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'});
+          card.focus({preventScroll: true});
+          return;
+        }
         return show(M.unsupported, true);
       }
       show(M.unavailable, true);
@@ -169,6 +176,7 @@
     }).then(function () {
       clearTimeout(timer);
       btn.disabled = false;
+      btn.removeAttribute('aria-busy');
       btn.textContent = M.go;
     });
   });
