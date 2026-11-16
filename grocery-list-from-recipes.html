@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery list from your recipes on iPhone – ReciPics</title>
+  <meta name="description" content="Add a recipe's ingredients to your grocery list in ReciPics, tick items off while you shop and share the list as text or PDF. For iPhone.">
+  <link rel="canonical" href="https://recipics.app/grocery-list-from-recipes.html">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/einkaufsliste-aus-rezepten.html">
+  <link rel="alternate" hreflang="en" href="https://recipics.app/grocery-list-from-recipes.html">
+  <link rel="alternate" hreflang="x-default" href="https://recipics.app/grocery-list-from-recipes.html">
+  <meta property="og:title" content="Grocery list from your recipes on iPhone – ReciPics">
+  <meta property="og:description" content="Add a recipe's ingredients to your grocery list in ReciPics, tick items off while you shop and share the list as text or PDF. For iPhone.">
+  <meta property="og:image" content="https://recipics.app/resources/og/og-grocery-en.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://recipics.app/resources/og/og-grocery-en.jpg">
+  <meta property="og:url" content="https://recipics.app/grocery-list-from-recipes.html">
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#fff !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card a{color:#E86A00;font-weight:700;text-decoration:none;}
+  .back{display:inline-flex;align-items:center;gap:9px;margin-top:30px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#fff;padding:14px 26px;border-radius:14px;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#9a8870;font-size:14px;font-weight:600;}
+  .lead{font-size:19px;color:#4a3a2a;font-weight:600;margin-top:14px;}
+  .shots{display:grid;grid-template-columns:repeat(2,minmax(0,280px));justify-content:center;gap:16px;margin-top:22px;}
+  .shots figure{margin:0;}
+  .shots img{width:100%;height:auto;border-radius:22px;border:1.5px solid #F4E6CE;box-shadow:0 14px 30px -18px rgba(80,50,10,.45);display:block;}
+  .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
+  .note{font-size:14px;color:#8a7860;font-weight:600;margin-top:10px;}
+  .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
+  .card ol li{margin:8px 0;}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
+  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.nav-links a:not(.nav-cta){display:none;}.footer{justify-content:center;text-align:center;}}
+</style>
+  <!-- jsonld-884 -->
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "en", "description": "Copying ingredients from a recipe onto a shopping note, one by one, takes time. In ReciPics, open a recipe and add its ingredients to your grocery list from the recipe's menu. Tick items off while you shop and share the list as text or PDF.", "url": "https://recipics.app/grocery-list-from-recipes.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-intent3-en&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "A grocery list from your recipes", "item": "https://recipics.app/grocery-list-from-recipes.html"}]}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "How do I make a grocery list from a recipe in ReciPics?", "acceptedAnswer": {"@type": "Answer", "text": "Open a recipe in ReciPics. Tap the menu (···) and choose “Add to Grocery List”. The recipe's ingredients appear in the Grocery List tab, grouped under the recipe name. If you add the same recipe again, its items are updated instead of added twice. Ingredients from different recipes are not combined: if two recipes need onions, onions are listed under each recipe."}}, {"@type": "Question", "name": "How does ReciPics handle amounts and servings on the grocery list?", "acceptedAnswer": {"@type": "Answer", "text": "The list uses the amounts as written in the recipe. The 1x, 2x and 4x picker changes the amounts shown in the recipe, not those on the list. For a bigger batch, change the amounts with “Edit recipe” before you add them, or add extra items by hand. For other amounts, use the recipe scaler in your browser."}}]}</script>
+</head>
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#features">Features</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-intent3-en&mt=8">Get ReciPics</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <span class="kicker">Shopping for a recipe</span>
+    <h1>A grocery list from your recipes</h1>
+    <p class="lead">Copying ingredients from a recipe onto a shopping note, one by one, takes time. In ReciPics, open a recipe and add its ingredients to your grocery list from the recipe's menu. Tick items off while you shop and share the list as text or PDF.</p>
+    <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-intent3-en&mt=8">View on the App Store</a>
+    <p class="eff"><a href="einkaufsliste-aus-rezepten.html" hreflang="de">Deutsch</a></p>
+    <div class="shots">
+      <figure><img src="resources/import-en-recipe.jpg" width="560" height="1218" alt="ReciPics: recipe with ingredients, servings picker and menu button"><figcaption>1. Open a recipe</figcaption></figure>
+      <figure><img src="resources/import-en-sheet.jpg" width="560" height="1218" alt="ReciPics: Import Recipe sheet with a pasted link" loading="lazy"><figcaption>2. Add new recipes by link</figcaption></figure>
+    </div>
+    <p class="note">Real screens from the app. The example recipe is from our own site recipics.app.</p>
+    <div class="card">
+      <h2>From recipe to grocery list</h2>
+      <ol><li>Open a recipe in ReciPics.</li><li>Tap the menu (···) and choose “Add to Grocery List”.</li><li>The recipe's ingredients appear in the Grocery List tab, grouped under the recipe name.</li></ol>
+      <p>If you add the same recipe again, its items are updated instead of added twice. Ingredients from different recipes are not combined: if two recipes need onions, onions are listed under each recipe.</p>
+      <h2>While you shop</h2>
+      <ul><li>Tick items off. Ticked items move to “Checked Items”, and “Clear Purchased” removes them.</li><li>Add things that are not in a recipe with +: name, quantity, unit and an optional note.</li><li>Group the list by recipe, or turn grouping off to see a single list. You can also add your own sections and rename or reorder them.</li><li>Share the list as text or PDF, or print it, for example to send it to whoever is doing the shopping.</li></ul>
+      <p>The list is stored on your iPhone. It does not sync between devices, and there is no shared live list: sharing sends a copy as text or PDF.</p>
+      <h2>Amounts and servings</h2>
+      <p>The list uses the amounts as written in the recipe. The 1x, 2x and 4x picker changes the amounts shown in the recipe, not those on the list. For a bigger batch, change the amounts with “Edit recipe” before you add them, or add extra items by hand. For other amounts, use the <a href="recipe-scaler.html">recipe scaler</a> in your browser.</p>
+      <h2>Getting recipes in</h2>
+      <ul><li>Recipe websites: copy the link, tap “Paste a link” in ReciPics and paste it. <a href="save-recipes-from-websites.html">Save recipes from websites</a></li><li>Cookbook pages and handwritten cards: take a photo in ReciPics, or choose one from your library.</li><li>Keep the recipes you cook often in your cookbook. <a href="digital-cookbook-app.html">A digital cookbook on your iPhone</a></li></ul>
+      <h2>What to expect</h2>
+      <p>ReciPics reads recipes from photos and links with AI, and AI can make mistakes. Compare an imported recipe with the original before you cook, especially amounts and temperatures. ReciPics may add short step titles and suggested ingredient alternatives (shown as “alternative”). These are not from the original.</p><p>Check ingredients yourself for allergies or intolerances; ReciPics can misread or miss an ingredient.</p>
+      <p class="note">Each photo scan uses the app's AI allowance, which is limited without Premium. For new users without a paid plan, the number of link imports per month is limited. The app shows how many you have left.</p>
+      <p class="note">Recipes from cookbooks and websites are usually protected by copyright. Use ReciPics for your private cookbook only, and don't share or publish imported recipes you have no right to share. To read a recipe, the photo and the text recognized on your iPhone, or the link, are sent to our servers and service providers, including our AI provider OpenAI (USA); see the <a href="privacy-page.html">Privacy</a> page.</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-intent3-en&mt=8">Get ReciPics on the App Store</a>
+      <p class="note">For iPhone with iOS 26 or later.</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page.html">Privacy</a><a href="terms-page.html">Terms</a><a href="contact-page.html">Contact</a><a href="impressum.html">Legal notice</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved.</span>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

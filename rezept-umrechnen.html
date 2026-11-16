@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezept umrechnen: Portionen und Einheiten – ReciPics</title>
+  <meta name="description" content="Rezept umrechnen, kostenlos: Zutatenliste einfügen, Portionen ändern und die neuen Mengen sehen. Dazu ein Umrechner für Cups, Löffel, ml, oz, g und °F/°C. Läuft in deinem Browser.">
+  <link rel="canonical" href="https://recipics.app/rezept-umrechnen.html">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/rezept-umrechnen.html">
+  <link rel="alternate" hreflang="en" href="https://recipics.app/recipe-scaler.html">
+  <link rel="alternate" hreflang="x-default" href="https://recipics.app/recipe-scaler.html">
+  <meta property="og:title" content="Rezept umrechnen: Portionen und Einheiten – ReciPics">
+  <meta property="og:description" content="Rezept umrechnen, kostenlos: Zutatenliste einfügen, Portionen ändern und die neuen Mengen sehen. Dazu ein Umrechner für Cups, Löffel, ml, oz, g und °F/°C. Läuft in deinem Browser.">
+  <meta property="og:image" content="https://recipics.app/resources/og/og-scaler-de.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://recipics.app/resources/og/og-scaler-de.jpg">
+  <meta property="og:url" content="https://recipics.app/rezept-umrechnen.html">
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#fff !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card a{color:#E86A00;font-weight:700;text-decoration:none;}
+  .back{display:inline-flex;align-items:center;gap:9px;margin-top:30px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#fff;padding:14px 26px;border-radius:14px;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#9a8870;font-size:14px;font-weight:600;}
+  .lead{font-size:19px;color:#4a3a2a;font-weight:600;margin-top:14px;}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px;}
+  .shots figure{margin:0;}
+  .shots img{width:100%;height:auto;border-radius:22px;border:1.5px solid #F4E6CE;box-shadow:0 14px 30px -18px rgba(80,50,10,.45);display:block;}
+  .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
+  .note{font-size:14px;color:#8a7860;font-weight:600;margin-top:10px;}
+  .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
+  .card ol li{margin:8px 0;}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
+  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.footer{justify-content:center;text-align:center;}}
+
+  .tool label{display:block;font-weight:800;color:#2A1E12;margin:16px 0 6px;font-size:16px;}
+  .tool textarea,.tool input,.tool select{width:100%;min-width:0;font:inherit;font-size:16px;color:#2A1E12;background:#FFFDF8;border:1.5px solid #E8D4B2;border-radius:12px;padding:10px 12px;}
+  .tool textarea{min-height:170px;resize:vertical;line-height:1.5;}
+  .tool .row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+  .tool .row2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:end;}
+  .tool button{font:inherit;font-weight:800;font-size:17px;margin-top:16px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;border:0;border-radius:14px;padding:12px 24px;cursor:pointer;box-shadow:0 12px 24px -12px rgba(214,103,0,.8);}
+  .tool button.sec{background:#fff;border:1.5px solid #E8D4B2;box-shadow:none;font-size:15px;padding:9px 18px;margin-top:10px;}
+  .tool textarea:focus-visible,.tool input:focus-visible,.tool select:focus-visible,.tool button:focus-visible,.card a:focus-visible,.cta:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
+  .tool .res{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;font-weight:600;color:#2A1E12;background:#FFF8EC;border:1.5px dashed #E8D4B2;border-radius:12px;padding:12px 14px;margin-top:8px;}
+  .tool .msg{font-weight:700;color:#5b4a38;margin-top:12px;}
+  .tool .conv{font-weight:800;font-size:19px;color:#2A1E12;margin-top:12px;}
+  .tool h3{font-weight:800;font-size:17px;margin-top:20px;color:#2A1E12;}
+  @media (max-width:640px){.tool .row,.tool .row2{grid-template-columns:1fr;}}
+</style>
+  <!-- jsonld-884 -->
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Rezept umrechnen: Portionen und Einheiten", "url": "https://recipics.app/rezept-umrechnen.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "inLanguage": "de", "isAccessibleForFree": true, "description": "Kostenloser Rezept-Umrechner im Browser: Zutatenliste auf neue Portionen umrechnen und Cups, Löffel, ml, oz, g und °F/°C umrechnen."}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Rezept umrechnen: Portionen und Einheiten", "item": "https://recipics.app/rezept-umrechnen.html"}]}]}</script>
+</head>
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">So funktioniert's</a>
+      <a href="index.html#features">Funktionen</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=web-tool-de&amp;mt=8">ReciPics laden</a>
+    </div>
+  </div>
+  <main class="wrap">
+    <span class="kicker">Kostenloses Küchen-Tool</span>
+    <h1>Rezept umrechnen: Portionen und Einheiten</h1>
+    <p class="lead">Füge eine Zutatenliste ein, gib die Portionen an und du bekommst die Mengen für so viele Personen, wie du bekochst. Darunter rechnest du Cups und Löffel in ml, Unzen und Pfund in Gramm und °F in °C um. Was du eingibst, wird in deinem Browser verarbeitet. Diese Seite speichert es nicht und sendet es nicht an uns.</p>
+    <p class="eff"><a href="recipe-scaler.html" hreflang="en">English</a></p>
+    <div class="card tool">
+      <h2 id="h-scale">Portionen umrechnen</h2>
+      <form id="scale-form" aria-labelledby="h-scale" novalidate>
+        <label for="ing">Zutaten (eine pro Zeile)</label>
+        <textarea id="ing" rows="7" placeholder="500 g Mehl&#10;1,5 TL Backpulver&#10;½ l Milch&#10;3 Eier&#10;Salz nach Geschmack" spellcheck="false" autocomplete="off"></textarea>
+        <div class="row">
+          <div><label for="orig">Portionen im Rezept</label><input id="orig" type="text" inputmode="decimal" value="4" autocomplete="off"></div>
+          <div><label for="target">Portionen, die du brauchst</label><input id="target" type="text" inputmode="decimal" value="6" autocomplete="off"></div>
+          <div><label for="factor">Oder ein Faktor</label><input id="factor" type="text" inputmode="decimal" value="1,5" placeholder="z. B. 1,5 oder 1/2" autocomplete="off"></div>
+        </div>
+        <button type="submit">Umrechnen</button>
+      </form>
+      <div aria-live="polite">
+        <p class="msg" id="scale-msg"></p>
+        <h3 id="h-out" hidden>Umgerechnete Zutaten</h3>
+        <p class="note">Die Ergebnisse sind gerundet und eine Orientierung. Prüfe sie vor dem Kochen, vor allem beim Backen.</p>
+        <pre class="res" id="scale-res" aria-label="Umgerechnete Zutaten" hidden></pre>
+      </div>
+      <button type="button" class="sec" id="copy" hidden>Liste kopieren</button>
+      <h2 id="h-conv">Einheiten umrechnen</h2>
+      <form id="conv-form" aria-labelledby="h-conv" novalidate>
+        <div class="row2">
+          <div><label for="amount">Menge</label><input id="amount" type="text" inputmode="decimal" value="1" autocomplete="off"></div>
+          <div><label for="from">Von</label><select id="from"><option value="cup" selected>Cups (US)</option><option value="tbsp">EL (US)</option><option value="tsp">TL (US)</option><option value="floz">fl oz (Flüssigunze)</option><option value="ml">ml</option><option value="l">l</option><option value="oz">oz (Unze, Gewicht)</option><option value="lb">lb (US-Pfund)</option><option value="g">g</option><option value="kg">kg</option><option value="F">°F</option><option value="C">°C</option></select></div>
+          <div><label for="to">In</label><select id="to"><option value="cup">Cups (US)</option><option value="tbsp">EL (US)</option><option value="tsp">TL (US)</option><option value="floz">fl oz (Flüssigunze)</option><option value="ml" selected>ml</option><option value="l">l</option><option value="oz">oz (Unze, Gewicht)</option><option value="lb">lb (US-Pfund)</option><option value="g">g</option><option value="kg">kg</option><option value="F">°F</option><option value="C">°C</option></select></div>
+        </div>
+        <button type="submit">Umrechnen</button>
+      </form>
+      <p class="conv" id="conv-res" aria-live="polite"></p>
+      <p class="note">Cups sind US-Cups (etwa 237 ml), EL und TL US-Löffel (etwa 15 ml und 5 ml). oz ist die Gewichtsunze, für Flüssigkeiten nimm fl oz. Ein US-Pfund (lb) hat etwa 454 g, nicht 500 g. Die Ergebnisse sind gerundet.</p>
+    </div>
+    <div class="card">
+      <h2>So funktioniert's</h2>
+      <ul><li>Mengen am Zeilenanfang werden umgerechnet: ganze Zahlen, Dezimalzahlen mit Komma, Brüche wie 1/2 oder 1 1/2 und ½ ¼ ¾ ⅓ ⅔. Zeilen ohne Zahl bleiben, wie sie sind.</li><li>Die Ergebnisse werden als gerundete Dezimalzahlen angezeigt. Umgerechnet wird nur die erste Menge einer Zeile, prüfe das Ergebnis also vor dem Kochen, vor allem beim Backen.</li><li>Der Umrechner rechnet nur innerhalb einer Art von Maß: Volumen in Volumen, Gewicht in Gewicht, Temperatur in Temperatur. Wie viel Gramm in einen Cup passen, hängt von der Zutat ab, deshalb rechnet er Cups nicht in Gramm um.</li></ul>
+    </div>
+    <div class="card">
+      <h2>Rezept zuerst scannen oder importieren</h2>
+      <p>Rezept noch im Kochbuch oder auf einer Website? Scanne es oder füge den Link in ReciPics ein und rechne dort um.</p>
+      <p><a href="rezepte-aus-kochbuch-scannen.html">Rezepte aus dem Kochbuch scannen</a> · <a href="rezepte-von-websites-speichern.html">Rezepte von Websites speichern</a></p>
+      <p class="note">ReciPics liest Rezepte aus Fotos und Links mit KI, und KI kann Fehler machen. Vergleiche ein importiertes Rezept vor dem Kochen mit dem Original, vor allem Mengen und Temperaturen.</p>
+      <p class="note">Foto-Scans zählen zum KI-Kontingent der App, das ohne Premium begrenzt ist. Für neue Nutzer ohne bezahltes Paket ist die Zahl der Link-Importe pro Monat begrenzt. Die App zeigt dir, wie viele noch übrig sind.</p>
+      <p class="note">Dieses Tool läuft nur in deinem Browser. In der App werden, um ein Rezept zu lesen, das Foto und der auf deinem iPhone erkannte Text oder der Link an unsere Server und Dienstleister gesendet, darunter unser KI-Anbieter OpenAI (USA); siehe <a href="privacy-page-de.html">Datenschutz</a>.</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=web-tool-de&amp;mt=8">ReciPics im App Store laden</a>
+      <p class="note">Für iPhone mit iOS 26 oder neuer.</p>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page-de.html">Datenschutz</a><a href="terms-page.html">AGB</a><a href="contact-page.html">Kontakt</a><a href="impressum.html">Impressum</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. Alle Rechte vorbehalten.</span>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <script>
+/* core:start */
+var UNICODE_FRACTIONS = {'½':1/2,'¼':1/4,'¾':3/4,'⅓':1/3,'⅔':2/3,'⅛':1/8,'⅜':3/8,'⅝':5/8,'⅞':7/8};
+var UF = '½¼¾⅓⅔⅛⅜⅝⅞';
+var NUM_RE = new RegExp('^(?:(\\d+)\\s+(\\d+)\\s*\\/\\s*(\\d+)|(\\d+)\\s*\\/\\s*(\\d+)|(\\d+)\\s*([' + UF + '])|([' + UF + '])|(\\d+(?:[.,]\\d+)?))');
+var FRACTION_UNITS = /^(cups?|c\.|tsps?\.?|teaspoons?|tbsps?\.?|tablespoons?)$/i;
+
+function parseNumberToken(m, lang) {
+  if (m[1] !== undefined) return parseInt(m[1], 10) + parseInt(m[2], 10) / parseInt(m[3], 10);
+  if (m[4] !== undefined) return parseInt(m[4], 10) / parseInt(m[5], 10);
+  if (m[6] !== undefined) return parseInt(m[6], 10) + UNICODE_FRACTIONS[m[7]];
+  if (m[8] !== undefined) return UNICODE_FRACTIONS[m[8]];
+  var s = m[9];
+  // EN "1,000" is a thousands separator; otherwise a comma is a decimal comma.
+  if (lang !== 'de' && /^\d{1,3},\d{3}$/.test(s)) return parseInt(s.replace(',', ''), 10);
+  if (lang === 'de' && /^\d{1,3}\.\d{3}$/.test(s)) return parseInt(s.replace('.', ''), 10);
+  return parseFloat(s.replace(',', '.'));
+}
+
+// Reads a leading quantity (or range "2-3") from text. Returns null when the text does not start with a number.
+function parseQuantity(text, lang) {
+  var m = NUM_RE.exec(text);
+  if (!m) return null;
+  var value = parseNumberToken(m, lang);
+  if (!isFinite(value)) return null;
+  var rest = text.slice(m[0].length);
+  var high = null;
+  var r = /^\s*[-–]\s*/.exec(rest);
+  if (r) {
+    var m2 = NUM_RE.exec(rest.slice(r[0].length));
+    if (m2) {
+      high = parseNumberToken(m2, lang);
+      rest = rest.slice(r[0].length + m2[0].length);
+    }
+  }
+  if (/^\d/.test(rest)) return null;
+  return {value: value, high: high, rest: rest};
+}
+
+function trimZeros(s) {
+  return s.indexOf('.') < 0 ? s : s.replace(/\.?0+$/, '');
+}
+
+function formatDecimal(v, lang) {
+  var digits = v >= 100 ? 0 : v >= 10 ? 1 : 2;
+  var s = trimZeros(v.toFixed(digits));
+  if (s === '0') s = trimZeros(v.toPrecision(1));
+  return lang === 'de' ? s.replace('.', ',') : s;
+}
+
+// Fraction string for clean values (halves, thirds, quarters, eighths), else null.
+function cleanFraction(v) {
+  var whole = Math.floor(v + 1e-9);
+  var frac = v - whole;
+  if (frac < 0.02) return whole > 0 ? String(whole) : null;
+  if (frac > 0.98) return String(whole + 1);
+  var dens = [2, 3, 4, 8];
+  for (var i = 0; i < dens.length; i++) {
+    var d = dens[i];
+    var n = Math.round(frac * d);
+    if (n > 0 && n < d && Math.abs(frac - n / d) < 0.02) {
+      var g = gcd(n, d);
+      var f = (n / g) + '/' + (d / g);
+      return whole > 0 ? whole + ' ' + f : f;
+    }
+  }
+  return null;
+}
+
+function gcd(a, b) { return b ? gcd(b, a % b) : a; }
+
+function formatQuantity(v, unitWord, lang) {
+  if (lang !== 'de' && unitWord && FRACTION_UNITS.test(unitWord)) {
+    var f = cleanFraction(v);
+    if (f) return f;
+  }
+  return formatDecimal(v, lang);
+}
+
+// Scales one ingredient line. Lines without a leading number come back unchanged.
+function scaleLine(line, factor, lang) {
+  var lead = /^(\s*(?:[-•*·–]\s+)?)/.exec(line)[1];
+  var body = line.slice(lead.length);
+  var q = parseQuantity(body, lang);
+  if (!q) return line;
+  var unitMatch = /^\s*([A-Za-zÄÖÜäöüß]+\.?)/.exec(q.rest);
+  var unitWord = unitMatch ? unitMatch[1] : '';
+  var out = formatQuantity(q.value * factor, unitWord, lang);
+  if (q.high !== null) out += '–' + formatQuantity(q.high * factor, unitWord, lang);
+  return lead + out + (lang === 'de' ? q.rest : fixPlural(q.rest, q.high !== null ? q.high * factor : q.value * factor));
+}
+
+// EN: "1 cups" -> "1 cup", "2 cup" -> "2 cups" for cup, teaspoon, tablespoon.
+function fixPlural(rest, v) {
+  return rest.replace(/^(\s*)(cup|teaspoon|tablespoon)(s?)\b/i, function (all, sp, word) {
+    return sp + word + (v > 1 + 1e-9 ? 's' : '');
+  });
+}
+
+function scaleText(text, factor, lang) {
+  return text.split(/\r?\n/).map(function (l) { return scaleLine(l, factor, lang); }).join('\n');
+}
+
+// Accepts "1.5", "1,5", "1 1/2", "1/2", "½".
+function parseInputNumber(s, lang) {
+  var t = String(s).trim();
+  if (t === '') return NaN;
+  var neg = false;
+  if (t[0] === '-' || t[0] === '−') { neg = true; t = t.slice(1).trim(); }
+  var q = parseQuantity(t, lang);
+  if (!q || q.high !== null || q.rest.trim() !== '') return NaN;
+  return neg ? -q.value : q.value;
+}
+
+var UNITS = {
+  cup: {kind: 'volume', ml: 236.5882365},
+  tbsp: {kind: 'volume', ml: 14.78676478},
+  tsp: {kind: 'volume', ml: 4.928921594},
+  floz: {kind: 'volume', ml: 29.57352956},
+  ml: {kind: 'volume', ml: 1},
+  l: {kind: 'volume', ml: 1000},
+  oz: {kind: 'mass', g: 28.349523125},
+  lb: {kind: 'mass', g: 453.59237},
+  g: {kind: 'mass', g: 1},
+  kg: {kind: 'mass', g: 1000},
+  F: {kind: 'temp'},
+  C: {kind: 'temp'}
+};
+
+// Returns {value} or {error: 'volume-mass' | 'kind' | 'nan'}.
+function convertUnit(value, from, to) {
+  if (!isFinite(value)) return {error: 'nan'};
+  var a = UNITS[from], b = UNITS[to];
+  if (!a || !b) return {error: 'kind'};
+  if (a.kind !== b.kind) {
+    var vm = (a.kind === 'volume' && b.kind === 'mass') || (a.kind === 'mass' && b.kind === 'volume');
+    return {error: vm ? 'volume-mass' : 'kind'};
+  }
+  if (a.kind === 'temp') {
+    if (from === to) return {value: value};
+    return {value: from === 'F' ? (value - 32) * 5 / 9 : value * 9 / 5 + 32};
+  }
+  if (a.kind === 'volume') return {value: value * a.ml / b.ml};
+  return {value: value * a.g / b.g};
+}
+
+function formatConverted(v, unit, lang) {
+  if (UNITS[unit] && UNITS[unit].kind === 'temp') {
+    var r = Math.round(v);
+    return String(r === 0 ? 0 : r);
+  }
+  if (lang !== 'de' && (unit === 'cup' || unit === 'tbsp' || unit === 'tsp')) {
+    var f = cleanFraction(v);
+    if (f) return f;
+  }
+  return formatDecimal(v, lang);
+}
+/* core:end */
+
+(function () {
+  var LANG = document.documentElement.lang === 'de' ? 'de' : 'en';
+  var M = {"empty": "Füge zuerst eine Zutatenliste ein.", "servings": "Gib Portionen oder einen Faktor größer als 0 ein.", "done": "{c} von {n} Zeilen umgerechnet (Faktor {f}).", "copied": "Kopiert.", "nocopy": "Markiere die Liste und kopiere sie.", "nan": "Gib eine Zahl ein, zum Beispiel 1,5 oder 1 1/2.", "vm": "Cups und Löffel messen Volumen, Gramm, Unzen und Pfund messen Gewicht. Wie viel Gramm in einen Cup passen, hängt von der Zutat ab: Ein Cup Mehl wiegt deutlich weniger als ein Cup Zucker. Deshalb rechnet dieses Tool das nicht um.", "kind": "Diese Einheiten lassen sich nicht ineinander umrechnen."};
+  var SYM = {"cup": "Cups", "tbsp": "EL", "tsp": "TL", "floz": "fl oz", "ml": "ml", "l": "l", "oz": "oz", "lb": "lb", "g": "g", "kg": "kg", "F": "°F", "C": "°C"};
+  function $(id) { return document.getElementById(id); }
+  function sym(u, v) { return LANG === 'en' && u === 'cup' && Math.abs(v) <= 1 ? 'cup' : SYM[u]; }
+  var orig = $('orig'), target = $('target'), factor = $('factor');
+  function fmt(v) { return formatDecimal(v, LANG); }
+  function syncFactor() {
+    var o = parseInputNumber(orig.value, LANG), t = parseInputNumber(target.value, LANG);
+    if (o > 0 && t > 0) factor.value = fmt(t / o);
+  }
+  orig.addEventListener('input', syncFactor);
+  target.addEventListener('input', syncFactor);
+  factor.addEventListener('input', function () {
+    var o = parseInputNumber(orig.value, LANG), f = parseInputNumber(factor.value, LANG);
+    if (o > 0 && f > 0) target.value = fmt(o * f);
+  });
+  $('scale-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var text = $('ing').value, msg = $('scale-msg'), res = $('scale-res'), copy = $('copy');
+    var f = parseInputNumber(factor.value, LANG);
+    if (!(f > 0)) {
+      var o = parseInputNumber(orig.value, LANG), t = parseInputNumber(target.value, LANG);
+      f = o > 0 && t > 0 ? t / o : NaN;
+    }
+    res.hidden = true; copy.hidden = true; $('h-out').hidden = true;
+    if (!text.trim()) { msg.textContent = M.empty; return; }
+    if (!(f > 0)) { msg.textContent = M.servings; return; }
+    var lines = text.split(/\r?\n/).filter(function (l) { return l.trim() !== ''; });
+    var out = lines.map(function (l) { return scaleLine(l, f, LANG); });
+    var changed = out.filter(function (l, i) { return l !== lines[i]; }).length;
+    msg.textContent = M.done.replace('{c}', changed).replace('{n}', lines.length).replace('{f}', fmt(f));
+    res.textContent = out.join('\n');
+    res.hidden = false; copy.hidden = false; $('h-out').hidden = false;
+  });
+  $('copy').addEventListener('click', function () {
+    var msg = $('scale-msg'), text = $('scale-res').textContent;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { msg.textContent = M.copied; }, function () { msg.textContent = M.nocopy; });
+    } else { msg.textContent = M.nocopy; }
+  });
+  $('conv-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var out = $('conv-res'), from = $('from').value, to = $('to').value;
+    var v = parseInputNumber($('amount').value, LANG);
+    var r = convertUnit(v, from, to);
+    if (r.error) { out.textContent = r.error === 'nan' ? M.nan : r.error === 'volume-mass' ? M.vm : M.kind; return; }
+    out.textContent = formatConverted(v, from, LANG) + ' ' + sym(from, v) + ' = ' + formatConverted(r.value, to, LANG) + ' ' + sym(to, r.value);
+  });
+})();
+  </script>
+</body>
+</html>
