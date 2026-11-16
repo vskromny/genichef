@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezept von Link: nur das Rezept, ohne Text drumherum – ReciPics</title>
+  <meta name="description" content="Kostenloses Tool: Link einer Rezeptseite einfügen und nur das Rezept sehen: Zutaten, Schritte, Zeiten und Portionen, ohne langen Text drumherum. Funktioniert mit Rezept-Websites, die strukturierte Rezeptdaten veröffentlichen.">
+  <meta name="referrer" content="no-referrer">
+  <link rel="canonical" href="https://recipics.app/rezept-von-link.html">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/rezept-von-link.html">
+  <link rel="alternate" hreflang="en" href="https://recipics.app/recipe-from-link.html">
+  <link rel="alternate" hreflang="x-default" href="https://recipics.app/recipe-from-link.html">
+  <meta property="og:title" content="Rezept von Link: nur das Rezept, ohne Text drumherum – ReciPics">
+  <meta property="og:description" content="Kostenloses Tool: Link einer Rezeptseite einfügen und nur das Rezept sehen: Zutaten, Schritte, Zeiten und Portionen, ohne langen Text drumherum. Funktioniert mit Rezept-Websites, die strukturierte Rezeptdaten veröffentlichen.">
+  <meta property="og:image" content="https://recipics.app/resources/og/og-sites-de.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://recipics.app/resources/og/og-sites-de.jpg">
+  <meta property="og:url" content="https://recipics.app/rezept-von-link.html">
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#fff !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card h3{font-weight:800;font-size:17px;margin-top:20px;color:#2A1E12;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
+  .card ol li{margin:8px 0;}
+  .card a{color:#E86A00;font-weight:700;text-decoration:none;}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#9a8870;font-size:14px;font-weight:600;}
+  .lead{font-size:19px;color:#4a3a2a;font-weight:600;margin-top:14px;}
+  .note{font-size:14px;color:#8a7860;font-weight:600;margin-top:10px;}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
+  @media (max-width:640px){.nav-links a:not(.nav-cta){display:none;}.footer{justify-content:center;text-align:center;}}
+
+  .tool label{display:block;font-weight:800;color:#2A1E12;margin:0 0 6px;font-size:16px;}
+  .tool .urlrow{display:flex;gap:12px;align-items:stretch;}
+  .tool input{flex:1;width:100%;min-width:0;font:inherit;font-size:16px;color:#2A1E12;background:#FFFDF8;border:1.5px solid #E8D4B2;border-radius:12px;padding:12px 14px;}
+  .tool button{font:inherit;font-weight:800;font-size:17px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;border:0;border-radius:14px;padding:12px 24px;cursor:pointer;box-shadow:0 12px 24px -12px rgba(214,103,0,.8);white-space:nowrap;}
+  .tool button[disabled]{opacity:.6;cursor:progress;}
+  .tool input:focus-visible,.tool button:focus-visible,.card a:focus-visible,.cta:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
+  .tool .msg{font-weight:700;color:#5b4a38;margin-top:14px;}
+  .tool .msg:empty{display:none;}
+  .tool .msg.warn{background:#FFF8EC;border:1.5px dashed #E8D4B2;border-radius:12px;padding:12px 14px;}
+  @media (max-width:640px){.tool .urlrow{flex-direction:column;}}
+
+  .result{overflow-wrap:anywhere;scroll-margin-top:96px;}
+  .result .src{font-size:17px;font-weight:700;color:#2A1E12;margin:0;background:#FFF3DE;border:1.5px solid #F4E6CE;border-radius:14px;padding:12px 16px;}
+  .result .src a{color:#C85500;text-decoration:underline;text-underline-offset:3px;}
+  .result .src.bottom{margin-top:22px;}
+  .result .by{font-size:15px;color:#6B5847;font-weight:700;margin-top:10px;}
+  .result h2.rt{font-size:clamp(24px,4vw,30px);line-height:1.2;margin-top:20px;}
+  .result .facts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px;padding:0;list-style:none;}
+  .result .facts li{margin:0;background:#FFF8EC;border:1.5px solid #F4E6CE;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:#5b4a38;}
+  .result .ing li{margin:6px 0;}
+  .result .steps li{margin:10px 0;font-weight:500;}
+  .result .legal{border-top:1.5px dashed #E8D4B2;margin-top:22px;padding-top:6px;}
+  </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Rezept von Link", "url": "https://recipics.app/rezept-von-link.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "inLanguage": "de", "isAccessibleForFree": true, "description": "Kostenloses Tool: Link einer Rezeptseite einfügen und Zutaten, Schritte, Zeiten und Portionen des Rezepts sehen, mit Link zur Quelle. Funktioniert mit Rezept-Websites, die strukturierte Rezeptdaten veröffentlichen."}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Rezept von Link", "item": "https://recipics.app/rezept-von-link.html"}]}, {"@type": "FAQPage", "inLanguage": "de", "mainEntity": [{"@type": "Question", "name": "Welche Rezept-Websites funktionieren?", "acceptedAnswer": {"@type": "Answer", "text": "Websites, die strukturierte Rezeptdaten (schema.org Recipe) in ihren Seiten veröffentlichen. Viele Rezept-Websites und Foodblogs ergänzen diese Daten, damit Suchmaschinen ihre Rezepte anzeigen können, aber nicht jede Seite tut das. Hat eine Seite keine solchen Daten, sagt dir das Tool das und zeigt nichts an."}}, {"@type": "Question", "name": "Warum heißt es bei einem Link, dass er nicht unterstützt wird?", "acceptedAnswer": {"@type": "Answer", "text": "Meist veröffentlicht die Seite keine strukturierten Rezeptdaten, oder die Seite war nicht erreichbar. Manche Websites möchten auch nicht von Tools wie diesem gelesen werden, und das respektieren wir. Andere Methoden, eine Seite zu lesen, nutzen wir nicht. Links von sozialen Netzwerken und Videoplattformen werden nicht unterstützt."}}, {"@type": "Question", "name": "Wird das Rezept irgendwo gespeichert?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Das Ergebnis existiert nur in diesem Browser-Tab und ist weg, wenn du ihn schließt oder neu lädst. Wir speichern weder den Link noch das Rezept. Um ein Rezept zu behalten, öffne die Quelle oder speichere es in der ReciPics-App."}}, {"@type": "Question", "name": "Gibt es ein Limit?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Das Tool ist kostenlos, ohne Konto, und erlaubt eine begrenzte Anzahl von Abfragen pro Tag. Wenn du das Limit erreichst, versuche es morgen wieder."}}, {"@type": "Question", "name": "Wem gehört das Rezept?", "acceptedAnswer": {"@type": "Answer", "text": "Das Rezept gehört seinem Autor und der Website, die es veröffentlicht hat. Jedes Ergebnis verlinkt auf die Quelle, wo du den vollständigen Artikel, Fotos und Tipps findest. Website-Betreiber und Autoren können unter hello@recipics.app eine Seite ausschliessen lassen."}}]}]}</script>
+</head>
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">So funktioniert's</a>
+      <a href="index.html#features">Funktionen</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=webtool-de&amp;mt=8">ReciPics laden</a>
+    </div>
+  </div>
+  <main class="wrap">
+    <span class="kicker">Kostenloses Küchen-Tool</span>
+    <h1>Nur das Rezept, direkt aus dem Link</h1>
+    <p class="lead">Füge den Link einer Rezeptseite ein und sieh nur das Rezept: Zutaten, Schritte, Zeiten und Portionen, ohne langen Text drumherum, ohne Pop-ups und Werbung. Funktioniert mit Rezept-Websites, die strukturierte Rezeptdaten veröffentlichen.</p>
+    <p class="eff"><a href="recipe-from-link.html" hreflang="en">English</a></p>
+    <div class="card tool">
+      <form id="wt-form" novalidate>
+        <label for="wt-url">Link einer Rezeptseite</label>
+        <div class="urlrow">
+          <input id="wt-url" type="url" inputmode="url" placeholder="https://www.example.com/rezept" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="2048" aria-describedby="wt-hint">
+          <button type="submit" id="wt-go">Rezept zeigen</button>
+        </div>
+        <p class="note" id="wt-hint">Füge den Link einer Rezeptseite ein. Funktioniert mit Rezept-Websites, die strukturierte Rezeptdaten veröffentlichen; nicht jede Seite tut das.</p>
+      </form>
+      <div aria-live="polite">
+        <p class="msg" id="wt-msg"></p>
+      </div>
+    </div>
+    <div class="card result" id="wt-result" hidden aria-labelledby="wt-title">
+      <p class="src" id="wt-src-top"></p>
+      <p class="by" id="wt-by" hidden></p>
+      <h2 class="rt" id="wt-title"></h2>
+      <ul class="facts" id="wt-facts" hidden></ul>
+      <h3 id="wt-h-ing">Zutaten</h3>
+      <ul class="ing" id="wt-ing" aria-labelledby="wt-h-ing"></ul>
+      <h3 id="wt-h-steps">Zubereitung</h3>
+      <ol class="steps" id="wt-steps" aria-labelledby="wt-h-steps"></ol>
+      <p class="src bottom" id="wt-src-bottom"></p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=webtool-de&amp;mt=8">In ReciPics im Kochbuch speichern</a>
+      <p class="note">Für iPhone mit iOS 26 oder neuer.</p>
+      <div class="legal">
+        <p class="note">Dieses Rezept gehört seinem Autor und der Website, die es veröffentlicht hat. Wir zeigen die Rezeptdaten, die die Seite für Maschinen bereitstellt, einmalig für deinen persönlichen Gebrauch. Den vollständigen Artikel, Fotos und Tipps findest du bei der Quelle.</p>
+        <p class="note">Wir speichern weder den Link noch das Rezept. Details: <a href="privacy-page-de.html#section-12">Datenschutzerklärung, Abschnitt 12</a>.</p>
+        <p class="note">Nicht mit der angezeigten Website verbunden. Website-Betreiber oder Autor? Um eine Seite auszuschliessen oder ein Problem zu melden, schreibe an <a href="mailto:hello@recipics.app">hello@recipics.app</a> (wir handeln innerhalb von 3 Werktagen).</p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>So funktioniert's</h2>
+      <ol>
+        <li>Kopiere den Link einer Rezeptseite aus deinem Browser und füge ihn oben ein.</li>
+        <li>Unser Server ruft genau diese eine Seite ab und liest nur die strukturierten Rezeptdaten, die die Website für Maschinen veröffentlicht (schema.org Recipe). Wir setzen dafür kein KI-Modell ein.</li>
+        <li>Du siehst Titel, Zutaten, Schritte, Zeiten und Portionen so, wie sie veröffentlicht sind, mit einem Link zur Quelle oben und unten.</li>
+      </ol>
+      <p>Das Ergebnis hat keine eigene Webadresse. Es bleibt in diesem Browser-Tab, bis du ihn schließt oder neu lädst. Die Seite setzt keine Cookies.</p>
+    </div>
+    <div class="card">
+      <h2>Häufige Fragen</h2>
+      <h3>Welche Rezept-Websites funktionieren?</h3>
+      <p>Websites, die strukturierte Rezeptdaten (schema.org Recipe) in ihren Seiten veröffentlichen. Viele Rezept-Websites und Foodblogs ergänzen diese Daten, damit Suchmaschinen ihre Rezepte anzeigen können, aber nicht jede Seite tut das. Hat eine Seite keine solchen Daten, sagt dir das Tool das und zeigt nichts an.</p>
+      <h3>Warum heißt es bei einem Link, dass er nicht unterstützt wird?</h3>
+      <p>Meist veröffentlicht die Seite keine strukturierten Rezeptdaten, oder die Seite war nicht erreichbar. Manche Websites möchten auch nicht von Tools wie diesem gelesen werden, und das respektieren wir. Andere Methoden, eine Seite zu lesen, nutzen wir nicht. Links von sozialen Netzwerken und Videoplattformen werden nicht unterstützt.</p>
+      <h3>Wird das Rezept irgendwo gespeichert?</h3>
+      <p>Nein. Das Ergebnis existiert nur in diesem Browser-Tab und ist weg, wenn du ihn schließt oder neu lädst. Wir speichern weder den Link noch das Rezept. Um ein Rezept zu behalten, öffne die Quelle oder speichere es in der ReciPics-App.</p>
+      <h3>Gibt es ein Limit?</h3>
+      <p>Ja. Das Tool ist kostenlos, ohne Konto, und erlaubt eine begrenzte Anzahl von Abfragen pro Tag. Wenn du das Limit erreichst, versuche es morgen wieder.</p>
+      <h3>Wem gehört das Rezept?</h3>
+      <p>Das Rezept gehört seinem Autor und der Website, die es veröffentlicht hat. Jedes Ergebnis verlinkt auf die Quelle, wo du den vollständigen Artikel, Fotos und Tipps findest. Website-Betreiber und Autoren können unter <a href="mailto:hello@recipics.app">hello@recipics.app</a> eine Seite ausschliessen lassen.</p>
+    </div>
+    <div class="card">
+      <h2>Alle Rezepte in einem Kochbuch</h2>
+      <p>ReciPics ist eine Kochbuch-App fürs iPhone. Speichere Rezepte von Websites, aus Kochbuch-Fotos und von handgeschriebenen Karten, rechne Portionen um und erstelle eine Einkaufsliste. <a href="rezepte-von-websites-speichern.html">Rezepte von Websites speichern</a> · <a href="rezept-umrechnen.html">Rezept umrechnen</a></p>
+      <p class="note">Der Link-Import in der App ist eine eigene Funktion: Der Link wird an unsere Server und Dienstleister gesendet, darunter OpenAI (USA); siehe <a href="privacy-page-de.html">Datenschutz</a>. Für neue Nutzer ohne bezahltes Abo ist die Zahl der Link-Importe pro Monat begrenzt. Die App zeigt, wie viele dir noch bleiben.</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=webtool-de&amp;mt=8">ReciPics im App Store laden</a>
+      <p class="note">Für iPhone mit iOS 26 oder neuer.</p>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page-de.html">Datenschutz</a><a href="terms-page.html">AGB</a><a href="contact-page.html">Kontakt</a><a href="impressum.html">Impressum</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. Alle Rechte vorbehalten.</span>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <script>
+(function () {
+  var LOCALE = 'de';
+  var M = {
+    empty: 'Füge zuerst den Link einer Rezeptseite ein.',
+    invalid: 'Das sieht nicht nach einem Weblink aus. Füge die vollständige Adresse ein, zum Beispiel https://www.example.com/rezept.',
+    loading: 'Rezept wird gesucht…',
+    busy: 'Suche…',
+    go: 'Rezept zeigen',
+    unsupported: 'Diese Seite veröffentlicht keine Rezeptdaten, die wir lesen können, deshalb können wir sie nicht anzeigen. Andere Methoden nutzen wir nicht. Probiere einen anderen Link.',
+    blocked: 'Diese Website möchte nicht von Tools wie diesem gelesen werden, deshalb können wir sie nicht anzeigen.',
+    limited: 'Tageslimit erreicht. Bitte versuche es morgen wieder.',
+    unavailable: 'Das Tool ist vorübergehend nicht verfügbar. Bitte versuche es später noch einmal.',
+    source: 'Quelle: ',
+    open: ': Originalrezept öffnen',
+    by: 'Rezept von ',
+    prep: 'Vorbereitung', cook: 'Kochen', total: 'Gesamt', yield: 'Ergibt',
+    h: 'Std.', min: 'Min.'
+  };
+  window.__WT = {LOCALE: LOCALE, M: M};
+})();
+  </script>
+  <script src="resources/webtool.js"></script>
+</body>
+</html>
