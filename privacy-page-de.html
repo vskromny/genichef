@@ -92,6 +92,8 @@
       <li><strong>Käufe.</strong> Käufe werden von Apple (StoreKit) abgewickelt. Wir erhalten weder Ihre Zahlungsdaten noch Ihre Apple-ID.</li>
       </ul>
       <p>Die App zeigt keine Tracking-Abfrage und verfolgt Sie nicht über Apps und Websites anderer Unternehmen hinweg.</p>
+      <h2>2a. Website und App-Store-Button</h2>
+      <p>Unsere Website recipics.app wird auf GitHub Pages (GitHub, Inc., USA) gehostet. Wenn Sie auf recipics.app einen App-Store-Button antippen, ruft Ihr Browser zunächst unser Backend unter genichef-openaiproxy.vercel.app auf (gehostet von Vercel, USA; siehe Abschnitte 4 und 5), das Sie sofort an den App Store weiterleitet. Um zu messen, welche von zwei Varianten unserer Seite mehr App-Store-Besuche bringt, sendet unser Backend ein Ereignis an PostHog (EU-Hosting-Region), das nur die angetippte Button-Variante enthält („a“ oder „b“). An PostHog übermitteln wir keine IP-Adresse, keinen User-Agent, kein Cookie und keine sonstige Kennung. Wir setzen keine Cookies und speichern oder lesen nichts auf Ihrem Gerät, und unser Code protokolliert diesen Aufruf nicht. Wie jeder Webhoster erhält Vercel technisch Ihre IP-Adresse und Anfragedaten, um die Weiterleitung auszuliefern, und kann technische Protokolle nach eigenen Bedingungen für begrenzte Zeit speichern. Zweck und Rechtsgrundlage: aggregierte Reichweitenmessung unserer Website (Art. 6 Abs. 1 lit. f DSGVO; nach Schweizer Recht unser überwiegendes privates Interesse). Da nicht auf Daten auf Ihrem Gerät zugegriffen wird, ist für diese Zählung keine Einwilligung erforderlich. Der App Store wird von Apple nach dessen eigener Datenschutzerklärung betrieben.</p>
       <h2>3. Zwecke und Rechtsgrundlagen</h2>
       <ul>
       <li><strong>Rezepterstellung, Transkription, Rezeptimport und Antworten des Assistenten:</strong> Bereitstellung der von Ihnen gewünschten App (Art. 6 Abs. 1 lit. b DSGVO).</li>
@@ -173,7 +175,7 @@
   <footer class="footer">
     <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
     <nav><a href="privacy-page-de.html">Datenschutz</a><a href="terms-page.html">AGB</a><a href="contact-page.html">Kontakt</a><a href="impressum.html">Impressum</a></nav>
-    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved.</span>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved. Nicht mit TikTok oder Meta verbunden und nicht von ihnen unterstützt.</span>
   </footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>

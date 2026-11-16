@@ -92,6 +92,8 @@
       <li><strong>Purchases.</strong> Purchases are handled by Apple (StoreKit). We do not receive your payment details or Apple ID.</li>
       </ul>
       <p>The app does not show a tracking permission request and does not track you across other companies' apps and websites.</p>
+      <h2>2a. Website and App Store button</h2>
+      <p>Our website recipics.app is hosted on GitHub Pages (GitHub, Inc., USA). When you tap an App Store button on recipics.app, your browser first calls our backend at genichef-openaiproxy.vercel.app (hosted by Vercel, USA; see sections 4 and 5), which immediately forwards you to the App Store. To find out which of two versions of our page leads to more App Store visits, our backend sends one event to PostHog (EU hosting region) that contains only the version of the button that was tapped (&ldquo;a&rdquo; or &ldquo;b&rdquo;). We send PostHog no IP address, user agent, cookie or other identifier. We set no cookies and store or read nothing on your device, and our code keeps no log of this request. Like any web host, Vercel technically receives your IP address and request data in order to deliver the redirect and may keep technical logs for a limited time under its own terms. Purpose and legal basis: aggregate measurement of our website (Art. 6(1)(f) GDPR; under Swiss law, our overriding private interest). Because no data on your device is accessed, no consent is required for this count. The App Store itself is operated by Apple under Apple&rsquo;s own privacy policy.</p>
       <h2>3. Why we process it and legal basis</h2>
       <ul>
       <li><strong>Recipe generation, transcription, recipe import and assistant answers:</strong> to provide the app you requested (Art. 6(1)(b) GDPR).</li>
@@ -173,7 +175,7 @@
   <footer class="footer">
     <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
     <nav><a href="privacy-page.html">Privacy</a><a href="terms-page.html">Terms</a><a href="contact-page.html">Contact</a><a href="impressum.html">Legal notice</a></nav>
-    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved.</span>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved. Not affiliated with or endorsed by TikTok or Meta.</span>
   </footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>

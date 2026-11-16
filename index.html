@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ReciPics — Snap your fridge, cook something amazing</title>
-  <meta name="description" content="ReciPics is your AI chef in your pocket. Snap a photo of your ingredients and get personalized recipe ideas.">
+  <title>ReciPics – Save recipes from TikTok, Instagram and the web</title>
+  <meta name="description" content="Save recipes from TikTok, Instagram and recipe websites in one iPhone cookbook (results vary). Or snap a recipe card, cookbook page or your ingredients.">
   <link rel="canonical" href="https://recipics.app/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="ReciPics">
   <meta property="og:url" content="https://recipics.app/">
-  <meta property="og:title" content="ReciPics — Snap your fridge, cook something amazing">
-  <meta property="og:description" content="ReciPics is your AI chef in your pocket. Snap a photo of your ingredients and get personalized recipe ideas.">
+  <meta property="og:title" content="ReciPics – Save recipes from TikTok, Instagram and the web">
+  <meta property="og:description" content="Save recipes from TikTok, Instagram and recipe websites in one iPhone cookbook (results vary). Or snap a recipe card, cookbook page or your ingredients.">
   <meta property="og:image" content="https://recipics.app/resources/og/og-home.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ReciPics — Snap your fridge, cook something amazing">
-  <meta name="twitter:description" content="ReciPics is your AI chef in your pocket. Snap a photo of your ingredients and get personalized recipe ideas.">
+  <meta name="twitter:title" content="ReciPics – Save recipes from TikTok, Instagram and the web">
+  <meta name="twitter:description" content="Save recipes from TikTok, Instagram and recipe websites in one iPhone cookbook (results vary). Or snap a recipe card, cookbook page or your ingredients.">
   <meta name="twitter:image" content="https://recipics.app/resources/og/og-home.jpg">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"ReciPics","description":"ReciPics is your AI chef in your pocket. Snap a photo of your ingredients and get personalized recipe ideas.","applicationCategory":"LifestyleApplication","operatingSystem":"iOS","url":"https://recipics.app/","installUrl":"https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018","image":"https://recipics.app/resources/appIcon.png"}
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"ReciPics","description":"Save recipes from TikTok, Instagram and recipe websites in one iPhone cookbook (results vary). Or snap a recipe card, cookbook page or your ingredients.","applicationCategory":"LifestyleApplication","operatingSystem":"iOS","url":"https://recipics.app/","installUrl":"https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018","image":"https://recipics.app/resources/appIcon.png"}
   </script>
   <link rel="icon" href="resources/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="resources/favicon.png">
@@ -81,8 +81,11 @@
       <p style="font-size:clamp(17px,2vw,20px);line-height:1.5;color:#6B5847;margin:22px 0 0;max-width:470px;font-weight:500;">
         Point your camera at whatever you've got. ReciPics reads your ingredients and suggests recipes, so dinner starts with what&rsquo;s already in your fridge.
       </p>
+      <p data-hero-b hidden style="font-size:clamp(16px,1.8vw,18px);line-height:1.5;color:#6B5847;margin:14px 0 0;max-width:470px;font-weight:500;text-wrap:pretty;">
+        <strong style="color:#3B5A00;font-weight:700;">Save recipes from websites via Share.</strong> New users get 5 free imports every month; Premium has unlimited imports.
+      </p>
       <div style="display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;align-items:center;">
-        <a href="https://apps.apple.com/us/app/genichef-ai-meal-genius/id6740248018" style="position:relative;overflow:hidden;text-decoration:none;display:inline-flex;align-items:center;gap:11px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);">
+        <a data-hero-store href="https://genichef-openaiproxy.vercel.app/go/a" style="position:relative;overflow:hidden;text-decoration:none;display:inline-flex;align-items:center;gap:11px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);">
           <span style="font-size:24px;">&#63743;</span>
           <span style="display:flex;flex-direction:column;line-height:1.05;text-align:left;"><span style="font-size:11px;font-weight:600;opacity:.9;">Download on the</span>App Store</span>
           <span style="position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);animation:shimmer 4.5s infinite;"></span>
@@ -353,9 +356,19 @@
       <a href="contact-page.html" style="text-decoration:none;color:inherit;">Contact</a>
       <a href="impressum.html" style="text-decoration:none;color:inherit;">Legal notice / Impressum</a>
     </div>
-    <span style="color:#9a8870;font-size:14px;font-weight:600;">&copy; <span data-year>2026</span> ReciPics. All rights reserved.</span>
+    <span style="color:#9a8870;font-size:14px;font-weight:600;">&copy; <span data-year>2026</span> ReciPics. All rights reserved. Not affiliated with or endorsed by TikTok or Meta.</span>
   </div>
 </div>
+<script>
+(function () {
+  // Hero A/B (dec 620/621): a fresh coin on every load; nothing is stored on the visitor's device.
+  var b = Math.random() < 0.5;
+  var line = document.querySelector('[data-hero-b]');
+  var link = document.querySelector('[data-hero-store]');
+  if (b && line) line.hidden = false;
+  if (b && link) link.href = link.href.replace('/go/a', '/go/b');
+})();
+</script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var root = document.getElementById('rp');
