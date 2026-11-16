@@ -1,0 +1,35 @@
+# ReciPics
+
+> ReciPics (App Store name: GeniChef) is an iPhone app for keeping your recipes in one cookbook. You can import recipes from recipe websites and from Instagram or TikTok links (results vary, especially for videos without a recipe in the caption), or photograph handwritten cards and cookbook pages and check the amounts. Then scale servings, build a grocery list and cook with read-aloud steps. Available in English and German.
+
+- App Store: https://apps.apple.com/app/id6740248018
+- Website: https://recipics.app/
+
+## Guides (English)
+
+- [Save recipes from Instagram and TikTok – ReciPics](https://recipics.app/save-recipes-from-instagram-tiktok.html): Copy the link of an Instagram or TikTok post and paste it into ReciPics. ReciPics reads the recipe from the caption and, if the caption has none, tries the video, then puts it into your cookbook with ingredients and steps. For iPhone.
+- [Save recipes from websites to your iPhone cookbook – ReciPics](https://recipics.app/save-recipes-from-websites.html): Paste a link and ReciPics saves the recipe with ingredients and steps to your cookbook. For iPhone.
+- [Digitize handwritten recipes from a photo – ReciPics](https://recipics.app/digitize-handwritten-recipes.html): Photograph a handwritten recipe card and ReciPics turns it into a recipe with ingredients, amounts and steps you can edit. Clear handwriting works best; check amounts. For iPhone.
+- [Recipe scanner for cookbooks: scan recipes with your iPhone – ReciPics](https://recipics.app/scan-recipes-from-cookbooks.html): Use your iPhone as a recipe scanner: take a photo of a recipe page in a cookbook or magazine and ReciPics turns it into a recipe with ingredients, amounts and steps in your cookbook. Check amounts after each scan. For iPhone.
+- [Digital cookbook app for iPhone – ReciPics](https://recipics.app/digital-cookbook-app.html): ReciPics is a digital cookbook for iPhone. Keep recipes from cookbook photos, handwritten cards, websites and Instagram or TikTok links in one place.
+- [Grocery list from your recipes on iPhone – ReciPics](https://recipics.app/grocery-list-from-recipes.html): Add a recipe's ingredients to your grocery list in ReciPics, tick items off while you shop and share the list as text or PDF. For iPhone.
+- [Recipe scaler and unit converter – ReciPics](https://recipics.app/recipe-scaler.html): Free recipe scaler: paste your ingredient list, change the servings and get the new amounts. Plus a converter for cups, spoons, ml, oz, g and °F/°C. Runs in your browser.
+- [Save your family's Christmas cookie recipes – ReciPics](https://recipics.app/save-christmas-cookie-recipes.html): Christmas cookie recipes on old cards? Photograph them and ReciPics makes editable recipes in one iPhone cookbook. Check amounts before baking.
+
+## Anleitungen (Deutsch)
+
+- [Rezepte von Instagram und TikTok speichern – ReciPics](https://recipics.app/rezepte-von-instagram-tiktok-speichern.html): Link eines Instagram- oder TikTok-Beitrags kopieren und in ReciPics einfügen. ReciPics liest das Rezept aus der Bildunterschrift und versucht es, wenn dort keins steht, mit dem Video. Zutaten und Schritte landen in deinem Kochbuch. Für iPhone.
+- [Rezepte von Websites speichern – ReciPics](https://recipics.app/rezepte-von-websites-speichern.html): Link einfügen, Rezept im Kochbuch: ReciPics speichert Rezepte von Websites mit Zutaten und Zubereitungsschritten. Für iPhone.
+- [Handgeschriebene Rezepte per Foto digitalisieren – ReciPics](https://recipics.app/handgeschriebene-rezepte-digitalisieren.html): Handgeschriebene Rezeptkarte abfotografieren, und ReciPics macht daraus ein Rezept mit Zutaten, Mengen und Schritten zum Bearbeiten. Klare Schrift klappt am besten; Mengen bitte prüfen. Für iPhone.
+- [Rezept-Scanner fürs Kochbuch: Rezepte mit dem iPhone scannen – ReciPics](https://recipics.app/rezepte-aus-kochbuch-scannen.html): Dein iPhone als Rezept-Scanner: Rezeptseite aus Kochbuch oder Magazin abfotografieren, und ReciPics legt das Rezept mit Zutaten, Mengen und Schritten in deinem Kochbuch ab. Mengen nach dem Scan prüfen. Für iPhone.
+- [Digitales Kochbuch fürs iPhone – ReciPics](https://recipics.app/digitales-kochbuch-app.html): ReciPics ist dein digitales Kochbuch fürs iPhone. Sammle Rezepte aus Kochbuch-Fotos, handgeschriebenen Karten, Websites und Instagram- oder TikTok-Links an einem Ort.
+- [Einkaufsliste aus Rezepten auf dem iPhone – ReciPics](https://recipics.app/einkaufsliste-aus-rezepten.html): Setz die Zutaten eines Rezepts in ReciPics auf deine Einkaufsliste, hak beim Einkaufen ab und teile die Liste als Text oder PDF. Fürs iPhone.
+- [Rezept umrechnen: Portionen und Einheiten – ReciPics](https://recipics.app/rezept-umrechnen.html): Rezept umrechnen, kostenlos: Zutatenliste einfügen, Portionen ändern und die neuen Mengen sehen. Dazu ein Umrechner für Cups, Löffel, ml, oz, g und °F/°C. Läuft in deinem Browser.
+- [Omas Weihnachtsplätzchen-Rezepte digitalisieren – ReciPics](https://recipics.app/weihnachtsplaetzchen-rezepte-digitalisieren.html): Plätzchenrezepte auf alten Karten? Abfotografieren, und ReciPics macht daraus bearbeitbare Rezepte in einem Kochbuch auf dem iPhone. Mengen bitte prüfen.
+
+## Optional
+
+- [Privacy policy](https://recipics.app/privacy-page.html)
+- [Datenschutzerklärung](https://recipics.app/privacy-page-de.html)
+- [Terms](https://recipics.app/terms-page.html)
+- [Contact](https://recipics.app/contact-page.html)
