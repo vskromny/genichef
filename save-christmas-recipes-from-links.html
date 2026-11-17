@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Save Christmas Recipes from Any Website, Without the Ads – ReciPics</title>
-  <meta name="description" content="Roasts, Stollen, cookies and mulled wine from blogs and recipe sites: paste the link and keep just the recipe in one iPhone cookbook before the holidays.">
-  <meta name="referrer" content="no-referrer">
+  <title>Save Christmas Recipes from Recipe Sites and Blogs in One Place – ReciPics</title>
+  <meta name="description" content="Roast, sides, Stollen, cookies and mulled wine from recipe sites and blogs: save the whole Christmas menu in one cookbook on your iPhone, without the ads.">
   <link rel="canonical" href="https://recipics.app/save-christmas-recipes-from-links.html">
   <link rel="alternate" hreflang="de" href="https://recipics.app/weihnachtsrezepte-aus-link-speichern.html">
   <link rel="alternate" hreflang="en" href="https://recipics.app/save-christmas-recipes-from-links.html">
   <link rel="alternate" hreflang="x-default" href="https://recipics.app/save-christmas-recipes-from-links.html">
-  <meta property="og:title" content="Save Christmas Recipes from Any Website, Without the Ads – ReciPics">
-  <meta property="og:description" content="Roasts, Stollen, cookies and mulled wine from blogs and recipe sites: paste the link and keep just the recipe in one iPhone cookbook before the holidays.">
+  <meta property="og:title" content="Save Christmas Recipes from Recipe Sites and Blogs in One Place – ReciPics">
+  <meta property="og:description" content="Roast, sides, Stollen, cookies and mulled wine from recipe sites and blogs: save the whole Christmas menu in one cookbook on your iPhone, without the ads.">
   <meta property="og:image" content="https://recipics.app/resources/og/og-xmas-link-en.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Save Christmas Recipes from Recipe Sites and Blogs in One Place – ReciPics">
   <meta name="twitter:image" content="https://recipics.app/resources/og/og-xmas-link-en.jpg">
   <meta property="og:url" content="https://recipics.app/save-christmas-recipes-from-links.html">
   <link rel="icon" href="resources/favicon.png" type="image/png">
@@ -62,42 +62,20 @@
   .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
   @media (max-width:640px){.nav-links a:not(.nav-cta){display:none;}.footer{justify-content:center;text-align:center;}.cta{display:flex;justify-content:center;width:100%;text-align:center;}}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
-
-  .tool label{display:block;font-weight:800;color:#2A1E12;margin:0 0 6px;font-size:16px;}
-  .tool .urlrow{display:flex;gap:12px;align-items:stretch;}
-  .tool input{flex:1;width:100%;min-width:0;font:inherit;font-size:16px;color:#2A1E12;background:#FFFDF8;border:1.5px solid #9C7F55;border-radius:12px;padding:12px 14px;}
-  .tool button{font:inherit;font-weight:800;font-size:17px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;border:0;border-radius:14px;padding:12px 24px;cursor:pointer;box-shadow:0 12px 24px -12px rgba(214,103,0,.8);white-space:nowrap;}
-  .tool button[disabled]{opacity:.6;cursor:progress;}
-  .tool input:focus-visible,.tool button:focus-visible,.card a:focus-visible,.cta:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
-  .tool .msg{font-weight:700;color:#5b4a38;margin-top:14px;}
-  .tool .msg:empty{display:none;}
-  .tool .note{font-size:16px;}
-  .tool .msg.warn{background:#FFF8EC;border:1.5px dashed #9C7F55;border-radius:12px;padding:12px 14px;}
-  @media (max-width:640px){.tool .urlrow{flex-direction:column;}}
-
-  .result{overflow-wrap:anywhere;scroll-margin-top:96px;}
-  .result .src{font-size:18px;font-weight:700;color:#2A1E12;margin:0;background:#FFF3DE;border:1.5px solid #F4E6CE;border-radius:14px;padding:12px 16px;}
-  .result .src a{color:#A84400;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px;}
-  .result .src.bottom{margin-top:22px;}
-  .result .by{font-size:15px;color:#6B5847;font-weight:700;margin-top:10px;}
-  .result h2.rt{font-size:clamp(24px,4vw,30px);line-height:1.2;margin-top:20px;}
-  .result .facts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px;padding:0;list-style:none;}
-  .result .facts li{margin:0;background:#FFF8EC;border:1.5px solid #F4E6CE;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:#5b4a38;}
-  .result .ing li{margin:6px 0;}
-  .result .steps li{margin:10px 0;font-weight:500;}
-  .result:focus{outline:none;}
-  .result:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
-  .result .legal{border-top:1.5px dashed #E8D4B2;margin-top:22px;padding-top:6px;}
+  .sub{font-family:'Shantell Sans',cursive;font-weight:700;font-size:clamp(20px,3vw,24px);color:#3B5A00;line-height:1.25;margin-top:10px;}
+  .wrap .lead{margin-top:10px;}
+  .ctas{display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px;margin-top:18px;}
+  .ctas .cta{margin-top:0;}
+  .cta2{display:inline-flex;align-items:center;justify-content:center;background:#FFFDF8;color:#2A1E12;border:2px solid #9C7F55;padding:13px 24px;border-radius:16px;font-weight:800;font-size:17px;text-decoration:none;}
+  .cta:focus-visible,.cta2:focus-visible,.card a:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
   .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px;}
   .shots figure{margin:0;}
   .shots img{width:100%;height:auto;border-radius:22px;border:1.5px solid #F4E6CE;box-shadow:0 14px 30px -18px rgba(80,50,10,.45);display:block;}
   .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
-  .honest{font-size:16px;color:#5b4a38;font-weight:600;margin-top:14px;}
-  .tool h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:0 0 12px;}
   .cross{background:#FFF3DE;border:1.5px solid #F4E6CE;border-radius:14px;padding:12px 16px;}
-  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}}
+  @media (max-width:640px){.wrap{padding-top:112px;}.ctas{gap:10px;}.cta2{width:100%;}.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}}
   </style>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "en", "description": "The Christmas menu is spread across a dozen tabs: the roast from one food blog, the Stollen from a recipe site, cookies from a reel, the mulled wine from a page you can't find again. Paste each link into ReciPics and the recipe lands in your cookbook on your iPhone, with ingredients and steps, without the ads and the life story around it. Everything in one place before the holidays.", "url": "https://recipics.app/save-christmas-recipes-from-links.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-xmas-link-en&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Save Christmas recipes from any website", "item": "https://recipics.app/save-christmas-recipes-from-links.html"}]}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Can I save Christmas recipes from Instagram or TikTok too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in the app. Copy the link of the post or video and paste it into ReciPics. The app reads the recipe from the caption and, if there is none, tries the video; such recipes are marked “Extracted from the video — check quantities”. The web tool on this page reads recipe websites only."}}, {"@type": "Question", "name": "What is left of a page full of ads and a long story?", "acceptedAnswer": {"@type": "Answer", "text": "The recipe. The web tool shows the recipe data the site publishes, with a link to the source at the top and the bottom. The app saves the title, photo, ingredients and steps to your cookbook."}}, {"@type": "Question", "name": "How does the web tool work?", "acceptedAnswer": {"@type": "Answer", "text": "Our server fetches that one page and reads only the structured recipe data the website publishes for machines (schema.org Recipe). We do not use an AI model for this. The result has no web address of its own and stays in this browser tab until you close or reload it. The page sets no cookies."}}, {"@type": "Question", "name": "Is the recipe saved anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. The result exists only in this browser tab and is gone when you close or reload it. We don't store the link or the recipe. To keep a recipe, open the source or save it in the ReciPics app."}}, {"@type": "Question", "name": "Is there a limit?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The tool is free, without an account, and allows a limited number of lookups per day. If you reach the limit, try again tomorrow."}}, {"@type": "Question", "name": "Who owns the recipe?", "acceptedAnswer": {"@type": "Answer", "text": "The recipe belongs to its author and the website that published it. Each result links to the source, where you find the full article, photos and tips. Website owners and authors can ask to exclude a site at hello@recipics.app."}}]}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "en", "description": "From recipe sites and blogs, without the ads. The roast, the Stollen, the cookies and the mulled wine are spread across a dozen tabs. Paste each link into ReciPics and the recipe lands in one cookbook on your iPhone, ready for the holidays.", "url": "https://recipics.app/save-christmas-recipes-from-links.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-xmas-link-en&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Save all your Christmas recipes in one place", "item": "https://recipics.app/save-christmas-recipes-from-links.html"}]}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "When should I start saving Christmas recipes?", "acceptedAnswer": {"@type": "Answer", "text": "Whenever you come across them. If you save recipes in November as you find them, the whole menu is in one cookbook by December, and you can add the ingredients to your grocery list before the big shop."}}, {"@type": "Question", "name": "Can I save Christmas recipes from Instagram or TikTok too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Copy the link of the post or video and paste it into ReciPics. The app reads the recipe from the caption and, if there is none, tries the video; such recipes are marked “Extracted from the video — check quantities”."}}, {"@type": "Question", "name": "How does the family cook from the same recipes?", "acceptedAnswer": {"@type": "Answer", "text": "Share a recipe as text or PDF, for example the Stollen or the roast, so everyone works from the same version. Family recipes on old handwritten cards can be photographed: see Save your family's Christmas cookie recipes."}}]}]}</script>
 </head>
 <body>
   <div class="nav">
@@ -110,117 +88,57 @@
   </div>
   <main class="wrap">
     <span class="kicker">Before the holidays</span>
-    <h1>Save Christmas recipes from any website</h1>
-    <p class="lead">The Christmas menu is spread across a dozen tabs: the roast from one food blog, the Stollen from a recipe site, cookies from a reel, the mulled wine from a page you can't find again. Paste each link into ReciPics and the recipe lands in your cookbook on your iPhone, with ingredients and steps, without the ads and the life story around it. Everything in one place before the holidays.</p>
-    <p class="honest">Many recipe sites work, but not all: some sites don't allow importing. Then the app tells you, and you can snap a photo of the recipe or paste it as text instead.</p>
-    <a class="cta" href="https://recipics-proxy.v-skromny.workers.dev/go/xmas-link-en">View on the App Store</a>
-    <p class="eff"><a href="weihnachtsrezepte-aus-link-speichern.html" hreflang="de">Deutsch</a></p>
-    <div class="card tool">
-      <h2>Try it with one recipe link</h2>
-      <form id="wt-form" novalidate>
-        <label for="wt-url">Link of a recipe page</label>
-        <div class="urlrow">
-          <input id="wt-url" type="url" inputmode="url" placeholder="https://www.example.com/recipe" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="2048" aria-describedby="wt-hint">
-          <button type="submit" id="wt-go">Show recipe</button>
-        </div>
-        <p class="note" id="wt-hint">See the recipe here in your browser first. This web tool reads recipe websites that publish structured recipe data; not every site does. Instagram and TikTok links work only in the app.</p>
-      </form>
-      <div aria-live="polite">
-        <p class="msg" id="wt-msg"></p>
-      </div>
+    <h1>Save all your Christmas recipes in one place</h1>
+    <p class="sub">From recipe sites and blogs, without the ads.</p>
+    <p class="lead">The roast, the Stollen, the cookies and the mulled wine are spread across a dozen tabs. Paste each link into ReciPics and the recipe lands in one cookbook on your iPhone, ready for the holidays.</p>
+    <div class="ctas">
+      <a class="cta" id="cta-store" href="https://recipics-proxy.v-skromny.workers.dev/go/xmas-link-en">View on the App Store</a>
+      <a class="cta2" id="cta-tool" href="recipe-from-link.html?src=xmas">Try the free link tool</a>
     </div>
-    <section class="card result" id="wt-result" hidden aria-labelledby="wt-title" tabindex="-1">
-      <p class="src" id="wt-src-top"></p>
-      <p class="by" id="wt-by" hidden></p>
-      <h2 class="rt" id="wt-title"></h2>
-      <ul class="facts" id="wt-facts" hidden></ul>
-      <h3 id="wt-h-ing">Ingredients</h3>
-      <ul class="ing" id="wt-ing" aria-labelledby="wt-h-ing"></ul>
-      <h3 id="wt-h-steps">Steps</h3>
-      <ol class="steps" id="wt-steps" aria-labelledby="wt-h-steps"></ol>
-      <p class="src bottom" id="wt-src-bottom"></p>
-      <a class="cta" href="https://recipics-proxy.v-skromny.workers.dev/go/xmas-link-en">Save it to your cookbook in ReciPics</a>
-      <p class="note">In the app, paste the same link or use Share.</p>
-      <p class="note">For iPhone with iOS 26 or later.</p>
-      <div class="legal">
-        <p class="note">This recipe belongs to its author and the website that published it. We show the recipe data the site publishes for machines, once, for your personal use. Visit the source for the full article, photos and tips.</p>
-        <p class="note">We don't store the link or the recipe. Details: <a href="privacy-page.html#section-12">Privacy Policy, section 12</a>.</p>
-        <p class="note">Not affiliated with the website shown. Website owner or author? To exclude a site or report a problem, write to <a href="mailto:hello@recipics.app">hello@recipics.app</a> (we act within 3 working days).</p>
-      </div>
-    </section>
+    <p class="eff"><a href="weihnachtsrezepte-aus-link-speichern.html" hreflang="de">Deutsch</a></p>
     <div class="shots">
       <figure><img src="resources/import-en-sheet.jpg" width="560" height="1218" alt="ReciPics: Import Recipe sheet with a pasted link"><figcaption>1. Paste a link</figcaption></figure>
-      <figure><img src="resources/import-en-recipe.jpg" width="560" height="1218" alt="ReciPics: imported recipe Fluffy Berry Pancakes with ingredients" loading="lazy"><figcaption>2. Recipe in your cookbook</figcaption></figure>
+      <figure><img src="resources/import-en-recipe.jpg" width="560" height="1218" alt="ReciPics: imported recipe Fluffy Berry Pancakes with ingredients"><figcaption>2. Recipe in your cookbook</figcaption></figure>
       <figure><img src="resources/import-en-steps.jpg" width="560" height="1218" alt="ReciPics: ingredient list with alternatives" loading="lazy"><figcaption>3. Ingredients and steps</figcaption></figure>
     </div>
     <p class="note">Real screens from the app. Example: a recipe from our own site recipics.app.</p>
     <div class="card">
       <h2>One cookbook for the Christmas menu</h2>
-      <p>Christmas cooking means recipes from everywhere: the roast your family asks for every year, a Stollen you want to try, three kinds of cookies, a pot of mulled wine for the neighbours. Save them as you find them in November. In December they are all in the Cookbook tab, not scattered across bookmarks, screenshots and open tabs.</p>
+      <p>The Christmas menu is spread across a dozen tabs: the roast from one food blog, the Stollen from a recipe site, cookies from a reel, the mulled wine from a page you can't find again. Save each recipe as soon as you find it. By December the whole menu is in one cookbook on your iPhone, ready when the family asks what's for dinner.</p>
+      <h2>Collect the menu course by course</h2>
+      <ul><li>Starters: the soup or salad you spotted on a food blog.</li><li>The roast: goose, turkey, beef or a vegetarian main, with the oven steps.</li><li>Sides: red cabbage, dumplings, potatoes, gravy.</li><li>Baking: Stollen and Christmas cookies from recipe sites or a reel.</li><li>Drinks: mulled wine for the neighbours.</li></ul>
+      <p>Every recipe you import lands in the Cookbook tab. Search by recipe name or ingredient to find it again.</p>
       <h2>How to save a recipe from a link</h2>
       <ol><li>Open the recipe page in your browser and copy the link. On Instagram or TikTok, tap Share and choose “Copy link”.</li><li>In ReciPics, tap “Paste a link”, paste it and tap “Import”.</li><li>ReciPics reads the page with AI and saves the title, photo, ingredients and steps to your cookbook. It usually takes about half a minute, sometimes longer, depending on the page.</li></ol>
       <p>For Instagram and TikTok, the app reads the recipe from the caption and, if the caption has none, tries the video. Such recipes are marked “Extracted from the video — check quantities”.</p>
       <h2>Which sites work?</h2>
-      <p>Many recipe websites and food blogs, especially those that show the recipe without a login. Results vary by site. Some sites don't allow importing; then the app tells you. On Instagram and TikTok, public posts work best; private accounts can't be imported.</p>
-      <h2>Before the cooking starts</h2>
-      <ul><li>Edit ingredients and steps, for example to note how you make the roast.</li><li>Scale servings (1x, 2x, 4x), for example when more guests come.</li><li>Add the ingredients to your grocery list, tick items off while you shop, and share the list as text or PDF.</li><li>Share a recipe as text or PDF, so everyone bakes the same Stollen.</li><li>Tick off ingredients while you cook and have the steps read aloud.</li><li>Find it again in the Cookbook tab, or search by recipe name or ingredient.</li></ul>
+      <p>Many recipe websites and food blogs, especially those that show the recipe without a login. Results vary by site. Not every site works: some sites don't allow importing. Then the app tells you, and you can snap a photo of the recipe or paste it as text instead. On Instagram and TikTok, public posts work best; private accounts can't be imported.</p>
+      <h2>Cooking for the whole family</h2>
+      <ul><li>Scale servings (1x, 2x, 4x) when more guests come.</li><li>Add each recipe's ingredients to your grocery list, where they are grouped by recipe. Tick items off while you shop and share the list as text or PDF.</li><li>Share a recipe as text or PDF, so everyone bakes the same Stollen.</li><li>Edit ingredients and steps, for example to note how your family makes the roast.</li><li>Tick off ingredients while you cook and have the steps read aloud.</li></ul>
       <p>Always check ingredients yourself for allergies or intolerances.</p>
       <p class="cross">Family cookie recipes on old handwritten cards? <a href="save-christmas-cookie-recipes.html">Save your family's Christmas cookie recipes</a></p>
       <p class="note">More: <a href="save-recipes-from-websites.html">Save recipes from websites</a> · <a href="save-recipes-from-instagram-tiktok.html">Save recipes from Instagram and TikTok</a> · <a href="recipe-from-link.html">Recipe from a link</a></p>
       <p class="note">For new users without a paid plan, the number of link imports per month is limited. The app shows how many you have left.</p>
-      <p class="note">Importing a link in the app is a separate feature from the web tool above: the link is sent to our servers and service providers, including OpenAI (USA); see the <a href="privacy-page.html">Privacy</a> page.</p>
+      <p class="note">To import a link, the link is sent to our servers and service providers, including OpenAI (USA); see the <a href="privacy-page.html">Privacy</a> page.</p>
       <p class="note">ReciPics is not affiliated with, endorsed by or sponsored by Instagram, Meta or TikTok. Recipes, texts and photos belong to their authors or the websites. Use ReciPics for your private cookbook only, and don't republish imported content.</p>
       <a class="cta" href="https://recipics-proxy.v-skromny.workers.dev/go/xmas-link-en">Get ReciPics on the App Store</a>
       <p class="note">For iPhone with iOS 26 or later.</p>
     </div>
     <div class="card">
       <h2>Questions</h2>
+      <h3>When should I start saving Christmas recipes?</h3>
+      <p>Whenever you come across them. If you save recipes in November as you find them, the whole menu is in one cookbook by December, and you can add the ingredients to your grocery list before the big shop.</p>
       <h3>Can I save Christmas recipes from Instagram or TikTok too?</h3>
-      <p>Yes, in the app. Copy the link of the post or video and paste it into ReciPics. The app reads the recipe from the caption and, if there is none, tries the video; such recipes are marked “Extracted from the video — check quantities”. The web tool on this page reads recipe websites only.</p>
-      <h3>What is left of a page full of ads and a long story?</h3>
-      <p>The recipe. The web tool shows the recipe data the site publishes, with a link to the source at the top and the bottom. The app saves the title, photo, ingredients and steps to your cookbook.</p>
-      <h3>How does the web tool work?</h3>
-      <p>Our server fetches that one page and reads only the structured recipe data the website publishes for machines (schema.org Recipe). We do not use an AI model for this. The result has no web address of its own and stays in this browser tab until you close or reload it. The page sets no cookies.</p>
-      <h3>Is the recipe saved anywhere?</h3>
-      <p>No. The result exists only in this browser tab and is gone when you close or reload it. We don't store the link or the recipe. To keep a recipe, open the source or save it in the ReciPics app.</p>
-      <h3>Is there a limit?</h3>
-      <p>Yes. The tool is free, without an account, and allows a limited number of lookups per day. If you reach the limit, try again tomorrow.</p>
-      <h3>Who owns the recipe?</h3>
-      <p>The recipe belongs to its author and the website that published it. Each result links to the source, where you find the full article, photos and tips. Website owners and authors can ask to exclude a site at <a href="mailto:hello@recipics.app">hello@recipics.app</a>.</p>
+      <p>Yes. Copy the link of the post or video and paste it into ReciPics. The app reads the recipe from the caption and, if there is none, tries the video; such recipes are marked “Extracted from the video — check quantities”.</p>
+      <h3>How does the family cook from the same recipes?</h3>
+      <p>Share a recipe as text or PDF, for example the Stollen or the roast, so everyone works from the same version. Family recipes on old handwritten cards can be photographed: see <a href="save-christmas-cookie-recipes.html">Save your family's Christmas cookie recipes</a>.</p>
     </div>
   </main>
   <footer class="footer">
     <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
     <nav><a href="privacy-page.html">Privacy</a><a href="terms-page.html">Terms</a><a href="contact-page.html">Contact</a><a href="impressum.html">Legal notice</a></nav>
-    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved. Not affiliated with or endorsed by TikTok or Meta.</span>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved. Not affiliated with or endorsed by Instagram, TikTok or Meta.</span>
   </footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-  <script>
-(function () {
-  var LOCALE = 'en';
-  var M = {
-      "empty": "Paste the link of a recipe page first.",
-      "invalid": "This doesn’t look like a web link. Paste the full address, for example https://www.example.com/recipe.",
-      "loading": "Looking up the recipe…",
-      "busy": "Looking up…",
-      "go": "Show recipe",
-      "unsupported": "This page doesn’t publish recipe data we can read, so we can’t show it. We don’t use other methods. Try another link.",
-      "blocked": "This website asks not to be read by tools like this one, so we can’t show it.",
-      "limited": "Daily limit reached. Please try again tomorrow, or paste the link into the ReciPics app.",
-      "unavailable": "The tool is temporarily unavailable. Please try again later.",
-      "source": "Source: ",
-      "open": ": open the original recipe",
-      "by": "Recipe by ",
-      "prep": "Prep",
-      "cook": "Cook",
-      "total": "Total",
-      "yield": "Makes",
-      "h": "h",
-      "min": "min"
-  };
-  window.__WT = {LOCALE: LOCALE, M: M};
-})();
-  </script>
-  <script src="resources/webtool.js"></script>
 </body>
 </html>
