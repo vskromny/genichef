@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-itunes-app" content="app-id=6740248018">
+  <title>What can I cook with what I have? Recipes from your ingredients – ReciPics</title>
+  <meta name="description" content="Take a photo of your fridge or the ingredients you have, and ReciPics suggests recipes that use them. Or say what you have. Filter by meal type and diet. For iPhone.">
+  <link rel="canonical" href="https://recipics.app/recipes-from-ingredients-you-have.html">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/rezepte-aus-vorhandenen-zutaten.html">
+  <link rel="alternate" hreflang="en" href="https://recipics.app/recipes-from-ingredients-you-have.html">
+  <link rel="alternate" hreflang="x-default" href="https://recipics.app/recipes-from-ingredients-you-have.html">
+  <meta property="og:title" content="What can I cook with what I have? Recipes from your ingredients – ReciPics">
+  <meta property="og:description" content="Take a photo of your fridge or the ingredients you have, and ReciPics suggests recipes that use them. Or say what you have. Filter by meal type and diet. For iPhone.">
+  <meta property="og:image" content="https://recipics.app/resources/og/og-home.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://recipics.app/resources/og/og-home.jpg">
+  <meta property="og:url" content="https://recipics.app/recipes-from-ingredients-you-have.html">
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#2A1E12 !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card h3{font-weight:800;font-size:18px;color:#2A1E12;margin:20px 0 4px;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card a{color:#B04A00;font-weight:700;text-decoration:none;}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#6F604C;font-size:14px;font-weight:600;}
+  .lead{font-size:19px;color:#4a3a2a;font-weight:600;margin-top:14px;}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px;}
+  .shots figure{margin:0;}
+  .shots img{width:100%;height:auto;border-radius:22px;border:1.5px solid #F4E6CE;box-shadow:0 14px 30px -18px rgba(80,50,10,.45);display:block;}
+  .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
+  .note{font-size:14px;color:#8a7860;font-weight:600;margin-top:10px;}
+  .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
+  .card ol li{margin:8px 0;}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
+  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.nav-links .nav-cta{display:none;}.footer{justify-content:center;text-align:center;}}
+</style>
+  <!-- jsonld-884 -->
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "en", "description": "The fridge is full, but nothing in it looks like dinner. Take a photo of the ingredients you have with ReciPics and get recipe ideas that use them. No photo at hand? Say what you have instead.", "url": "https://recipics.app/recipes-from-ingredients-you-have.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-ingredients-en&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Recipes from the ingredients you have", "item": "https://recipics.app/recipes-from-ingredients-you-have.html"}]}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Do I need to enter exact amounts?", "acceptedAnswer": {"@type": "Answer", "text": "No. ReciPics only needs to know which ingredients you have, not how much of each. The full recipe then lists amounts, so check that you have enough before you start."}}, {"@type": "Question", "name": "Can I leave out ingredients or stick to a diet?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Remove ingredients you don't want to use from the list of detected ingredients before you get new suggestions, and choose a dietary preference such as vegetarian, vegan or gluten-free. Allergies and dietary restrictions can go in your profile. Always check ingredients yourself for allergies or intolerances."}}, {"@type": "Question", "name": "How well does it recognise ingredients?", "acceptedAnswer": {"@type": "Answer", "text": "ReciPics lists only the items it can identify clearly. A sharp, well-lit photo works best; a blurry or dark photo may not be recognised. AI can make mistakes, so check the list and add anything it missed."}}, {"@type": "Question", "name": "Does it work offline?", "acceptedAnswer": {"@type": "Answer", "text": "No. Recognising ingredients and suggesting recipes needs an internet connection. Recipes you have saved are stored on your iPhone."}}, {"@type": "Question", "name": "Is ReciPics only for iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. ReciPics is an iPhone app for iOS 26 or later. There is no Android or web version."}}]}</script>
+</head>
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#features">Features</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-ingredients-en&mt=8">Get ReciPics</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <span class="kicker">Cook with what you have</span>
+    <h1>Recipes from the ingredients you have</h1>
+    <p class="lead">The fridge is full, but nothing in it looks like dinner. Take a photo of the ingredients you have with ReciPics and get recipe ideas that use them. No photo at hand? Say what you have instead.</p>
+    <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-ingredients-en&mt=8">View on the App Store</a>
+    <p class="eff"><a href="rezepte-aus-vorhandenen-zutaten.html" hreflang="de">Deutsch</a></p>
+    <div class="shots">
+      <figure><img src="resources/home-recipes.jpg" width="460" height="1000" alt="ReciPics: camera pointed at an open fridge"><figcaption>1. Snap your fridge</figcaption></figure>
+      <figure><img src="resources/recipe-suggestions.jpg" width="460" height="1000" alt="ReciPics: recipe suggestions with cooking time, difficulty and estimated calories" loading="lazy"><figcaption>2. Pick a suggestion</figcaption></figure>
+      <figure><img src="resources/recipe-details.jpg" width="460" height="1000" alt="ReciPics: recipe with ingredients, amounts and servings 1x, 2x, 4x" loading="lazy"><figcaption>3. Cook the recipe</figcaption></figure>
+    </div>
+    <p class="note">Real screens from the app. Calories and nutrition are estimates.</p>
+    <div class="card">
+      <h2>A full fridge and no idea</h2>
+      <p>Half a pepper, a few eggs, a bag of spinach, some leftover rice. Looking up a recipe for each of them takes longer than the cooking. ReciPics starts from what is already in front of you and suggests what you could make with it.</p>
+      <h2>How it works</h2>
+      <ol><li>Open ReciPics and point the camera at your fridge, a pantry shelf or the ingredients on the counter. You can also pick a photo from your library.</li><li>ReciPics recognises the ingredients it can see clearly with AI and suggests a list of recipes that use several of them. Besides what is in the photo, it assumes only basics like salt, pepper, water and oil.</li><li>Tap a suggestion to get the full recipe with amounts, steps and estimated nutrition per serving. Keep the ones you like in your cookbook.</li></ol>
+      <h2>No photo? Say it or type it</h2>
+      <ul><li>Hold the microphone button and say what you have, for example “eggs, spinach, feta”. You can also say what you feel like eating.</li><li>Before your first recipe, the start screen offers “Type it”: write your ingredients or a dish idea and tap “Get recipes”.</li><li>After a scan, open the list of detected ingredients. Remove what is wrong, add what the camera missed, and get new suggestions.</li></ul>
+      <h2>Filter by meal and diet</h2>
+      <p>Before you snap, choose a meal type (breakfast, brunch, lunch, dinner, dessert, snack or drinks) and a dietary preference, for example vegetarian, vegan, gluten-free, lactose-free or keto. The suggestions follow your choice.</p>
+      <p>In your profile you can also add allergies and dietary restrictions. If you agree to share them, ReciPics takes them into account when it suggests recipes. AI can make mistakes: always check ingredients yourself for allergies or intolerances.</p>
+      <h2>After you pick a recipe</h2>
+      <ul><li>Switch servings between 1x, 2x and 4x.</li><li>Put the recipe's ingredients on your <a href="grocery-list-from-recipes.html">grocery list</a> and tick off what you already have.</li><li>Plan the rest of the week with the <a href="index.html#plan">meal planner</a>.</li></ul>
+      <h2>Questions</h2>
+      <h3>Do I need to enter exact amounts?</h3>
+      <p>No. ReciPics only needs to know which ingredients you have, not how much of each. The full recipe then lists amounts, so check that you have enough before you start.</p>
+      <h3>Can I leave out ingredients or stick to a diet?</h3>
+      <p>Yes. Remove ingredients you don't want to use from the list of detected ingredients before you get new suggestions, and choose a dietary preference such as vegetarian, vegan or gluten-free. Allergies and dietary restrictions can go in your profile. Always check ingredients yourself for allergies or intolerances.</p>
+      <h3>How well does it recognise ingredients?</h3>
+      <p>ReciPics lists only the items it can identify clearly. A sharp, well-lit photo works best; a blurry or dark photo may not be recognised. AI can make mistakes, so check the list and add anything it missed.</p>
+      <h3>Does it work offline?</h3>
+      <p>No. Recognising ingredients and suggesting recipes needs an internet connection. Recipes you have saved are stored on your iPhone.</p>
+      <h3>Is ReciPics only for iPhone?</h3>
+      <p>Yes. ReciPics is an iPhone app for iOS 26 or later. There is no Android or web version.</p>
+      <p>Found a recipe online instead? <a href="recipe-from-link.html">Recipe from a link</a> shows just the recipe in your browser · <a href="save-recipes-from-websites.html">Save recipes from websites</a></p>
+      <p class="note">Suggestions from photos, voice and text count toward the app's AI allowance, which is limited without Premium.</p>
+      <p class="note">To suggest recipes, your photo, voice recording or text is sent to our servers and service providers, including our AI provider OpenAI (USA); see <a href="privacy-page.html">Privacy</a>.</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-ingredients-en&mt=8">Get ReciPics on the App Store</a>
+      <p class="note">For iPhone with iOS 26 or later.</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page.html">Privacy</a><a href="terms-page.html">Terms</a><a href="contact-page.html">Contact</a><a href="impressum.html">Legal notice</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved.</span>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
