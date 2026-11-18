@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-itunes-app" content="app-id=6740248018">
+  <title>Meal planner app: plan the week from your saved recipes – ReciPics</title>
+  <meta name="description" content="Plan breakfast, lunch and dinner for the week with recipes from your ReciPics cookbook. Repeat meals daily or weekly, add the ingredients to your grocery list and share the plan as a PDF. For iPhone.">
+  <link rel="canonical" href="https://recipics.app/meal-planner-app.html">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/essensplaner-app.html">
+  <link rel="alternate" hreflang="en" href="https://recipics.app/meal-planner-app.html">
+  <link rel="alternate" hreflang="x-default" href="https://recipics.app/meal-planner-app.html">
+  <meta property="og:title" content="Meal planner app: plan the week from your saved recipes – ReciPics">
+  <meta property="og:description" content="Plan breakfast, lunch and dinner for the week with recipes from your ReciPics cookbook. Repeat meals daily or weekly, add the ingredients to your grocery list and share the plan as a PDF. For iPhone.">
+  <meta property="og:image" content="https://recipics.app/resources/og/og-mealplan-en.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://recipics.app/resources/og/og-mealplan-en.jpg">
+  <meta property="og:url" content="https://recipics.app/meal-planner-app.html">
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#2A1E12 !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card h3{font-weight:800;font-size:18px;color:#2A1E12;margin:20px 0 4px;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card a{color:#B04A00;font-weight:700;text-decoration:none;}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#6F604C;font-size:14px;font-weight:600;}
+  .lead{font-size:19px;color:#4a3a2a;font-weight:600;margin-top:14px;}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px;}
+  .shots figure{margin:0;}
+  .shots img{width:100%;height:auto;border-radius:22px;border:1.5px solid #F4E6CE;box-shadow:0 14px 30px -18px rgba(80,50,10,.45);display:block;}
+  .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
+  .note{font-size:14px;color:#8a7860;font-weight:600;margin-top:10px;}
+  .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
+  .card ol li{margin:8px 0;}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
+  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.nav-links .nav-cta{display:none;}.footer{justify-content:center;text-align:center;}}
+</style>
+  <!-- jsonld-884 -->
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "en", "description": "You have saved plenty of recipes, and still the question every evening is what to cook. In ReciPics, put recipes from your cookbook on a weekly plan, one meal at a time, and add their ingredients to your grocery list when you go shopping.", "url": "https://recipics.app/meal-planner-app.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-mealplan-en&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Meal planner from your recipes", "item": "https://recipics.app/meal-planner-app.html"}]}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Can I plan meals without an internet connection?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The meal planner and the grocery list work without a connection. Importing recipes and getting AI suggestions need an internet connection."}}, {"@type": "Question", "name": "Where is my meal plan stored, and can my family see it?", "acceptedAnswer": {"@type": "Answer", "text": "Your plan is stored on your iPhone. There is no account and no sync between devices, so there is no shared plan that others can edit. To share it, send the plan as a PDF."}}, {"@type": "Question", "name": "Can I plan more than one week ahead?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Move between weeks with the arrows and plan any week you like. Repeating meals are added up to four weeks ahead, or until the end date you set."}}, {"@type": "Question", "name": "Does the grocery list combine the same ingredient from different recipes?", "acceptedAnswer": {"@type": "Answer", "text": "No. Each planned meal adds its own ingredients with the amounts from its recipe, so the same ingredient can appear more than once. Check the list before you shop."}}, {"@type": "Question", "name": "Is ReciPics only for iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. ReciPics is an iPhone app for iOS 26 or later. There is no Android or web version."}}]}</script>
+</head>
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#features">Features</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=web-mealplan-en&amp;mt=8">Get ReciPics</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <span class="kicker">Plan the week</span>
+    <h1>A weekly meal planner for your recipes</h1>
+    <p class="lead">You have saved plenty of recipes, and still the question every evening is what to cook. In ReciPics, put recipes from your cookbook on a weekly plan, one meal at a time, and add their ingredients to your grocery list when you go shopping.</p>
+    <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=web-mealplan-en&amp;mt=8">View on the App Store</a>
+    <p class="eff"><a href="essensplaner-app.html" hreflang="de">Deutsch</a></p>
+    <div class="shots">
+      <figure><img src="resources/recipe-details.jpg" width="460" height="1000" alt="ReciPics: saved recipe Chicken and Avocado Salad with ingredients and menu button"><figcaption>1. Open a saved recipe</figcaption></figure>
+      <figure><img src="resources/meal-planner.jpg" width="460" height="1000" alt="ReciPics meal planner: one week with breakfast, lunch and dinner rows and planned recipes" loading="lazy"><figcaption>2. Put it on a day</figcaption></figure>
+      <figure><img src="resources/grocery-list.jpg" width="460" height="1000" alt="ReciPics grocery list with ingredients, quantities and checkboxes" loading="lazy"><figcaption>3. Shop from the list</figcaption></figure>
+    </div>
+    <p class="note">Real screens from the app.</p>
+    <div class="card">
+      <h2>The week at a glance</h2>
+      <p>The Meal Planner tab shows one week as a grid: the days run across, your meals run down. Move between weeks with the arrows and tap an empty cell to plan that meal.</p>
+      <p>Breakfast, lunch and dinner are set up for you. Under “Manage Meal Types” you can add your own, for example a snack, rename them or change their order, up to five rows in total.</p>
+      <h2>Make a meal plan in three steps</h2>
+      <ol><li>Save recipes to your cookbook: import them from a link or a photo, or keep a recipe that ReciPics suggests.</li><li>In the Meal Planner, tap an empty cell and pick one of your saved recipes. Or open a recipe in your cookbook, tap the menu (···), choose “Add to Meal Planner” and pick a date and breakfast, lunch or dinner.</li><li>When you are ready to shop, tap the cart button at the top of the planner. ReciPics shows which ingredients from the week's planned recipes are new and which are already on your list, and adds the new ones.</li></ol>
+      <h2>Repeat meals and plan freely</h2>
+      <ul><li>Set a meal to repeat daily or weekly, with an optional end date. Without an end date, repeats are added for the next four weeks.</li><li>Not every meal needs a recipe: switch on “Manual entry” and add a title and a note, for example leftovers or eating out.</li><li>Touch and hold a planned meal to edit it, copy it to another day of the week with “Duplicate to…”, include or exclude it from the grocery list, or delete it.</li><li>Tap the pencil to rearrange: drag a meal to an empty cell, and undo changes while you are editing.</li><li>Tap a planned recipe to open it while you cook.</li></ul>
+      <h2>From meal plan to grocery list</h2>
+      <p>Only planned recipes add ingredients; manual entries don't. Each planned meal adds its own ingredients with the amounts written in its recipe. Ingredients are not combined: if two planned meals need onions, onions appear twice. A meal that repeats adds its ingredients once for each time it is planned in that week.</p>
+      <p>If you sync again later, only ingredients that have not been added yet are added. On the list you tick items off and can share it as text or PDF. More about the <a href="grocery-list-from-recipes.html">grocery list from your recipes</a>.</p>
+      <h2>Share or print the plan</h2>
+      <p>In the planner's menu (···), choose “Share”, then “Share as PDF” or “Print”. The PDF lists each day of the week you are viewing that has planned meals, with the meals in order and your notes.</p>
+      <h2>Where the recipes come from</h2>
+      <ul><li>Recipe websites: copy the link and paste it into ReciPics. <a href="save-recipes-from-websites.html">Save recipes from websites</a></li><li>Instagram and TikTok: copy the link of a post or video. ReciPics reads the caption with AI and, if there is no recipe in it, tries the video. <a href="save-recipes-from-instagram-tiktok.html">Save recipes from Instagram and TikTok</a></li><li>Cookbook pages and handwritten cards: take a photo in ReciPics or choose one from your library. <a href="scan-recipes-from-cookbooks.html">Scan recipes from cookbooks</a> · <a href="digitize-handwritten-recipes.html">Digitize handwritten recipes</a></li><li>No idea yet? Take a photo of the ingredients you have and get recipe ideas. <a href="recipes-from-ingredients-you-have.html">Recipes from the ingredients you have</a></li></ul>
+      <p>AI can make mistakes. Compare an imported recipe with the original before you cook, especially amounts and temperatures, and check ingredients yourself for allergies or intolerances.</p>
+      <h2>Questions</h2>
+      <h3>Can I plan meals without an internet connection?</h3>
+      <p>Yes. The meal planner and the grocery list work without a connection. Importing recipes and getting AI suggestions need an internet connection.</p>
+      <h3>Where is my meal plan stored, and can my family see it?</h3>
+      <p>Your plan is stored on your iPhone. There is no account and no sync between devices, so there is no shared plan that others can edit. To share it, send the plan as a PDF.</p>
+      <h3>Can I plan more than one week ahead?</h3>
+      <p>Yes. Move between weeks with the arrows and plan any week you like. Repeating meals are added up to four weeks ahead, or until the end date you set.</p>
+      <h3>Does the grocery list combine the same ingredient from different recipes?</h3>
+      <p>No. Each planned meal adds its own ingredients with the amounts from its recipe, so the same ingredient can appear more than once. Check the list before you shop.</p>
+      <h3>Is ReciPics only for iPhone?</h3>
+      <p>Yes. ReciPics is an iPhone app for iOS 26 or later. There is no Android or web version.</p>
+      <p class="note">Each photo scan uses the app's AI allowance, which is limited without Premium. For new users without a paid plan, the number of link imports per month is limited. The app shows how many you have left.</p>
+      <p class="note">Recipes from cookbooks and websites are usually protected by copyright. Use ReciPics for your private cookbook only, and don't share or publish imported recipes you have no right to share. To read a recipe, the photo and the text recognized on your iPhone, or the link, are sent to our servers and service providers, including our AI provider OpenAI (USA); see the <a href="privacy-page.html">Privacy</a> page. The content of your meal plan stays on your iPhone and is not sent to our servers.</p>
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=web-mealplan-en&amp;mt=8">Get ReciPics on the App Store</a>
+      <p class="note">For iPhone with iOS 26 or later.</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page.html">Privacy</a><a href="terms-page.html">Terms</a><a href="contact-page.html">Contact</a><a href="impressum.html">Legal notice</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved. Not affiliated with or endorsed by TikTok or Meta.</span>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
