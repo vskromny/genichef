@@ -74,6 +74,30 @@
   .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
   .cross{background:#FFF3DE;border:1.5px solid #F4E6CE;border-radius:14px;padding:12px 16px;}
   @media (max-width:640px){.wrap{padding-top:112px;}.ctas{gap:10px;}.cta2{width:100%;}.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}}
+  .tool label{display:block;font-weight:800;color:#2A1E12;margin:0 0 6px;font-size:16px;}
+  .tool .urlrow{display:flex;gap:12px;align-items:stretch;}
+  .tool input{flex:1;width:100%;min-width:0;font:inherit;font-size:16px;color:#2A1E12;background:#FFFDF8;border:1.5px solid #9C7F55;border-radius:12px;padding:12px 14px;}
+  .tool button{font:inherit;font-weight:800;font-size:17px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;border:0;border-radius:14px;padding:12px 24px;cursor:pointer;box-shadow:0 12px 24px -12px rgba(214,103,0,.8);white-space:nowrap;}
+  .tool button[disabled]{opacity:.6;cursor:progress;}
+  .tool input:focus-visible,.tool button:focus-visible,.card a:focus-visible,.cta:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
+  .tool .msg{font-weight:700;color:#5b4a38;margin-top:14px;}
+  .tool .msg:empty{display:none;}
+  .tool .note{font-size:16px;}
+  .tool .msg.warn{background:#FFF8EC;border:1.5px dashed #9C7F55;border-radius:12px;padding:12px 14px;}
+  @media (max-width:640px){.tool .urlrow{flex-direction:column;}}
+  .result{overflow-wrap:anywhere;scroll-margin-top:96px;}
+  .result .src{font-size:18px;font-weight:700;color:#2A1E12;margin:0;background:#FFF3DE;border:1.5px solid #F4E6CE;border-radius:14px;padding:12px 16px;}
+  .result .src a{color:#A84400;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px;}
+  .result .src.bottom{margin-top:22px;}
+  .result .by{font-size:15px;color:#6B5847;font-weight:700;margin-top:10px;}
+  .result h2.rt{font-size:clamp(24px,4vw,30px);line-height:1.2;margin-top:20px;}
+  .result .facts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px;padding:0;list-style:none;}
+  .result .facts li{margin:0;background:#FFF8EC;border:1.5px solid #F4E6CE;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:#5b4a38;}
+  .result .ing li{margin:6px 0;}
+  .result .steps li{margin:10px 0;font-weight:500;}
+  .result:focus{outline:none;}
+  .result:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
+  .result .legal{border-top:1.5px dashed #E8D4B2;margin-top:22px;padding-top:6px;}
   </style>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "de", "description": "Aus Links von Rezeptseiten und Blogs, ohne Werbung. Gänsebraten, Stollen, Plätzchen und Glühwein in zwanzig offenen Tabs? Füg die Links in ReciPics ein: Jedes Rezept landet in deinem Kochbuch auf dem iPhone, rechtzeitig vor den Feiertagen.", "url": "https://recipics.app/weihnachtsrezepte-aus-link-speichern.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-xmas-link-de&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Weihnachtsrezepte speichern: alle in einer App", "item": "https://recipics.app/weihnachtsrezepte-aus-link-speichern.html"}]}, {"@type": "FAQPage", "inLanguage": "de", "mainEntity": [{"@type": "Question", "name": "Wann fange ich am besten an, Weihnachtsrezepte zu sammeln?", "acceptedAnswer": {"@type": "Answer", "text": "Sobald dir eins über den Weg läuft. Wenn du im November speicherst, was du findest, steht im Dezember das ganze Menü in einem Kochbuch, und du kannst die Zutaten vor dem grossen Einkauf auf die Einkaufsliste setzen."}}, {"@type": "Question", "name": "Kann ich Weihnachtsrezepte auch von Instagram oder TikTok speichern?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Kopiere den Link des Beitrags oder Videos und füge ihn in ReciPics ein. Die App liest das Rezept aus der Bildunterschrift und versucht es, wenn dort keins steht, mit dem Video; solche Rezepte sind mit „Aus dem Video übernommen – bitte Mengen prüfen“ markiert."}}, {"@type": "Question", "name": "Wie kocht die ganze Familie nach denselben Rezepten?", "acceptedAnswer": {"@type": "Answer", "text": "Teile ein Rezept als Text oder PDF, zum Beispiel den Stollen oder den Braten, damit alle nach derselben Version arbeiten. Omas Rezepte auf alten Karteikarten kannst du abfotografieren: siehe Omas Weihnachtsplätzchen-Rezepte digitalisieren."}}]}]}</script>
 </head>
@@ -93,7 +117,7 @@
     <p class="lead">Gänsebraten, Stollen, Plätzchen und Glühwein in zwanzig offenen Tabs? Füg die Links in ReciPics ein: Jedes Rezept landet in deinem Kochbuch auf dem iPhone, rechtzeitig vor den Feiertagen.</p>
     <div class="ctas">
       <a class="cta" id="cta-store" href="https://recipics-proxy.v-skromny.workers.dev/go/xmas-link-de">Im App Store ansehen</a>
-      <a class="cta2" id="cta-tool" href="rezept-aus-link.html?src=xmas">Link-Tool kostenlos testen</a>
+      <a class="cta2" id="cta-tool" href="#try-tool">Link-Tool kostenlos testen</a>
     </div>
     <p class="eff"><a href="save-christmas-recipes-from-links.html" hreflang="en">English</a></p>
     <div class="shots">
@@ -102,6 +126,41 @@
       <figure><img src="resources/import-de-steps.jpg" width="560" height="1218" alt="ReciPics: Zutatenliste mit Alternativen" loading="lazy"><figcaption>3. Zutaten und Schritte</figcaption></figure>
     </div>
     <p class="note">Echte Screens aus der App. Beispiel: ein Rezept von unserer eigenen Seite recipics.app.</p>
+    <div class="card tool" id="try-tool">
+      <h2>Gleich ausprobieren: Rezept aus Link</h2>
+      <p>Füge einen Rezept-Link ein und lies nur das Rezept. Kostenlos, ohne Konto. Wir speichern weder den Link noch das Rezept, und dieses Tool nutzt keine KI. <a href="rezept-aus-link.html">Mehr zu diesem Tool</a> · <a href="privacy-page-de.html#section-12">Datenschutz</a></p>
+      <form id="wt-form" novalidate>
+        <label for="wt-url">Link einer Rezeptseite</label>
+        <div class="urlrow">
+          <input id="wt-url" type="url" inputmode="url" placeholder="https://www.example.com/rezept" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="2048" aria-describedby="wt-hint">
+          <button type="submit" id="wt-go">Rezept anzeigen</button>
+        </div>
+        <p class="note" id="wt-hint">Füge den Link einer Rezeptseite ein. Funktioniert mit Rezept-Websites, die strukturierte Rezeptdaten veröffentlichen; nicht jede Seite tut das.</p>
+      </form>
+      <p class="note">Die ReciPics-App funktioniert anders: Sie liest Links mit KI, siehe <a href="privacy-page-de.html">Datenschutz</a>.</p>
+      <div aria-live="polite">
+        <p class="msg" id="wt-msg"></p>
+      </div>
+    </div>
+    <section class="card result" id="wt-result" hidden aria-labelledby="wt-title" tabindex="-1">
+      <p class="src" id="wt-src-top"></p>
+      <p class="by" id="wt-by" hidden></p>
+      <h2 class="rt" id="wt-title"></h2>
+      <ul class="facts" id="wt-facts" hidden></ul>
+      <h3 id="wt-h-ing">Zutaten</h3>
+      <ul class="ing" id="wt-ing" aria-labelledby="wt-h-ing"></ul>
+      <h3 id="wt-h-steps">Zubereitung</h3>
+      <ol class="steps" id="wt-steps" aria-labelledby="wt-h-steps"></ol>
+      <p class="src bottom" id="wt-src-bottom"></p>
+      <a class="cta" href="https://recipics-proxy.v-skromny.workers.dev/go/webtool-de">In ReciPics im Kochbuch speichern</a>
+      <p class="note">In der App denselben Link einfügen oder über „Teilen“ senden.</p>
+      <p class="note">Für iPhone mit iOS 26 oder neuer.</p>
+      <div class="legal">
+        <p class="note">Dieses Rezept gehört seinem Autor und der Website, die es veröffentlicht hat. Wir zeigen die Rezeptdaten, die die Seite für Maschinen bereitstellt, einmalig für deinen persönlichen Gebrauch. Den vollständigen Artikel, Fotos und Tipps findest du bei der Quelle.</p>
+        <p class="note">Wir speichern weder den Link noch das Rezept. Details: <a href="privacy-page-de.html#section-12">Datenschutzerklärung, Abschnitt 12</a>.</p>
+        <p class="note">Nicht mit der angezeigten Website verbunden. Website-Betreiber oder Autor? Um eine Seite auszuschliessen oder ein Problem zu melden, schreibe an <a href="mailto:hello@recipics.app">hello@recipics.app</a> (wir handeln innerhalb von 3 Werktagen).</p>
+      </div>
+    </section>
     <div class="card">
       <h2>Dein Weihnachtsmenü in einem Kochbuch</h2>
       <p>Der Gänsebraten steht auf einem Foodblog, der Stollen auf einer Rezeptseite, die Plätzchen hast du in einem Reel gesehen, und der Glühwein ist irgendwo zwischen zwanzig offenen Tabs verschwunden. Speicher jedes Rezept gleich, wenn du es findest. Im Dezember steht dann das ganze Menü in einem Kochbuch auf deinem iPhone, und du weisst sofort, was es an den Feiertagen gibt.</p>
@@ -140,5 +199,28 @@
     <span class="cr">&copy; <span id="year">2026</span> ReciPics. Alle Rechte vorbehalten. Nicht mit Instagram, TikTok oder Meta verbunden und nicht von ihnen unterstützt.</span>
   </footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+(function () {
+  var LOCALE = 'de';
+  var M = {
+    empty: 'Füge zuerst den Link einer Rezeptseite ein.',
+    invalid: 'Das sieht nicht nach einem Weblink aus. Füge die vollständige Adresse ein, zum Beispiel https://www.example.com/rezept.',
+    loading: 'Rezept wird gesucht…',
+    busy: 'Suche…',
+    go: 'Rezept anzeigen',
+    unsupported: 'Diese Seite veröffentlicht keine Rezeptdaten, die wir lesen können, deshalb können wir sie nicht anzeigen. Andere Methoden nutzen wir nicht. Probiere einen anderen Link.',
+    blocked: 'Diese Website möchte nicht von Tools wie diesem gelesen werden, deshalb können wir sie nicht anzeigen.',
+    limited: 'Tageslimit erreicht. Bitte versuche es morgen wieder oder füge den Link in der ReciPics-App ein.',
+    unavailable: 'Das Tool ist vorübergehend nicht verfügbar. Bitte versuche es später noch einmal.',
+    source: 'Quelle: ',
+    open: ': Originalrezept öffnen',
+    by: 'Rezept von ',
+    prep: 'Vorbereitung', cook: 'Kochzeit', total: 'Gesamtzeit', yield: 'Ergibt',
+    h: 'Std.', min: 'Min.'
+  };
+  window.__WT = {LOCALE: LOCALE, M: M};
+})();
+  </script>
+  <script src="resources/webtool.js"></script>
 </body>
 </html>

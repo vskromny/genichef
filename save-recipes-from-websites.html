@@ -64,7 +64,35 @@
   .card ol li{margin:8px 0;}
   .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
   @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.nav-links .nav-cta{display:none;}.footer{justify-content:center;text-align:center;}}
-</style>
+  .tool label{display:block;font-weight:800;color:#2A1E12;margin:0 0 6px;font-size:16px;}
+  .tool .urlrow{display:flex;gap:12px;align-items:stretch;}
+  .tool input{flex:1;width:100%;min-width:0;font:inherit;font-size:16px;color:#2A1E12;background:#FFFDF8;border:1.5px solid #9C7F55;border-radius:12px;padding:12px 14px;}
+  .tool button{font:inherit;font-weight:800;font-size:17px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;border:0;border-radius:14px;padding:12px 24px;cursor:pointer;box-shadow:0 12px 24px -12px rgba(214,103,0,.8);white-space:nowrap;}
+  .tool button[disabled]{opacity:.6;cursor:progress;}
+  .tool input:focus-visible,.tool button:focus-visible,.card a:focus-visible,.cta:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
+  .tool .msg{font-weight:700;color:#5b4a38;margin-top:14px;}
+  .tool .msg:empty{display:none;}
+  .tool .note{font-size:16px;}
+  .tool .msg.warn{background:#FFF8EC;border:1.5px dashed #9C7F55;border-radius:12px;padding:12px 14px;}
+  @media (max-width:640px){.tool .urlrow{flex-direction:column;}}
+  .result{overflow-wrap:anywhere;scroll-margin-top:96px;}
+  .result .src{font-size:18px;font-weight:700;color:#2A1E12;margin:0;background:#FFF3DE;border:1.5px solid #F4E6CE;border-radius:14px;padding:12px 16px;}
+  .result .src a{color:#A84400;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px;}
+  .result .src.bottom{margin-top:22px;}
+  .result .by{font-size:15px;color:#6B5847;font-weight:700;margin-top:10px;}
+  .result h2.rt{font-size:clamp(24px,4vw,30px);line-height:1.2;margin-top:20px;}
+  .result .facts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px;padding:0;list-style:none;}
+  .result .facts li{margin:0;background:#FFF8EC;border:1.5px solid #F4E6CE;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:#5b4a38;}
+  .result .ing li{margin:6px 0;}
+  .result .steps li{margin:10px 0;font-weight:500;}
+  .result:focus{outline:none;}
+  .result:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
+  .result .legal{border-top:1.5px dashed #E8D4B2;margin-top:22px;padding-top:6px;}
+    .ctas{display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px;margin-top:18px;}.ctas .cta{margin-top:0;}
+  .cta2{display:inline-flex;align-items:center;justify-content:center;background:#FFFDF8;color:#2A1E12;border:2px solid #9C7F55;padding:13px 24px;border-radius:16px;font-weight:800;font-size:17px;text-decoration:none;}
+  .cta2:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
+  @media (max-width:640px){.ctas{gap:10px;}.cta2{width:100%;}}
+  </style>
   <!-- jsonld-884 -->
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "en", "description": "Found a recipe online and don't want to hunt for it again? Copy the link and paste it into ReciPics. The app puts the recipe, with ingredients and steps, into your cookbook. Recipes from many sites end up in one cookbook instead of scattered across bookmarks and notes.", "url": "https://recipics.app/save-recipes-from-websites.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-sites-en&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Save recipes from websites in one app", "item": "https://recipics.app/save-recipes-from-websites.html"}]}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "How do I save a recipe from a website to ReciPics?", "acceptedAnswer": {"@type": "Answer", "text": "Open the recipe page in your browser and copy the link. In ReciPics, tap “Paste a link” and paste it. Tap “Import”. ReciPics reads the page with AI and saves the title, photo, ingredients and steps to your cookbook. It usually takes about half a minute, sometimes longer, depending on the page. Without a paid plan, the number of link imports per month is limited; the app shows how many are left."}}, {"@type": "Question", "name": "Which recipe websites work with ReciPics?", "acceptedAnswer": {"@type": "Answer", "text": "Many recipe websites work, especially those that show the recipe without a login. Results vary by site. On 12 Nov 2026 we successfully imported recipes from chefkoch.de, fooby.ch (German and English) and swissmilk.ch, for example.Some websites block the import. The app tells you when that happens, and you can snap a photo of the recipe or paste it as text instead."}}]}</script>
@@ -82,7 +110,10 @@
     <span class="kicker">Recipe import by link</span>
     <h1>Save recipes from websites in one app</h1>
     <p class="lead">Found a recipe online and don't want to hunt for it again? Copy the link and paste it into ReciPics. The app puts the recipe, with ingredients and steps, into your cookbook. Recipes from many sites end up in one cookbook instead of scattered across bookmarks and notes.</p>
-    <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-sites-en&mt=8">View on the App Store</a>
+    <div class="ctas">
+      <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-sites-en&mt=8">View on the App Store</a>
+      <a class="cta2" id="cta-tool" href="#try-tool">Try the free link tool</a>
+    </div>
     <p class="eff"><a href="rezepte-von-websites-speichern.html" hreflang="de">Deutsch</a></p>
     <div class="shots">
       <figure><img src="resources/import-en-sheet.jpg" width="560" height="1218" alt="ReciPics: Import Recipe sheet with a pasted link"><figcaption>1. Paste a link</figcaption></figure>
@@ -90,6 +121,41 @@
       <figure><img src="resources/import-en-steps.jpg" width="560" height="1218" alt="ReciPics: ingredient list with alternatives" loading="lazy"><figcaption>3. Ingredients and steps</figcaption></figure>
     </div>
     <p class="note">Real screens from the app. Example: a recipe from our own site recipics.app.</p>
+    <div class="card tool" id="try-tool">
+      <h2>Try it now: recipe from a link</h2>
+      <p>Paste a recipe link and read just the recipe. Free, no account. We don't store the link or the recipe, and this tool uses no AI. <a href="recipe-from-link.html">More about this tool</a> · <a href="privacy-page.html#section-12">Privacy</a></p>
+      <form id="wt-form" novalidate>
+        <label for="wt-url">Link of a recipe page</label>
+        <div class="urlrow">
+          <input id="wt-url" type="url" inputmode="url" placeholder="https://www.example.com/recipe" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="2048" aria-describedby="wt-hint">
+          <button type="submit" id="wt-go">Show recipe</button>
+        </div>
+        <p class="note" id="wt-hint">Paste the link of a recipe page. Works with recipe websites that publish structured recipe data; not every site does.</p>
+      </form>
+      <p class="note">The ReciPics app works differently: it reads links with AI; see <a href="privacy-page.html">Privacy</a>.</p>
+      <div aria-live="polite">
+        <p class="msg" id="wt-msg"></p>
+      </div>
+    </div>
+    <section class="card result" id="wt-result" hidden aria-labelledby="wt-title" tabindex="-1">
+      <p class="src" id="wt-src-top"></p>
+      <p class="by" id="wt-by" hidden></p>
+      <h2 class="rt" id="wt-title"></h2>
+      <ul class="facts" id="wt-facts" hidden></ul>
+      <h3 id="wt-h-ing">Ingredients</h3>
+      <ul class="ing" id="wt-ing" aria-labelledby="wt-h-ing"></ul>
+      <h3 id="wt-h-steps">Steps</h3>
+      <ol class="steps" id="wt-steps" aria-labelledby="wt-h-steps"></ol>
+      <p class="src bottom" id="wt-src-bottom"></p>
+      <a class="cta" href="https://recipics-proxy.v-skromny.workers.dev/go/webtool-en">Save it to your cookbook in ReciPics</a>
+      <p class="note">In the app, paste the same link or use Share.</p>
+      <p class="note">For iPhone with iOS 26 or later.</p>
+      <div class="legal">
+        <p class="note">This recipe belongs to its author and the website that published it. We show the recipe data the site publishes for machines, once, for your personal use. Visit the source for the full article, photos and tips.</p>
+        <p class="note">We don't store the link or the recipe. Details: <a href="privacy-page.html#section-12">Privacy Policy, section 12</a>.</p>
+        <p class="note">Not affiliated with the website shown. Website owner or author? To exclude a site or report a problem, write to <a href="mailto:hello@recipics.app">hello@recipics.app</a> (we act within 3 working days).</p>
+      </div>
+    </section>
     <div class="card">
       <h2>How it works</h2>
       <ol><li>Open the recipe page in your browser and copy the link.</li><li>In ReciPics, tap “Paste a link” and paste it.</li><li>Tap “Import”. ReciPics reads the page with AI and saves the title, photo, ingredients and steps to your cookbook. It usually takes about half a minute, sometimes longer, depending on the page.</li></ol>
@@ -114,5 +180,28 @@
     <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved. Not affiliated with or endorsed by TikTok or Meta.</span>
   </footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+(function () {
+  var LOCALE = 'en';
+  var M = {
+    empty: 'Paste the link of a recipe page first.',
+    invalid: 'This doesn’t look like a web link. Paste the full address, for example https://www.example.com/recipe.',
+    loading: 'Looking up the recipe…',
+    busy: 'Looking up…',
+    go: 'Show recipe',
+    unsupported: 'This page doesn’t publish recipe data we can read, so we can’t show it. We don’t use other methods. Try another link.',
+    blocked: 'This website asks not to be read by tools like this one, so we can’t show it.',
+    limited: 'Daily limit reached. Please try again tomorrow, or paste the link into the ReciPics app.',
+    unavailable: 'The tool is temporarily unavailable. Please try again later.',
+    source: 'Source: ',
+    open: ': open the original recipe',
+    by: 'Recipe by ',
+    prep: 'Prep', cook: 'Cook', total: 'Total', yield: 'Makes',
+    h: 'h', min: 'min'
+  };
+  window.__WT = {LOCALE: LOCALE, M: M};
+})();
+  </script>
+  <script src="resources/webtool.js"></script>
 </body>
 </html>

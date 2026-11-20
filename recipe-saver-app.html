@@ -74,6 +74,30 @@
   .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
   .cross{background:#FFF3DE;border:1.5px solid #F4E6CE;border-radius:14px;padding:12px 16px;}
   @media (max-width:640px){.wrap{padding-top:112px;}.ctas{gap:10px;}.cta2{width:100%;}.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}}
+  .tool label{display:block;font-weight:800;color:#2A1E12;margin:0 0 6px;font-size:16px;}
+  .tool .urlrow{display:flex;gap:12px;align-items:stretch;}
+  .tool input{flex:1;width:100%;min-width:0;font:inherit;font-size:16px;color:#2A1E12;background:#FFFDF8;border:1.5px solid #9C7F55;border-radius:12px;padding:12px 14px;}
+  .tool button{font:inherit;font-weight:800;font-size:17px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;border:0;border-radius:14px;padding:12px 24px;cursor:pointer;box-shadow:0 12px 24px -12px rgba(214,103,0,.8);white-space:nowrap;}
+  .tool button[disabled]{opacity:.6;cursor:progress;}
+  .tool input:focus-visible,.tool button:focus-visible,.card a:focus-visible,.cta:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
+  .tool .msg{font-weight:700;color:#5b4a38;margin-top:14px;}
+  .tool .msg:empty{display:none;}
+  .tool .note{font-size:16px;}
+  .tool .msg.warn{background:#FFF8EC;border:1.5px dashed #9C7F55;border-radius:12px;padding:12px 14px;}
+  @media (max-width:640px){.tool .urlrow{flex-direction:column;}}
+  .result{overflow-wrap:anywhere;scroll-margin-top:96px;}
+  .result .src{font-size:18px;font-weight:700;color:#2A1E12;margin:0;background:#FFF3DE;border:1.5px solid #F4E6CE;border-radius:14px;padding:12px 16px;}
+  .result .src a{color:#A84400;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px;}
+  .result .src.bottom{margin-top:22px;}
+  .result .by{font-size:15px;color:#6B5847;font-weight:700;margin-top:10px;}
+  .result h2.rt{font-size:clamp(24px,4vw,30px);line-height:1.2;margin-top:20px;}
+  .result .facts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px;padding:0;list-style:none;}
+  .result .facts li{margin:0;background:#FFF8EC;border:1.5px solid #F4E6CE;border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700;color:#5b4a38;}
+  .result .ing li{margin:6px 0;}
+  .result .steps li{margin:10px 0;font-weight:500;}
+  .result:focus{outline:none;}
+  .result:focus-visible{outline:3px solid #3B5A00;outline-offset:2px;}
+  .result .legal{border-top:1.5px dashed #E8D4B2;margin-top:22px;padding-top:6px;}
   </style>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "en", "description": "Links, posts and photos, together in one cookbook. One recipe on a blog, one in a reel, one on a card in the kitchen drawer: paste the link or snap a photo, and ReciPics saves it to your cookbook on your iPhone. Your collection stays together, ready when you want to cook.", "url": "https://recipics.app/recipe-saver-app.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=keeper-en&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "An app to save recipes from links, reels and cards", "item": "https://recipics.app/recipe-saver-app.html"}]}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What is a recipe saver app?", "acceptedAnswer": {"@type": "Answer", "text": "An app that holds the recipes you collect from different places; some people call it a recipe keeper. In ReciPics you add a recipe by link or by photo, and it is saved with ingredients, amounts and steps, so you can search it, change it and cook from it."}}, {"@type": "Question", "name": "Do I have to type up recipes from cards or books?", "acceptedAnswer": {"@type": "Answer", "text": "No. Take a photo of the card or the page and ReciPics reads the text. Go through the amounts afterwards, especially on handwritten cards, because AI can misread them."}}, {"@type": "Question", "name": "How do I pass a saved recipe on to a friend?", "acceptedAnswer": {"@type": "Answer", "text": "Open the recipe and share it as text or PDF. Your friend can read it without the app."}}]}]}</script>
 </head>
@@ -93,7 +117,7 @@
     <p class="lead">One recipe on a blog, one in a reel, one on a card in the kitchen drawer: paste the link or snap a photo, and ReciPics saves it to your cookbook on your iPhone. Your collection stays together, ready when you want to cook.</p>
     <div class="ctas">
       <a class="cta" id="cta-store" href="https://recipics-proxy.v-skromny.workers.dev/go/keeper-en">View on the App Store</a>
-      <a class="cta2" id="cta-tool" href="recipe-from-link.html">Try the free link tool</a>
+      <a class="cta2" id="cta-tool" href="#try-tool">Try the free link tool</a>
     </div>
     <p class="eff"><a href="rezepte-sammeln-app.html" hreflang="de">Deutsch</a></p>
     <div class="shots">
@@ -102,6 +126,41 @@
       <figure><img src="resources/import-en-recipe.jpg" width="560" height="1218" alt="ReciPics: saved recipe Fluffy Berry Pancakes with photo and ingredients" loading="lazy"><figcaption>3. Saved in your cookbook</figcaption></figure>
     </div>
     <p class="note">Real screens from the app. Examples: a recipe from our own site recipics.app and a post from our own account @recipics.</p>
+    <div class="card tool" id="try-tool">
+      <h2>Try it now: recipe from a link</h2>
+      <p>Paste a recipe link and read just the recipe. Free, no account. We don't store the link or the recipe, and this tool uses no AI. <a href="recipe-from-link.html">More about this tool</a> · <a href="privacy-page.html#section-12">Privacy</a></p>
+      <form id="wt-form" novalidate>
+        <label for="wt-url">Link of a recipe page</label>
+        <div class="urlrow">
+          <input id="wt-url" type="url" inputmode="url" placeholder="https://www.example.com/recipe" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="2048" aria-describedby="wt-hint">
+          <button type="submit" id="wt-go">Show recipe</button>
+        </div>
+        <p class="note" id="wt-hint">Paste the link of a recipe page. Works with recipe websites that publish structured recipe data; not every site does.</p>
+      </form>
+      <p class="note">The ReciPics app works differently: it reads links with AI; see <a href="privacy-page.html">Privacy</a>.</p>
+      <div aria-live="polite">
+        <p class="msg" id="wt-msg"></p>
+      </div>
+    </div>
+    <section class="card result" id="wt-result" hidden aria-labelledby="wt-title" tabindex="-1">
+      <p class="src" id="wt-src-top"></p>
+      <p class="by" id="wt-by" hidden></p>
+      <h2 class="rt" id="wt-title"></h2>
+      <ul class="facts" id="wt-facts" hidden></ul>
+      <h3 id="wt-h-ing">Ingredients</h3>
+      <ul class="ing" id="wt-ing" aria-labelledby="wt-h-ing"></ul>
+      <h3 id="wt-h-steps">Steps</h3>
+      <ol class="steps" id="wt-steps" aria-labelledby="wt-h-steps"></ol>
+      <p class="src bottom" id="wt-src-bottom"></p>
+      <a class="cta" href="https://recipics-proxy.v-skromny.workers.dev/go/webtool-en">Save it to your cookbook in ReciPics</a>
+      <p class="note">In the app, paste the same link or use Share.</p>
+      <p class="note">For iPhone with iOS 26 or later.</p>
+      <div class="legal">
+        <p class="note">This recipe belongs to its author and the website that published it. We show the recipe data the site publishes for machines, once, for your personal use. Visit the source for the full article, photos and tips.</p>
+        <p class="note">We don't store the link or the recipe. Details: <a href="privacy-page.html#section-12">Privacy Policy, section 12</a>.</p>
+        <p class="note">Not affiliated with the website shown. Website owner or author? To exclude a site or report a problem, write to <a href="mailto:hello@recipics.app">hello@recipics.app</a> (we act within 3 working days).</p>
+      </div>
+    </section>
     <div class="card">
       <h2>From wherever you found it</h2>
       <p>A food blog link, a reel, a cookbook page and grandma's handwritten card all end up in the same cookbook, with ingredients, amounts and steps laid out the same way. You paste a link or take a photo, and ReciPics does the typing.</p>
@@ -136,5 +195,28 @@
     <span class="cr">&copy; <span id="year">2026</span> ReciPics. All rights reserved. Not affiliated with or endorsed by Instagram, TikTok or Meta.</span>
   </footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+(function () {
+  var LOCALE = 'en';
+  var M = {
+    empty: 'Paste the link of a recipe page first.',
+    invalid: 'This doesn’t look like a web link. Paste the full address, for example https://www.example.com/recipe.',
+    loading: 'Looking up the recipe…',
+    busy: 'Looking up…',
+    go: 'Show recipe',
+    unsupported: 'This page doesn’t publish recipe data we can read, so we can’t show it. We don’t use other methods. Try another link.',
+    blocked: 'This website asks not to be read by tools like this one, so we can’t show it.',
+    limited: 'Daily limit reached. Please try again tomorrow, or paste the link into the ReciPics app.',
+    unavailable: 'The tool is temporarily unavailable. Please try again later.',
+    source: 'Source: ',
+    open: ': open the original recipe',
+    by: 'Recipe by ',
+    prep: 'Prep', cook: 'Cook', total: 'Total', yield: 'Makes',
+    h: 'h', min: 'min'
+  };
+  window.__WT = {LOCALE: LOCALE, M: M};
+})();
+  </script>
+  <script src="resources/webtool.js"></script>
 </body>
 </html>
