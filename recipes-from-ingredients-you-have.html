@@ -63,7 +63,8 @@
   .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
   .card ol li{margin:8px 0;}
   .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
-  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.nav-links .nav-cta{display:none;}.footer{justify-content:center;text-align:center;}}
+  @media (max-width:640px){.shots{grid-template-columns:repeat(3,1fr);gap:8px;}.shots figcaption{font-size:12px;}.nav-links a:not(.nav-cta){display:none;}.nav-links .nav-cta{display:none;}.footer{justify-content:center;text-align:center;}}
+.shots{counter-reset:s;}.shots figcaption::before{counter-increment:s;content:counter(s) ". ";}
 </style>
   <!-- jsonld-884 -->
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "en", "description": "The fridge is full, but nothing in it looks like dinner. Take a photo of the ingredients you have with ReciPics and get recipe ideas that use several of them. No photo at hand? Say what you have instead.", "url": "https://recipics.app/recipes-from-ingredients-you-have.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-ingredients-en&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Recipes from the ingredients you have", "item": "https://recipics.app/recipes-from-ingredients-you-have.html"}]}]}</script>
@@ -85,11 +86,11 @@
     <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-ingredients-en&mt=8">View on the App Store</a>
     <p class="eff"><a href="rezepte-aus-vorhandenen-zutaten.html" hreflang="de">Deutsch</a></p>
     <div class="shots">
-      <figure><img src="resources/home-recipes.jpg" width="460" height="1000" alt="ReciPics: camera pointed at an open fridge"><figcaption>1. Snap your fridge</figcaption></figure>
-      <figure><img src="resources/recipe-suggestions.jpg" width="460" height="1000" alt="ReciPics: recipe suggestions with cooking time, difficulty and estimated calories" loading="lazy"><figcaption>2. Pick a suggestion</figcaption></figure>
-      <figure><img src="resources/recipe-details.jpg" width="460" height="1000" alt="ReciPics: recipe with ingredients, amounts and servings 1x, 2x, 4x" loading="lazy"><figcaption>3. Cook the recipe</figcaption></figure>
+      <figure><img src="resources/ingredients-en-1.jpg" width="460" height="1000" alt="ReciPics: detected ingredients next to an AI-generated example fridge photo"><figcaption>Snap your fridge</figcaption></figure>
+      <figure><img src="resources/ingredients-en-2.jpg" width="460" height="1000" alt="ReciPics: recipe suggestions with cooking time, difficulty and estimated calories" loading="lazy"><figcaption>Pick a suggestion</figcaption></figure>
+      <figure><img src="resources/ingredients-en-3.jpg" width="460" height="1000" alt="ReciPics: recipe Roasted Vegetables with Chickpeas and Feta with ingredients, amounts and servings" loading="lazy"><figcaption>Cook the recipe</figcaption></figure>
     </div>
-    <p class="note">Real screens from the app. Calories and nutrition are estimates.</p>
+    <p class="note">Screens from the app with example content (test version). The fridge photo and recipe photos are AI-generated examples; in the app, suggestions come from your own photo and may differ. Calories and nutrition are estimates.</p>
     <div class="card">
       <h2>A full fridge and no idea</h2>
       <p>Half a pepper, a few eggs, a bag of spinach, some leftover rice. Looking up a recipe for each of them takes longer than the cooking. ReciPics starts from what is already in front of you and suggests what you could make with it.</p>

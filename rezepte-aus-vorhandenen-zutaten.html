@@ -63,7 +63,8 @@
   .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
   .card ol li{margin:8px 0;}
   .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
-  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.nav-links .nav-cta{display:none;}.footer{justify-content:center;text-align:center;}}
+  @media (max-width:640px){.shots{grid-template-columns:repeat(3,1fr);gap:8px;}.shots figcaption{font-size:12px;}.nav-links a:not(.nav-cta){display:none;}.nav-links .nav-cta{display:none;}.footer{justify-content:center;text-align:center;}}
+.shots{counter-reset:s;}.shots figcaption::before{counter-increment:s;content:counter(s) ". ";}
 </style>
   <!-- jsonld-884 -->
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "de", "description": "Der Kühlschrank ist voll, aber eine Idee fürs Abendessen fehlt. Fotografier mit ReciPics die Zutaten, die du da hast, und du bekommst Rezeptvorschläge, in denen mehrere davon vorkommen. Kein Foto zur Hand? Dann sag einfach, was da ist.", "url": "https://recipics.app/rezepte-aus-vorhandenen-zutaten.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-ingredients-de&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Rezepte aus vorhandenen Zutaten", "item": "https://recipics.app/rezepte-aus-vorhandenen-zutaten.html"}]}]}</script>
@@ -85,11 +86,11 @@
     <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-ingredients-de&mt=8">Im App Store ansehen</a>
     <p class="eff"><a href="recipes-from-ingredients-you-have.html" hreflang="en">English</a></p>
     <div class="shots">
-      <figure><img src="resources/home-recipes.jpg" width="460" height="1000" alt="ReciPics: Kamera auf einen offenen Kühlschrank gerichtet"><figcaption>1. Kühlschrank fotografieren</figcaption></figure>
-      <figure><img src="resources/recipe-suggestions.jpg" width="460" height="1000" alt="ReciPics: Rezeptvorschläge mit Kochzeit, Schwierigkeit und geschätzten Kalorien" loading="lazy"><figcaption>2. Vorschlag wählen</figcaption></figure>
-      <figure><img src="resources/recipe-details.jpg" width="460" height="1000" alt="ReciPics: Rezept mit Zutaten, Mengen und Portionswahl 1x, 2x, 4x" loading="lazy"><figcaption>3. Loskochen</figcaption></figure>
+      <figure><img src="resources/ingredients-de-1.jpg" width="460" height="1000" alt="ReciPics: erkannte Zutaten neben einem KI-generierten Beispielfoto aus dem Kühlschrank"><figcaption>Kühlschrank fotografieren</figcaption></figure>
+      <figure><img src="resources/ingredients-de-2.jpg" width="460" height="1000" alt="ReciPics: Rezeptvorschläge mit Kochzeit, Schwierigkeit und geschätzten Kalorien" loading="lazy"><figcaption>Vorschlag wählen</figcaption></figure>
+      <figure><img src="resources/ingredients-de-3.jpg" width="460" height="1000" alt="ReciPics: Rezept Ofengemüse mit Kichererbsen und Feta mit Zutaten, Mengen und Portionswahl" loading="lazy"><figcaption>Loskochen</figcaption></figure>
     </div>
-    <p class="note">Echte Screens aus der englischen App-Version; die App gibt es auch auf Deutsch. Kalorien und Nährwerte sind Schätzungen.</p>
+    <p class="note">Screens aus der deutschen App mit Beispielinhalten (Testversion). Kühlschrankfoto und Rezeptfotos sind KI-generierte Beispiele; in der App entstehen die Vorschläge aus deinem eigenen Foto und können abweichen. Kalorien und Nährwerte sind Schätzungen.</p>
     <div class="card">
       <h2>Voller Kühlschrank, keine Idee</h2>
       <p>Eine halbe Paprika, ein paar Eier, eine Tüte Spinat, Reis von gestern. Für jede Zutat einzeln ein Rezept zu suchen, dauert länger als das Kochen selbst. ReciPics fängt bei dem an, was schon vor dir liegt, und schlägt vor, was du daraus machen kannst.</p>
