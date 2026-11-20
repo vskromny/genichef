@@ -63,7 +63,8 @@
   .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
   .card ol li{margin:8px 0;}
   .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
-  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.nav-links .nav-cta{display:none;}.footer{justify-content:center;text-align:center;}}
+  @media (max-width:640px){.shots{grid-template-columns:repeat(3,1fr);gap:8px;}.shots figcaption{font-size:12px;}.nav-links a:not(.nav-cta){display:none;}.nav-links .nav-cta{display:none;}.footer{justify-content:center;text-align:center;}}
+.shots{counter-reset:s;}.shots figcaption::before{counter-increment:s;content:counter(s) ". ";}
 </style>
   <!-- jsonld-884 -->
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "de", "description": "Gespeicherte Rezepte hast du genug, und trotzdem stellt sich jeden Abend die Frage, was es heute gibt. In ReciPics legst du Rezepte aus deinem Kochbuch auf einen Wochenplan, Mahlzeit für Mahlzeit, und setzt die Zutaten auf deine Einkaufsliste, wenn du einkaufen gehst.", "url": "https://recipics.app/essensplaner-app.html", "installUrl": "https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&ct=web-mealplan-de&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Essensplaner mit deinen Rezepten", "item": "https://recipics.app/essensplaner-app.html"}]}]}</script>
@@ -85,11 +86,11 @@
     <a class="cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=web-mealplan-de&amp;mt=8">Im App Store ansehen</a>
     <p class="eff"><a href="meal-planner-app.html" hreflang="en">English</a></p>
     <div class="shots">
-      <figure><img src="resources/import-de-recipe.jpg" width="560" height="1218" alt="ReciPics: gespeichertes Rezept mit Zutaten, Portionswahl und Menü-Taste"><figcaption>1. Gespeichertes Rezept öffnen</figcaption></figure>
-      <figure><img src="resources/meal-planner.jpg" width="460" height="1000" alt="ReciPics-Essensplaner: eine Woche mit Zeilen für Frühstück, Mittag- und Abendessen und geplanten Rezepten" loading="lazy"><figcaption>2. Auf einen Tag legen</figcaption></figure>
-      <figure><img src="resources/grocery-list.jpg" width="460" height="1000" alt="ReciPics-Einkaufsliste mit Zutaten, Mengen und Abhak-Kreisen" loading="lazy"><figcaption>3. Mit der Liste einkaufen</figcaption></figure>
+      <figure><img src="resources/planner-de-1.jpg" width="460" height="1000" alt="ReciPics: gespeichertes Rezept Ofengemüse mit Kichererbsen und Feta mit Zutaten und Portionswahl"><figcaption>Gespeichertes Rezept öffnen</figcaption></figure>
+      <figure><img src="resources/planner-de-2.jpg" width="460" height="1000" alt="ReciPics-Essensplaner: eine Woche, das Rezept liegt auf Montag beim Abendessen" loading="lazy"><figcaption>Auf einen Tag legen</figcaption></figure>
+      <figure><img src="resources/planner-de-3.jpg" width="460" height="1000" alt="ReciPics-Einkaufsliste mit dem Abschnitt Essensplan, Zutaten, Mengen und Abhak-Kreisen" loading="lazy"><figcaption>Mit der Liste einkaufen</figcaption></figure>
     </div>
-    <p class="note">Echte Screens aus der App. Das Rezept zeigt die deutsche App-Version (Beispielrezept von unserer eigenen Seite recipics.app); Essensplaner und Einkaufsliste stammen aus der englischen App-Version, die App gibt es auch auf Deutsch.</p>
+    <p class="note">Screens aus der deutschen ReciPics-App mit Beispielinhalten (Testversion). Rezept, Rezeptfoto (KI-generiert), Wochenplan und Einkaufsliste dienen nur als Beispiel.</p>
     <div class="card">
       <h2>Der Wochenplan fürs Essen auf einen Blick</h2>
       <p>Im Tab „Essensplaner“ siehst du eine Woche als Raster: die Tage nebeneinander, die Mahlzeiten untereinander. Mit den Pfeilen wechselst du die Woche, und ein Tipp auf ein leeres Feld plant diese Mahlzeit.</p>
