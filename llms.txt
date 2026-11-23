@@ -23,6 +23,11 @@
 - [Meal planner app: plan the week from your saved recipes – ReciPics](https://recipics.app/meal-planner-app.html): Plan breakfast, lunch and dinner for the week with recipes from your ReciPics cookbook. Repeat meals daily or weekly, add the ingredients to your grocery list and share the plan as a PDF. For iPhone.
 - [ReciMe alternative for iPhone: ReciPics vs ReciMe (2026) – ReciPics](https://recipics.app/recime-alternative.html): ReciPics vs ReciMe: devices, prices, recipe import and grocery list. ReciPics runs on iPhone with iOS 26+; ReciMe also on iPad, Mac, Android and the web.
 - [Paprika alternative for iPhone: ReciPics vs Paprika (2026) – ReciPics](https://recipics.app/paprika-alternative.html): ReciPics vs Paprika 4: devices, prices, recipe import and cook mode. ReciPics runs on iPhone with iOS 26+; Paprika also on iPad, Mac, Android and Windows.
+- [Recipe video to recipe card: how to save a spoken recipe – ReciPics](https://recipics.app/recipe-from-video.html): Recipe only spoken in a TikTok or Instagram video, not written in the caption? Paste the link into ReciPics; it tries the video for videos up to 2 minutes. Check the amounts. For iPhone.
+- [Screenshot to recipe: turn recipe screenshots into your cookbook – ReciPics](https://recipics.app/screenshot-to-recipe.html): Recipe screenshots piling up in your photos? Pick one in ReciPics and it reads the text into a recipe with ingredients and steps you can edit. One screenshot per scan. For iPhone.
+- [How to save a recipe on iPhone with the Share button – ReciPics](https://recipics.app/save-recipe-on-iphone.html): Save a recipe on your iPhone from Safari, TikTok or Instagram: tap Share, choose ReciPics, tap Import. The recipe lands in your cookbook with ingredients and steps. For iPhone.
+- [Grocery list from a TikTok or Instagram recipe – ReciPics](https://recipics.app/grocery-list-from-tiktok-recipe.html): Turn a recipe from a TikTok or Instagram post into a grocery list: import the link into ReciPics, then add the ingredients to your list with one tap. For iPhone.
+- [Make a printable recipe card from your recipes – ReciPics](https://recipics.app/printable-recipe-card.html): Make a printable recipe card on iPhone: save the recipe in ReciPics from a link, photo or screenshot, then share it as a PDF or print it. One recipe per PDF. For iPhone.
 
 ## Anleitungen (Deutsch)
 
@@ -49,3 +54,8 @@
 - [Datenschutzerklärung](https://recipics.app/privacy-page-de.html)
 - [Terms](https://recipics.app/terms-page.html)
 - [Contact](https://recipics.app/contact-page.html)
+- [Rezept aus Video: gesprochenes Rezept als Rezeptkarte speichern – ReciPics](https://recipics.app/rezept-aus-video.html): Rezept nur im TikTok- oder Instagram-Video gesprochen, nicht in der Bildunterschrift? Link in ReciPics einfügen; die App versucht es bei Videos bis 2 Minuten mit dem Video. Mengen prüfen. Für iPhone.
+- [Rezept aus Screenshot: Rezept-Screenshots ins Kochbuch übernehmen – ReciPics](https://recipics.app/rezept-aus-screenshot.html): Rezept-Screenshots stapeln sich in deinen Fotos? Wähl einen in ReciPics aus, und die App macht aus dem Text ein Rezept mit Zutaten und Schritten zum Bearbeiten. Ein Screenshot pro Scan. Für iPhone.
+- [Rezept auf dem iPhone speichern: über den Teilen-Button – ReciPics](https://recipics.app/rezept-auf-iphone-speichern.html): Rezept auf dem iPhone speichern, direkt aus Safari, TikTok oder Instagram: auf Teilen tippen, ReciPics wählen, Importieren. Zutaten und Schritte landen in deinem Kochbuch. Für iPhone.
+- [Einkaufsliste aus einem TikTok- oder Instagram-Rezept – ReciPics](https://recipics.app/einkaufsliste-aus-tiktok-rezept.html): Aus einem Rezept in einem TikTok- oder Instagram-Beitrag wird deine Einkaufsliste: Link in ReciPics importieren, Zutaten mit einem Tipp auf die Liste setzen. Für iPhone.
+- [Rezeptkarte erstellen und drucken, auf dem iPhone – ReciPics](https://recipics.app/rezeptkarte-erstellen.html): Rezeptkarte erstellen auf dem iPhone: Rezept per Link, Foto oder Screenshot in ReciPics speichern, dann als PDF teilen oder drucken. Ein Rezept pro PDF. Für iPhone.

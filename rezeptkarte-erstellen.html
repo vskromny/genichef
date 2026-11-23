@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-itunes-app" content="app-id=6740248018">
+  <title>Rezeptkarte erstellen und drucken, auf dem iPhone – ReciPics</title>
+  <meta name="description" content="Rezeptkarte erstellen auf dem iPhone: Rezept per Link, Foto oder Screenshot in ReciPics speichern, dann als PDF teilen oder drucken. Ein Rezept pro PDF. Für iPhone.">
+  <link rel="canonical" href="https://recipics.app/rezeptkarte-erstellen.html">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/rezeptkarte-erstellen.html">
+  <link rel="alternate" hreflang="en" href="https://recipics.app/printable-recipe-card.html">
+  <link rel="alternate" hreflang="x-default" href="https://recipics.app/printable-recipe-card.html">
+  <meta property="og:title" content="Rezeptkarte erstellen und drucken, auf dem iPhone – ReciPics">
+  <meta property="og:description" content="Rezeptkarte erstellen auf dem iPhone: Rezept per Link, Foto oder Screenshot in ReciPics speichern, dann als PDF teilen oder drucken. Ein Rezept pro PDF. Für iPhone.">
+  <meta property="og:image" content="https://recipics.app/resources/og/og-book-de.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://recipics.app/resources/og/og-book-de.jpg">
+  <meta property="og:url" content="https://recipics.app/rezeptkarte-erstellen.html">
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;line-height:1.6;}
+  body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.55;pointer-events:none;z-index:0;}
+  body::after{content:'';position:absolute;top:0;left:0;right:0;height:520px;background:radial-gradient(820px 420px at 85% -10%,rgba(255,176,46,.30),transparent 60%),radial-gradient(680px 420px at -8% 20%,rgba(124,150,40,.14),transparent 55%);pointer-events:none;z-index:0;}
+  a{color:inherit;}
+  .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px -16px rgba(80,50,10,.28);}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .brand img{width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);}
+  .brand span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;}
+  .nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;}
+  .nav-links a{text-decoration:none;color:inherit;}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#2A1E12 !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
+  .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
+  .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .eff{color:#8a7860;font-weight:700;margin-top:8px;}
+  .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
+  .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
+  .card h2:first-child{margin-top:0;}
+  .card p{color:#5b4a38;margin:10px 0;font-weight:500;}
+  .card ul{margin:10px 0 10px 22px;color:#5b4a38;font-weight:500;}
+  .card li{margin:7px 0;}
+  .card a{color:#B04A00;font-weight:700;text-decoration:none;}
+  .back{display:inline-flex;align-items:center;gap:9px;margin-top:30px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;padding:14px 26px;border-radius:14px;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 16px 30px -12px rgba(214,103,0,.7);}
+  .footer{position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1100px;margin:48px auto 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+  .footer .fb{display:flex;align-items:center;gap:11px;}
+  .footer .fb img{width:38px;height:38px;border-radius:11px;}
+  .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
+  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav a{text-decoration:none;color:inherit;}
+  .footer .cr{color:#6F604C;font-size:14px;font-weight:600;}
+  .lead{font-size:19px;color:#4a3a2a;font-weight:600;margin-top:14px;}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px;}
+  .shots figure{margin:0;}
+  .shots img{width:100%;height:auto;border-radius:22px;border:1.5px solid #F4E6CE;box-shadow:0 14px 30px -18px rgba(80,50,10,.45);display:block;}
+  .shots figcaption{font-size:14px;color:#6B5847;font-weight:700;margin-top:8px;text-align:center;}
+  .note{font-size:14px;color:#8a7860;font-weight:600;margin-top:10px;}
+  .card ol{margin:10px 0 10px 22px;color:#5b4a38;font-weight:600;}
+  .card ol li{margin:8px 0;}
+  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12 !important;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);}
+  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr;}.shots figure:last-child{display:none;}.nav-links a:not(.nav-cta){display:none;}.nav-links .nav-cta{display:none;}.footer{justify-content:center;text-align:center;}}
+</style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "ReciPics", "operatingSystem": "iOS", "applicationCategory": "LifestyleApplication", "inLanguage": "de", "description": "Du willst ein Rezept auf Papier für die Küche oder als Datei zum Weiterschicken? Hol es per Link, Foto oder Screenshot in ReciPics, bring es in Form und teile es als PDF oder druck es direkt vom iPhone aus.", "url": "https://recipics.app/rezeptkarte-erstellen.html", "installUrl": "https://apps.apple.com/app/id6740248018?pt=10114007&ct=web-howto-card-de&mt=8", "image": "https://recipics.app/resources/appIcon.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ReciPics", "item": "https://recipics.app/"}, {"@type": "ListItem", "position": 2, "name": "Rezeptkarte erstellen und drucken", "item": "https://recipics.app/rezeptkarte-erstellen.html"}]}]}</script>
+</head>
+<body>
+  <div class="nav">
+    <a class="brand" href="index.html"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></a>
+    <div class="nav-links">
+      <a href="index.html#how">So funktioniert's</a>
+      <a href="index.html#features">Funktionen</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/id6740248018?pt=10114007&amp;ct=web-howto-card-de&amp;mt=8">ReciPics laden</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <span class="kicker">Anleitung: Rezeptkarte als PDF</span>
+    <h1>Rezeptkarte erstellen und drucken</h1>
+    <p class="lead">Du willst ein Rezept auf Papier für die Küche oder als Datei zum Weiterschicken? Hol es per Link, Foto oder Screenshot in ReciPics, bring es in Form und teile es als PDF oder druck es direkt vom iPhone aus.</p>
+    <a class="cta" href="https://apps.apple.com/app/id6740248018?pt=10114007&amp;ct=web-howto-card-de&amp;mt=8">Im App Store ansehen</a>
+    <p class="eff"><a href="printable-recipe-card.html" hreflang="en">English</a></p>
+    <div class="card">
+<h2>Schritt für Schritt</h2>
+      <ol><li>Hol das Rezept in ReciPics: Tippe auf „Link einfügen“ für eine Website oder einen TikTok- oder Instagram-Beitrag, oder nimm ein Foto oder einen <a href="rezept-aus-screenshot.html">Screenshot</a> des Rezepts.</li><li>Öffne das Rezept und prüfe es. Über „Rezept bearbeiten“ im Menü (···) korrigierst du Mengen, änderst den Namen oder kürzt die Schritte.</li><li>Wähl im selben Menü „Als PDF teilen“, um die Karte an Nachrichten, Mail oder Dateien zu schicken, oder „Drucken“ für einen AirPrint-Drucker.</li></ol>
+      <h2>Was auf der Karte steht</h2>
+      <ul><li>Der Titel, das Foto, falls das Rezept eins hat, und einige Angaben wie Küche und Schwierigkeit.</li><li>Die Zutatenliste und die Schritte, so wie sie gerade in der App stehen, inklusive deiner Änderungen.</li><li>Eine kurze Fußzeile „Geteilt mit ReciPics“ mit einem Link zur App.</li></ul>
+      <h2>Grenzen</h2>
+      <ul><li>Ein Rezept pro PDF. Einen Export als Kochbuch oder Heft gibt es nicht.</li><li>Das PDF hat das Format US Letter. Auf A4-Papier wählst du im Druckdialog eine Option zum Anpassen an die Seite, falls die Ränder abgeschnitten werden.</li><li>Es gibt keine Vorlagen, Schriften oder Karteikarten-Formate zur Auswahl. Brauchst du ein anderes Layout, gibt dir „Als Text teilen“ das Rezept als Text für deine eigene Gestaltung.</li><li>Lange Rezepte laufen auf eine zweite Seite.</li></ul>
+      <p>Ein Rezept per Link zu holen, ist ein Link-Import. Neue Installationen ohne bezahltes Paket haben 5 kostenlose Link-Importe pro Kalendermonat. Es zählen nur Importe, die klappen, und das Import-Fenster zeigt dir, wie viele noch übrig sind. Jeder Foto-Scan nutzt das KI-Kontingent der App, das ohne Premium begrenzt ist.</p>
+      <p>ReciPics liest Rezepte mit KI, und KI kann sich irren. Vergleiche das Rezept vor dem Kochen mit dem Original, vor allem Mengen und Temperaturen, und prüfe Zutaten bei Allergien oder Unverträglichkeiten selbst.</p>
+      <p>Du sammelst Familienrezepte? <a href="rezeptbuch-app.html">Rezeptbuch-App</a> · <a href="handgeschriebene-rezepte-digitalisieren.html">Handgeschriebene Rezepte digitalisieren</a></p>
+      <p class="note">Nicht mit TikTok oder Instagram verbunden. ReciPics wird von TikTok, Instagram, Meta oder ByteDance weder unterstützt noch gesponsert; die Namen beschreiben nur, welche Links die App lesen kann. Rezepte, Bildunterschriften, Videos und Bilder gehören ihren Urhebern. Nutze ReciPics nur für dein privates Kochbuch und veröffentliche importierte Inhalte nicht weiter.</p>
+      <p class="note">Rezepte aus Kochbüchern, von Websites und aus Beiträgen sind meist urheberrechtlich geschützt. Druck und teile Karten nur für den privaten Gebrauch, außer du hast das Recht, sie weiterzugeben.</p>
+      <a class="cta" href="https://apps.apple.com/app/id6740248018?pt=10114007&amp;ct=web-howto-card-de&amp;mt=8">ReciPics im App Store laden</a>
+      <p class="note">Für iPhone mit iOS 26 oder neuer.</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
+    <nav><a href="privacy-page-de.html">Datenschutz</a><a href="terms-page.html">AGB</a><a href="contact-page.html">Kontakt</a><a href="impressum.html">Impressum</a></nav>
+    <span class="cr">&copy; <span id="year">2026</span> ReciPics. Alle Rechte vorbehalten. Nicht mit TikTok oder Meta verbunden und nicht von ihnen unterstützt.</span>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<img src="https://recipics-pv.v-skromny.workers.dev/pv?p=rezeptkarte-erstellen" width="1" height="1" alt="" referrerpolicy="no-referrer" style="position:absolute;left:-9999px">
+</body>
+</html>
