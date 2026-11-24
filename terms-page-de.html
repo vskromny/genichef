@@ -29,7 +29,7 @@
   .nav-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#2A1E12 !important;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);text-decoration:none;}
   .wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:138px clamp(20px,5vw,24px) 40px;}
   .kicker{font-family:'Caveat',cursive;font-weight:700;font-size:26px;color:#3B5A00;}
-  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;}
+  .wrap h1{font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(36px,6vw,52px);line-height:1.08;margin-top:2px;hyphens:auto;overflow-wrap:anywhere;}
   .eff{color:#8a7860;font-weight:700;margin-top:8px;}
   .card{background:#fff;border:1.5px solid #F4E6CE;border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 18px 40px -24px rgba(80,50,10,.4);margin-top:26px;}
   .card h2{font-family:'Shantell Sans',cursive;font-weight:700;font-size:23px;color:#2A1E12;margin:30px 0 8px;}
@@ -43,7 +43,7 @@
   .footer .fb{display:flex;align-items:center;gap:11px;}
   .footer .fb img{width:38px;height:38px;border-radius:11px;}
   .footer .fb span{font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;}
-  .footer nav{display:flex;gap:26px;font-weight:700;color:#6B5847;font-size:15px;}
+  .footer nav{display:flex;flex-wrap:wrap;gap:10px 26px;font-weight:700;color:#6B5847;font-size:15px;}
   .footer nav a{text-decoration:none;color:inherit;}
   .footer .cr{color:#6F604C;font-size:14px;font-weight:600;}
   /* contact form */
@@ -86,7 +86,7 @@
       <h2>2. Verantwortung der Nutzerinnen und Nutzer</h2>
       <ul><li>Die Zubereitung und der Verzehr von Rezepten aus ReciPics erfolgen vollständig auf Ihr eigenes Risiko.</li><li>ReciPics übernimmt keine Gewähr für die Richtigkeit, Vollständigkeit oder Sicherheit eines Rezepts.</li><li>Sie tragen die volle Verantwortung für alle nachteiligen Folgen, Verletzungen oder Schäden, die sich aus der Zubereitung oder dem Verzehr eines von der App erzeugten Rezepts ergeben.</li></ul>
       <h2>3. Haftungsbeschränkung</h2>
-      <p>ReciPics, seine Entwickler, verbundenen Unternehmen und Partner haften nicht für unmittelbare, mittelbare, beiläufig entstandene oder Folgeschäden, die sich aus Ihrer Nutzung der App ergeben, insbesondere, aber nicht ausschließlich für:</p>
+      <p>ReciPics, seine Entwickler, verbundenen Unternehmen und Partner haften nicht für unmittelbare, mittelbare, Neben- oder Folgeschäden, die sich aus Ihrer Nutzung der App ergeben, insbesondere, aber nicht ausschließlich für:</p>
       <ul><li>Falsche oder unsichere Zubereitung von Rezepten</li><li>Allergische Reaktionen oder Lebensmittelvergiftungen</li><li>Nichteinhaltung von Ernährungseinschränkungen</li><li>Sonstige gesundheitliche Probleme</li></ul>
       <h2>4. Personenbezogene Daten und Datenschutz</h2>
       <p>ReciPics respektiert Ihre Privatsphäre. Personenbezogene Daten werden ausschließlich gemäß unserer Datenschutzerklärung verarbeitet. Wir verkaufen keine von Nutzerinnen und Nutzern erstellten Bilder oder Spracheingaben und geben sie nur an die in unserer Datenschutzerklärung genannten Dienstleister weiter.</p>
@@ -101,7 +101,7 @@
   </div>
   <footer class="footer">
     <div class="fb"><img src="resources/appIcon.png" alt="ReciPics"><span>ReciPics</span></div>
-    <nav><a href="privacy-page-de.html">Datenschutz</a><a href="terms-page-de.html">AGB</a><a href="contact-page-de.html">Kontakt</a><a href="impressum-de.html">Impressum</a></nav>
+    <nav><a href="privacy-page-de.html">Datenschutz</a><a href="terms-page-de.html">Nutzungsbedingungen</a><a href="contact-page-de.html">Kontakt</a><a href="impressum-de.html">Impressum</a></nav>
     <span class="cr">&copy; <span id="year">2026</span> ReciPics. Alle Rechte vorbehalten. Nicht mit TikTok oder Meta verbunden und nicht von ihnen unterstützt.</span>
   </footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
