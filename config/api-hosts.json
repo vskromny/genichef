@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "openai": "https://recipics-proxy.v-skromny.workers.dev/",
+  "import": "https://recipics-proxy.v-skromny.workers.dev/"
+}
