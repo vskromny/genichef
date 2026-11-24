@@ -52,6 +52,7 @@
   h3,h4{hyphens:auto;overflow-wrap:anywhere;}
   /* desktop: &shy; is for narrow screens only; !important beats inline hyphens:manual. .shy-ok = word wider than its card even at 1440; 1024 not 641: feature cards are too narrow on tablets */
   @media (min-width:1024px){h1,h2,h3:not(.shy-ok),h4{-webkit-hyphens:none!important;hyphens:none!important;}}
+  @media (min-width:1024px){.nw-lg{white-space:nowrap}}
 </style>
 </head>
 <body>
@@ -176,7 +177,7 @@
         </div>
         <div style="background:#fff;border-radius:22px;padding:26px;box-shadow:0 16px 36px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;">
           <div style="width:58px;height:58px;border-radius:16px;background:#EEF3DC;display:flex;align-items:center;justify-content:center;font-size:27px;margin-bottom:14px;">&#9851;</div>
-          <h3 class="shy-ok" style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:22px;-webkit-hyphens:manual;hyphens:manual;">Weniger Lebensmittel&shy;ver&shy;schwen&shy;dung</h3>
+          <h3 class="shy-ok" style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:22px;-webkit-hyphens:manual;hyphens:manual;">Weniger Lebensmittel&shy;<span class="nw-lg">ver&shy;schwen&shy;dung</span></h3>
           <p style="color:#6B5847;font-weight:500;margin-top:6px;line-height:1.5;">Verbrauche, was du hast, bevor es schlecht wird.</p>
         </div>
         <div style="background:#fff;border-radius:22px;padding:26px;box-shadow:0 16px 36px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;">
