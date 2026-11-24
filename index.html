@@ -44,10 +44,11 @@
     #top>div:last-child{min-height:auto!important;margin-top:8px;}
     .g-stack{grid-template-columns:1fr!important;}
     .g-half,[data-panel]{grid-template-columns:repeat(2,1fr)!important;}
-    .navlink{display:none!important;}
     .hero-doodle{display:none!important;}
     [data-nav]{padding:12px 18px!important;}
   }
+/* 860 not 760: on tablets the DE section links wrap and touch the logo (row 1472) */
+@media (max-width:860px){.navlink{display:none!important;}}
 @media (max-width:640px){.nav-cta{display:none!important;}}
 </style>
 </head>
