@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-itunes-app" content="app-id=6740248018">
+  <title>ReciPics – Rezepte von TikTok, Instagram und aus dem Web speichern</title>
+  <meta name="description" content="Speichere Rezepte von TikTok, Instagram und Rezept-Websites in einem Kochbuch auf deinem iPhone (Ergebnisse können variieren). Oder fotografiere eine Rezeptkarte, eine Kochbuchseite oder deine Zutaten.">
+  <link rel="canonical" href="https://recipics.app/index-de.html">
+  <link rel="alternate" hreflang="x-default" href="https://recipics.app/">
+  <link rel="alternate" hreflang="en" href="https://recipics.app/">
+  <link rel="alternate" hreflang="de" href="https://recipics.app/index-de.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ReciPics">
+  <meta property="og:url" content="https://recipics.app/index-de.html">
+  <meta property="og:title" content="ReciPics – Rezepte von TikTok, Instagram und aus dem Web speichern">
+  <meta property="og:description" content="Speichere Rezepte von TikTok, Instagram und Rezept-Websites in einem Kochbuch auf deinem iPhone (Ergebnisse können variieren). Oder fotografiere eine Rezeptkarte, eine Kochbuchseite oder deine Zutaten.">
+  <meta property="og:image" content="https://recipics.app/resources/og/og-home.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ReciPics – Rezepte von TikTok, Instagram und aus dem Web speichern">
+  <meta name="twitter:description" content="Speichere Rezepte von TikTok, Instagram und Rezept-Websites in einem Kochbuch auf deinem iPhone (Ergebnisse können variieren). Oder fotografiere eine Rezeptkarte, eine Kochbuchseite oder deine Zutaten.">
+  <meta name="twitter:image" content="https://recipics.app/resources/og/og-home.jpg">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"ReciPics","description":"Speichere Rezepte von TikTok, Instagram und Rezept-Websites in einem Kochbuch auf deinem iPhone (Ergebnisse können variieren). Oder fotografiere eine Rezeptkarte, eine Kochbuchseite oder deine Zutaten.","applicationCategory":"LifestyleApplication","operatingSystem":"iOS","inLanguage":"de","url":"https://recipics.app/index-de.html","installUrl":"https://apps.apple.com/app/id6740248018","image":"https://recipics.app/resources/appIcon.png"}
+  </script>
+  <link rel="icon" href="resources/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="resources/favicon.png">
+  <link href="fonts/fonts.css" rel="stylesheet">
+  <style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Nunito',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#FFF8EC;color:#2A1E12;overflow-x:hidden;}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+  @keyframes bobS{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-12px) rotate(-3deg)}}
+  @keyframes bobR{0%,100%{transform:translateY(0) rotate(7deg)}50%{transform:translateY(-13px) rotate(4deg)}}
+  @keyframes shimmer{0%{transform:translateX(-130%) rotate(20deg)}100%{transform:translateX(240%) rotate(20deg)}}
+  @keyframes panGrad{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+  @keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(255,122,0,.45)}70%{box-shadow:0 0 0 16px rgba(255,122,0,0)}100%{box-shadow:0 0 0 0 rgba(255,122,0,0)}}
+  @keyframes wiggle{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+  @media (max-width:760px){
+    #top{grid-template-columns:1fr!important;padding-top:104px!important;}
+    #top>div:last-child{min-height:auto!important;margin-top:8px;}
+    .g-stack{grid-template-columns:1fr!important;}
+    .g-half,[data-panel]{grid-template-columns:repeat(2,1fr)!important;}
+    .navlink{display:none!important;}
+    .hero-doodle{display:none!important;}
+    [data-nav]{padding:12px 18px!important;}
+  }
+@media (max-width:640px){.nav-cta{display:none!important;}}
+</style>
+</head>
+<body>
+<div id="rp" style="position:relative;width:100%;overflow:hidden;background:#FFF8EC;">
+  <div style="position:fixed;inset:0;background-image:radial-gradient(rgba(180,130,60,.13) 1.4px,transparent 1.4px);background-size:28px 28px;opacity:.6;pointer-events:none;z-index:0;"></div>
+  <div style="position:absolute;top:0;left:0;right:0;height:900px;background:radial-gradient(900px 520px at 82% -6%,rgba(255,176,46,.32),transparent 60%),radial-gradient(760px 520px at -6% 26%,rgba(124,150,40,.16),transparent 55%);pointer-events:none;z-index:0;"></div>
+
+  <!-- NAV -->
+  <div data-nav style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,60px);background:rgba(255,248,236,.6);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:background .3s ease,box-shadow .3s ease;">
+    <a href="#top" style="text-decoration:none;display:flex;align-items:center;gap:11px;">
+      <img width="256" height="256" src="resources/appIcon.png" alt="ReciPics" style="width:42px;height:42px;border-radius:12px;box-shadow:0 8px 18px -6px rgba(214,103,0,.5);">
+      <span style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:24px;color:#2A1E12;">ReciPics</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:clamp(14px,2.4vw,30px);font-weight:700;font-size:16px;color:#5b4a38;">
+      <a href="#how" class="navlink" style="text-decoration:none;color:inherit;">So funktioniert's</a>
+      <a href="#features" class="navlink" style="text-decoration:none;color:inherit;">Funktionen</a>
+      <a href="#plan" class="navlink" style="text-decoration:none;color:inherit;">Planen &amp; einkaufen</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=web-home&amp;mt=8" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF8C1A,#FF7A00);color:#2A1E12;padding:11px 22px;border-radius:999px;font-weight:800;box-shadow:0 10px 22px -8px rgba(214,103,0,.7);">ReciPics laden</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div id="top" data-hero style="position:relative;z-index:1;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;padding:130px clamp(20px,5vw,40px) 60px;">
+    <div>
+      <div style="display:inline-flex;align-items:center;gap:9px;background:#FFFFFF;border:2px dashed #F0B870;color:#B04A00;font-weight:800;font-size:14px;padding:8px 16px;border-radius:999px;transform:rotate(-1.5deg);box-shadow:0 6px 16px -10px rgba(214,103,0,.6);">
+        <span style="width:9px;height:9px;border-radius:50%;background:#FF7A00;display:inline-block;animation:pulseRing 2.2s infinite;"></span>
+        KI-Koch für die Hosentasche
+      </div>
+      <h1 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(40px,6vw,64px);line-height:1.05;margin:22px 0 0;letter-spacing:-.5px;">
+        Fotografier den Kühlschrank,<br>koch etwas
+        <span style="position:relative;white-space:nowrap;color:#E86A00;">Großartiges
+          <span style="position:absolute;left:-4px;right:-4px;bottom:6px;height:16px;background:linear-gradient(90deg,#B4D157,#7C9628);z-index:-1;border-radius:8px;transform:rotate(-1deg);"></span>
+        </span>.
+      </h1>
+      <p style="font-size:clamp(17px,2vw,20px);line-height:1.5;color:#6B5847;margin:22px 0 0;max-width:470px;font-weight:500;">
+        Richte die Kamera auf das, was du da hast. ReciPics erkennt deine Zutaten und schlägt Rezepte vor, damit das Abendessen mit dem beginnt, was schon in deinem Kühlschrank liegt.
+      </p>
+      <div style="display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;align-items:center;">
+        <a data-hero-store href="https://recipics-proxy.v-skromny.workers.dev/go/a" style="position:relative;overflow:hidden;text-decoration:none;display:inline-flex;align-items:center;gap:11px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;padding:16px 30px;border-radius:16px;font-weight:800;font-size:18px;box-shadow:0 16px 32px -12px rgba(214,103,0,.8);">
+          <span style="font-size:24px;">&#63743;</span>
+          <span style="display:flex;flex-direction:column;line-height:1.05;text-align:left;"><span style="font-size:11px;font-weight:600;opacity:.9;">Laden im</span>App Store</span>
+          <span style="position:absolute;top:0;left:0;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);animation:shimmer 4.5s infinite;"></span>
+        </a>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:30px;flex-wrap:wrap;">
+        <span style="background:#fff;border:1.5px solid #F2E0C4;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;display:inline-flex;align-items:center;gap:7px;"><span style="font-size:16px;">&#128247;</span>Foto zu Rezept</span>
+        <span style="background:#fff;border:1.5px solid #F2E0C4;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;display:inline-flex;align-items:center;gap:7px;"><span style="font-size:16px;">&#129529;</span>Mahlzeit konfigurieren</span>
+        <span style="background:#fff;border:1.5px solid #F2E0C4;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;display:inline-flex;align-items:center;gap:7px;"><span style="font-size:16px;">&#10024;</span>KI-Empfehlungen</span>
+      </div>
+    </div>
+
+    <div style="position:relative;display:flex;justify-content:center;align-items:center;min-height:580px;">
+      <span data-par="0.05" style="position:absolute;top:24px;right:0;z-index:4;"><span style="display:block;width:104px;height:104px;border-radius:50%;overflow:hidden;border:5px solid #fff;box-shadow:0 16px 30px -12px rgba(80,50,10,.5);animation:bobR 6s ease-in-out infinite;"><img alt="" width="320" height="320" src="resources/hero-dish-pasta.jpg" style="width:100%;height:100%;object-fit:cover;"></span></span>
+      <span data-par="0.09" style="position:absolute;bottom:54px;left:-8px;z-index:4;"><span style="display:block;width:112px;height:112px;border-radius:50%;overflow:hidden;border:5px solid #fff;box-shadow:0 16px 30px -12px rgba(80,50,10,.5);animation:bobS 7s ease-in-out infinite;"><img alt="" width="336" height="336" src="resources/hero-dish-veg.jpg" style="width:100%;height:100%;object-fit:cover;"></span></span>
+      <span data-par="0.04" class="hero-doodle" style="position:absolute;top:-6px;left:36px;font-family:'Caveat',cursive;font-weight:700;font-size:30px;color:#3B5A00;transform:rotate(-8deg);">knips es! &#8600;</span>
+
+      <div data-tilt style="position:relative;z-index:3;transition:transform .25s ease;transform-style:preserve-3d;">
+        <div style="position:relative;width:clamp(260px,30vw,300px);aspect-ratio:9/19.5;background:#15110c;border-radius:46px;padding:11px;box-shadow:0 40px 70px -20px rgba(214,103,0,.55),0 0 0 2px rgba(0,0,0,.06);animation:bob 8s ease-in-out infinite;">
+          <div style="position:absolute;top:20px;left:50%;transform:translateX(-50%);width:96px;height:28px;background:#000;border-radius:20px;z-index:5;"></div>
+          <img alt="ReciPics: erkannte Zutaten neben einem KI-generierten Beispielfoto aus dem Kühlschrank" width="460" height="1000" src="resources/ingredients-de-1.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:36px;display:block;">
+        </div>
+      </div>
+
+      <div data-par="0.07" style="position:absolute;bottom:0;right:6px;z-index:5;"><div style="background:#fff;border-radius:18px;padding:13px 16px;box-shadow:0 18px 34px -14px rgba(80,50,10,.45);display:flex;align-items:center;gap:11px;transform:rotate(3deg);">
+        <span style="width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,#FFB02E,#FF7A00);display:flex;align-items:center;justify-content:center;font-size:19px;">&#10024;</span>
+        <div style="line-height:1.15;"><div style="font-weight:800;font-size:14px;">Rezept gefunden!</div><div style="font-size:12px;color:#6B5847;">Ofengemüse · 35 Min.</div></div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div id="how" style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:40px clamp(20px,5vw,40px) 70px;">
+    <div data-reveal style="text-align:center;margin-bottom:34px;">
+      <span style="font-family:'Caveat',cursive;font-weight:700;font-size:27px;color:#3B5A00;">drei einfache Schritte</span>
+      <h2 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(32px,4.5vw,44px);margin-top:2px;">So funktioniert ReciPics</h2>
+    </div>
+    <div data-reveal class="g-stack" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div style="position:relative;background:#fff;border-radius:24px;padding:28px;box-shadow:0 18px 40px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;transform:rotate(-1deg);">
+        <span style="position:absolute;top:-13px;left:24px;background:linear-gradient(135deg,#FFD37A,#FFB02E);color:#5b3b00;font-weight:800;padding:5px 14px;border-radius:6px;transform:rotate(-7deg);box-shadow:0 6px 12px -6px rgba(0,0,0,.3);font-size:13px;">SCHRITT 1</span>
+        <div style="width:66px;height:66px;border-radius:18px;background:#FFF1DC;display:flex;align-items:center;justify-content:center;font-size:32px;margin:16px 0 16px;">&#128247;</div>
+        <h3 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:24px;">Foto machen</h3>
+        <p style="color:#6B5847;font-weight:500;margin-top:8px;line-height:1.5;">Kühlschrank auf, Kamera drauf: Fotografiere einfach, was du gerade da hast.</p>
+      </div>
+      <div style="position:relative;background:#fff;border-radius:24px;padding:28px;box-shadow:0 18px 40px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;transform:rotate(1deg);">
+        <span style="position:absolute;top:-13px;left:24px;background:linear-gradient(135deg,#A7C24B,#7C9628);color:#1f3000;font-weight:800;padding:5px 14px;border-radius:6px;transform:rotate(5deg);box-shadow:0 6px 12px -6px rgba(0,0,0,.3);font-size:13px;">SCHRITT 2</span>
+        <div style="width:66px;height:66px;border-radius:18px;background:#EEF3DC;display:flex;align-items:center;justify-content:center;font-size:32px;margin:16px 0 16px;">&#129504;</div>
+        <h3 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:24px;">Die KI kocht los</h3>
+        <p style="color:#6B5847;font-weight:500;margin-top:8px;line-height:1.5;">Unser Koch liest deine Zutaten und denkt sich Rezepte nach deinem Geschmack aus.</p>
+      </div>
+      <div style="position:relative;background:#fff;border-radius:24px;padding:28px;box-shadow:0 18px 40px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;transform:rotate(-1deg);">
+        <span style="position:absolute;top:-13px;left:24px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;font-weight:800;padding:5px 14px;border-radius:6px;transform:rotate(-4deg);box-shadow:0 6px 12px -6px rgba(0,0,0,.3);font-size:13px;">SCHRITT 3</span>
+        <div style="width:66px;height:66px;border-radius:18px;background:#FFE7D2;display:flex;align-items:center;justify-content:center;font-size:32px;margin:16px 0 16px;">&#127859;</div>
+        <h3 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:24px;">Loskochen</h3>
+        <p style="color:#6B5847;font-weight:500;margin-top:8px;line-height:1.5;">Folge klaren Schritt-für-Schritt-Anleitungen mit Zeitangaben und Nährwerten.</p>
+      </div>
+    </div>
+    <p data-reveal style="text-align:center;margin-top:28px;font-weight:700;font-size:17px;"><a href="rezepte-aus-vorhandenen-zutaten.html" style="color:#B04A00;text-decoration:none;display:inline-block;padding:10px 0;">Was kann ich mit dem kochen, was ich da habe? &rarr;</a></p>
+  </div>
+
+  <!-- FEATURES -->
+  <div id="features" style="position:relative;z-index:1;background:linear-gradient(180deg,rgba(255,241,220,0),rgba(255,237,210,.8));padding:64px 0;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,40px);">
+      <div data-reveal style="text-align:center;margin-bottom:36px;">
+        <span style="font-family:'Caveat',cursive;font-weight:700;font-size:27px;color:#3B5A00;">eine Küche voller Köpfchen</span>
+        <h2 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(32px,4.5vw,44px);margin-top:2px;">Clevere Funktionen</h2>
+      </div>
+      <div data-reveal class="g-stack" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;">
+        <div style="background:#fff;border-radius:22px;padding:26px;box-shadow:0 16px 36px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;">
+          <div style="width:58px;height:58px;border-radius:16px;background:#FFF1DC;display:flex;align-items:center;justify-content:center;font-size:27px;margin-bottom:14px;">&#129529;</div>
+          <h3 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:22px;">Mahlzeit konfigurieren</h3>
+          <p style="color:#6B5847;font-weight:500;margin-top:6px;line-height:1.5;">Filtere nach Mahlzeitenart, Ernährungsweise und Fitnesszielen.</p>
+        </div>
+        <div style="background:#fff;border-radius:22px;padding:26px;box-shadow:0 16px 36px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;">
+          <div style="width:58px;height:58px;border-radius:16px;background:#EEF3DC;display:flex;align-items:center;justify-content:center;font-size:27px;margin-bottom:14px;">&#127822;</div>
+          <h3 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:22px;">Nährwerte im Blick</h3>
+          <p style="color:#6B5847;font-weight:500;margin-top:6px;line-height:1.5;">Geschätzte Kalorien und Makros bei generierten Rezepten.</p>
+        </div>
+        <div style="background:#fff;border-radius:22px;padding:26px;box-shadow:0 16px 36px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;">
+          <div style="width:58px;height:58px;border-radius:16px;background:#FFE7D2;display:flex;align-items:center;justify-content:center;font-size:27px;margin-bottom:14px;">&#9201;&#65039;</div>
+          <h3 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:22px;">Zeit sparen</h3>
+          <p style="color:#6B5847;font-weight:500;margin-top:6px;line-height:1.5;">Schnelle Rezepte für die Zeit, die du hast.</p>
+        </div>
+        <div style="background:#fff;border-radius:22px;padding:26px;box-shadow:0 16px 36px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;">
+          <div style="width:58px;height:58px;border-radius:16px;background:#EEF3DC;display:flex;align-items:center;justify-content:center;font-size:27px;margin-bottom:14px;">&#9851;</div>
+          <h3 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:22px;">Weniger Lebensmittelverschwendung</h3>
+          <p style="color:#6B5847;font-weight:500;margin-top:6px;line-height:1.5;">Verbrauche, was du hast, bevor es schlecht wird.</p>
+        </div>
+        <div style="background:#fff;border-radius:22px;padding:26px;box-shadow:0 16px 36px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;">
+          <div style="width:58px;height:58px;border-radius:16px;background:#FFF1DC;display:flex;align-items:center;justify-content:center;font-size:27px;margin-bottom:14px;">&#128161;</div>
+          <h3 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:22px;">Lass dich inspirieren</h3>
+          <p style="color:#6B5847;font-weight:500;margin-top:6px;line-height:1.5;">Entdecke neue Ideen nach deinem Geschmack.</p>
+        </div>
+        <div style="background:#fff;border-radius:22px;padding:26px;box-shadow:0 16px 36px -22px rgba(80,50,10,.4);border:1.5px solid #F4E6CE;">
+          <div style="width:58px;height:58px;border-radius:16px;background:#FFE7D2;display:flex;align-items:center;justify-content:center;font-size:27px;margin-bottom:14px;">&#128218;</div>
+          <h3 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:22px;">Rezeptbibliothek</h3>
+          <p style="color:#6B5847;font-weight:500;margin-top:6px;line-height:1.5;">Deine Lieblingsrezepte, alle an einem Ort.</p>
+        </div>
+      </div>
+
+      <!-- TABS -->
+      <div data-reveal style="margin-top:54px;text-align:center;">
+        <h3 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(26px,3.5vw,34px);">Kocht so, wie du isst</h3>
+        <div style="display:flex;justify-content:center;gap:12px;margin:24px 0 28px;flex-wrap:wrap;">
+          <button data-tab="meal" style="cursor:pointer;border:none;font-family:'Nunito',sans-serif;padding:12px 24px;border-radius:999px;font-weight:800;font-size:15px;background:linear-gradient(135deg,#FF9A2E,#FF7A00);color:#2A1E12;box-shadow:0 12px 24px -10px rgba(214,103,0,.7);transition:all .25s ease;">Mahlzeitenarten</button>
+          <button data-tab="diet" style="cursor:pointer;border:none;font-family:'Nunito',sans-serif;padding:12px 24px;border-radius:999px;font-weight:800;font-size:15px;background:#fff;color:#3B5A00;box-shadow:0 6px 16px -10px rgba(80,50,10,.4);transition:all .25s ease;">Ernährung</button>
+          <button data-tab="fitness" style="cursor:pointer;border:none;font-family:'Nunito',sans-serif;padding:12px 24px;border-radius:999px;font-weight:800;font-size:15px;background:#fff;color:#3B5A00;box-shadow:0 6px 16px -10px rgba(80,50,10,.4);transition:all .25s ease;">Fitnessziele</button>
+        </div>
+        <div data-panel="meal" style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px;">
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#127859;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Frühstück</h4></div>
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#129386;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Mittagessen</h4></div>
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#127837;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Abendessen</h4></div>
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#129473;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Desserts</h4></div>
+        </div>
+        <div data-panel="diet" style="display:none;grid-template-columns:repeat(4,1fr);gap:18px;">
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#129382;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Vegetarisch</h4></div>
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#127793;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Vegan</h4></div>
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#129371;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Milchfrei</h4></div>
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#127806;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Glutenfrei</h4></div>
+        </div>
+        <div data-panel="fitness" style="display:none;grid-template-columns:repeat(4,1fr);gap:18px;">
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#128170;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Proteinreich</h4></div>
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#127939;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Low Carb</h4></div>
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#129388;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Kalorienarm</h4></div>
+          <div style="background:#fff;border:1.5px solid #F4E6CE;border-radius:18px;padding:24px;box-shadow:0 12px 30px -22px rgba(80,50,10,.4);"><div style="font-size:38px;">&#10084;&#65039;</div><h4 style="font-family:'Shantell Sans',cursive;font-weight:700;font-size:20px;margin-top:10px;">Herzgesund</h4></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PLAN & SHOP -->
+  <div id="plan" style="position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:60px clamp(20px,5vw,40px);">
+    <div data-reveal style="text-align:center;margin-bottom:50px;">
+      <span style="font-family:'Caveat',cursive;font-weight:700;font-size:27px;color:#3B5A00;">mehr als Rezepte</span>
+      <h2 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(32px,4.5vw,44px);margin-top:2px;">Vom Kühlschrank zur ganzen Woche</h2>
+    </div>
+
+    <!-- Meal Planner -->
+    <div data-reveal style="display:flex;align-items:center;gap:clamp(28px,5vw,64px);flex-wrap:wrap;margin-bottom:70px;">
+      <div style="flex:1 1 240px;min-width:0;display:flex;justify-content:center;">
+        <div style="position:relative;">
+          <div style="position:relative;width:min(248px,72vw);aspect-ratio:9/19.5;background:#15110c;border-radius:42px;padding:10px;box-shadow:0 40px 64px -24px rgba(80,50,10,.55);transform:rotate(-4deg);">
+            <img alt="ReciPics-Essensplaner: eine Woche, das Rezept liegt auf Montag beim Abendessen" width="460" height="1000" loading="lazy" src="resources/planner-de-2.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:33px;display:block;">
+          </div>
+          <div style="position:absolute;bottom:-14px;right:-12px;background:#fff;border-radius:16px;padding:11px 15px;box-shadow:0 18px 34px -14px rgba(80,50,10,.45);display:flex;align-items:center;gap:10px;transform:rotate(4deg);">
+            <span style="width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#A7C24B,#7C9628);display:flex;align-items:center;justify-content:center;font-size:17px;">&#128197;</span>
+            <div style="line-height:1.15;"><div style="font-weight:800;font-size:13px;">Woche geplant</div><div style="font-size:11px;color:#6B5847;">21 Mahlzeiten bereit</div></div>
+          </div>
+        </div>
+      </div>
+      <div style="flex:1 1 320px;min-width:0;">
+        <span style="font-family:'Caveat',cursive;font-weight:700;font-size:24px;color:#3B5A00;">Essensplaner</span>
+        <h3 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(26px,3.4vw,34px);margin:2px 0 12px;">Plane deine Mahlzeiten für die Woche</h3>
+        <p style="color:#6B5847;font-weight:500;font-size:17px;line-height:1.6;max-width:440px;">Verteile Frühstück, Mittag- und Abendessen über deine ganze Woche. Leg ein gespeichertes Rezept auf einen Tag und eine Mahlzeit &mdash; ReciPics zeigt dir die ganze Woche auf einen Blick.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;">
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#128197; Wochenkalender</span>
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#128072; Datum und Mahlzeit wählen</span>
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#128257; Täglich oder wöchentlich wiederholen</span>
+        </div>
+        <p style="margin-top:18px;font-weight:700;font-size:17px;"><a href="essensplaner-app.html" style="color:#B04A00;text-decoration:none;display:inline-block;padding:10px 0;">So funktioniert der Essensplaner &rarr;</a></p>
+      </div>
+    </div>
+
+    <!-- Grocery List -->
+    <div data-reveal style="display:flex;align-items:center;gap:clamp(28px,5vw,64px);flex-wrap:wrap-reverse;">
+      <div style="flex:1 1 320px;min-width:0;">
+        <span style="font-family:'Caveat',cursive;font-weight:700;font-size:24px;color:#3B5A00;">Einkaufsliste</span>
+        <h3 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(26px,3.4vw,34px);margin:2px 0 12px;">Deine Einkaufsliste, direkt aus deinem Plan</h3>
+        <p style="color:#6B5847;font-weight:500;font-size:17px;line-height:1.6;max-width:440px;">Übernimm die Zutaten deiner geplanten Mahlzeiten in eine Einkaufsliste und hake sie ab, während du durch die Gänge gehst.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;">
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#10024; Aus deinem Essensplan</span>
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#129534; Erneuter Abgleich fügt nur Neues hinzu</span>
+          <span style="background:#fff;border:1.5px solid #F4E6CE;border-radius:999px;padding:9px 16px;font-weight:700;font-size:14px;color:#3B5A00;box-shadow:0 8px 18px -12px rgba(80,50,10,.4);">&#9989; Beim Einkaufen abhaken</span>
+        </div>
+        <p style="margin-top:18px;font-weight:700;font-size:17px;"><a href="einkaufsliste-aus-rezepten.html" style="color:#B04A00;text-decoration:none;display:inline-block;padding:10px 0;">So funktioniert die Einkaufsliste &rarr;</a></p>
+      </div>
+      <div style="flex:1 1 240px;min-width:0;display:flex;justify-content:center;">
+        <div style="position:relative;">
+          <div style="position:relative;width:min(248px,72vw);aspect-ratio:9/19.5;background:#15110c;border-radius:42px;padding:10px;box-shadow:0 40px 64px -24px rgba(214,103,0,.5);transform:rotate(4deg);">
+            <img alt="ReciPics-Einkaufsliste mit dem Abschnitt Essensplan, Zutaten, Mengen und Abhak-Kreisen" width="460" height="1000" loading="lazy" src="resources/planner-de-3.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:33px;display:block;">
+          </div>
+          <div style="position:absolute;bottom:-14px;left:-12px;background:#fff;border-radius:16px;padding:11px 15px;box-shadow:0 18px 34px -14px rgba(80,50,10,.45);display:flex;align-items:center;gap:10px;transform:rotate(-4deg);">
+            <span style="width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#FFB02E,#FF7A00);display:flex;align-items:center;justify-content:center;font-size:17px;">&#128722;</span>
+            <div style="line-height:1.15;"><div style="font-weight:800;font-size:13px;">Einkauf bereit</div><div style="font-size:11px;color:#6B5847;">12 Artikel &middot; nach Rezept</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APP SHOWCASE -->
+  <div style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:70px clamp(20px,5vw,40px);text-align:center;">
+    <div data-reveal>
+      <span style="font-family:'Caveat',cursive;font-weight:700;font-size:27px;color:#3B5A00;">wirf einen Blick hinein</span>
+      <h2 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(32px,4.5vw,44px);margin:2px 0 40px;">Schön gestaltet</h2>
+    </div>
+    <div data-reveal style="display:flex;justify-content:center;align-items:flex-end;gap:24px;flex-wrap:wrap;">
+      <div style="position:relative;width:228px;aspect-ratio:9/19.5;background:#15110c;border-radius:40px;padding:9px;box-shadow:0 34px 56px -22px rgba(80,50,10,.5);transform:rotate(-5deg) translateY(14px);">
+        <img alt="ReciPics: Rezept Ofengemüse mit Kichererbsen und Feta mit Zutaten, Mengen und Portionswahl" width="460" height="1000" loading="lazy" src="resources/ingredients-de-3.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:32px;display:block;">
+      </div>
+      <div style="position:relative;width:250px;aspect-ratio:9/19.5;background:#15110c;border-radius:42px;padding:10px;box-shadow:0 40px 64px -22px rgba(214,103,0,.5);z-index:2;">
+        <img alt="ReciPics: Rezeptvorschläge mit Kochzeit, Schwierigkeit und geschätzten Kalorien" width="460" height="1000" loading="lazy" src="resources/ingredients-de-2.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:33px;display:block;">
+      </div>
+      <div style="position:relative;width:228px;aspect-ratio:9/19.5;background:#15110c;border-radius:40px;padding:9px;box-shadow:0 34px 56px -22px rgba(80,50,10,.5);transform:rotate(5deg) translateY(14px);">
+        <img alt="ReciPics: Kochbuch" width="460" height="1000" loading="lazy" src="resources/cookbook.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:32px;display:block;">
+      </div>
+    </div>
+  </div>
+
+  <!-- APP STORE REVIEWS: verbatim real App Store reviews only -->
+  <div id="reviews" style="position:relative;z-index:1;padding:40px 0 60px;">
+    <div style="max-width:900px;margin:0 auto;padding:0 clamp(20px,5vw,40px);">
+      <div data-reveal style="text-align:center;margin-bottom:32px;">
+        <span style="font-family:'Caveat',cursive;font-weight:700;font-size:27px;color:#3B5A00;">aus dem App Store</span>
+        <h2 style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(28px,4vw,38px);margin-top:2px;">Zwei App-Store-Bewertungen</h2>
+      </div>
+      <div data-reveal class="g-stack" style="display:grid;grid-template-columns:repeat(2,1fr);gap:22px;">
+        <div style="background:#fff;border-radius:24px;padding:26px;box-shadow:0 18px 40px -24px rgba(80,50,10,.45);border:1.5px solid #F4E6CE;display:flex;flex-direction:column;">
+          <div style="color:#FFB02E;letter-spacing:2px;font-size:17px;" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-weight:600;color:#3a2e20;margin:12px 0 16px;line-height:1.55;font-size:15.5px;" lang="en">&ldquo;So many things are possible with this app. I can get ideas for recipes from a picture of ingredients or of a dish. I can then fully customize any recipe I generate.&rdquo;</p>
+          <div style="font-size:13px;color:#6B5847;font-weight:600;margin-top:auto;">App-Store-Bewertung, Storefront Italien, Nov. 2025 (Original auf Englisch)</div>
+        </div>
+        <div style="background:#fff;border-radius:24px;padding:26px;box-shadow:0 18px 40px -24px rgba(80,50,10,.45);border:1.5px solid #F4E6CE;display:flex;flex-direction:column;">
+          <div style="color:#FFB02E;letter-spacing:2px;font-size:17px;" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-weight:600;color:#3a2e20;margin:12px 0 16px;line-height:1.55;font-size:15.5px;" lang="en">&ldquo;This app has been such a fun way to try new meals with what I already have. Just snapping a photo of the ingredients and getting recipes back saves me time and keeps things interesting.&rdquo;</p>
+          <div style="font-size:13px;color:#6B5847;font-weight:600;margin-top:auto;">App-Store-Bewertung, Storefront Polen, Aug. 2025 (Original auf Englisch)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div data-reveal style="position:relative;z-index:1;max-width:1200px;margin:10px auto 64px;padding:0 clamp(20px,5vw,40px);">
+    <div style="position:relative;border-radius:30px;overflow:hidden;background:linear-gradient(120deg,#FF9A2E,#FF7A00 55%,#E86A00);background-size:200% 200%;animation:panGrad 9s ease infinite;padding:56px 40px;text-align:center;box-shadow:0 30px 60px -24px rgba(214,103,0,.8);">
+      <div style="position:absolute;inset:0;background-image:radial-gradient(circle at 18% 30%,rgba(255,255,255,.18),transparent 8%),radial-gradient(circle at 82% 70%,rgba(255,255,255,.14),transparent 9%);pointer-events:none;"></div>
+      <h2 style="position:relative;font-family:'Shantell Sans',cursive;font-weight:800;font-size:clamp(32px,4.8vw,46px);color:#2A1E12;">Dein Kühlschrank ist voller Abendessen.</h2>
+      <p style="position:relative;color:#2A1E12;font-size:clamp(16px,2vw,19px);font-weight:600;margin-top:10px;">ReciPics zeigt dir, was du heute Abend kochen kannst.</p>
+      <a href="https://apps.apple.com/app/apple-store/id6740248018?pt=10114007&amp;ct=web-home&amp;mt=8" style="position:relative;margin-top:26px;text-decoration:none;display:inline-flex;align-items:center;gap:11px;background:#fff;color:#B85000;padding:16px 32px;border-radius:16px;font-weight:800;font-size:18px;box-shadow:0 18px 34px -14px rgba(0,0,0,.4);">
+        <span style="font-size:24px;">&#63743;</span>Laden im App Store
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="position:relative;z-index:1;border-top:1.5px dashed #E8D4B2;padding:34px clamp(20px,5vw,40px);max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;">
+    <div style="display:flex;align-items:center;gap:11px;">
+      <img alt="ReciPics" width="256" height="256" loading="lazy" src="resources/appIcon.png" style="width:38px;height:38px;border-radius:11px;">
+      <span style="font-family:'Shantell Sans',cursive;font-weight:800;font-size:22px;">ReciPics</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:26px;font-weight:700;color:#6B5847;font-size:15px;">
+      <a href="rezepte-von-websites-speichern.html" style="text-decoration:none;color:inherit;">Rezepte von Websites speichern</a>
+      <a href="rezepte-von-instagram-tiktok-speichern.html" style="text-decoration:none;color:inherit;">Rezepte von Instagram und TikTok speichern</a>
+      <a href="handgeschriebene-rezepte-digitalisieren.html" style="text-decoration:none;color:inherit;">Handgeschriebene Rezepte digitalisieren</a>
+      <a href="rezepte-aus-kochbuch-scannen.html" style="text-decoration:none;color:inherit;">Rezepte aus dem Kochbuch scannen</a>
+      <a href="digitales-kochbuch-app.html" style="text-decoration:none;color:inherit;">Digitales Kochbuch</a>
+      <a href="rezept-umrechnen.html" style="text-decoration:none;color:inherit;">Rezept umrechnen</a>
+      <a href="rezept-aus-link.html" style="text-decoration:none;color:inherit;">Rezept aus Link</a>
+      <a href="einkaufsliste-aus-rezepten.html" style="text-decoration:none;color:inherit;">Einkaufsliste aus Rezepten</a>
+      <a href="weihnachtsplaetzchen-rezepte-digitalisieren.html" style="text-decoration:none;color:inherit;">Weihnachtsplätzchen-Rezepte digitalisieren</a>
+      <a href="weihnachtsrezepte-aus-link-speichern.html" style="text-decoration:none;color:inherit;">Weihnachtsrezepte aus Links speichern</a>
+      <a href="rezepte-sammeln-app.html" style="text-decoration:none;color:inherit;">Rezepte sammeln</a>
+      <a href="rezeptbuch-app.html" style="text-decoration:none;color:inherit;">Rezeptbuch</a>
+      <a href="rezepte-aus-vorhandenen-zutaten.html" style="text-decoration:none;color:inherit;">Rezepte aus vorhandenen Zutaten</a>
+      <a href="essensplaner-app.html" style="text-decoration:none;color:inherit;">Essensplaner-App</a>
+      <a href="recime-alternative-deutsch.html" style="text-decoration:none;color:inherit;">ReciMe-Alternative</a>
+      <a href="paprika-alternative-deutsch.html" style="text-decoration:none;color:inherit;">Paprika-Alternative</a>
+      <a href="privacy-page-de.html" style="text-decoration:none;color:inherit;">Datenschutz</a>
+      <a href="terms-page-de.html" style="text-decoration:none;color:inherit;">AGB</a>
+      <a href="contact-page-de.html" style="text-decoration:none;color:inherit;">Kontakt</a>
+      <a href="impressum-de.html" style="text-decoration:none;color:inherit;">Impressum</a>
+      <a href="index.html" hreflang="en" lang="en" style="text-decoration:none;color:inherit;">English</a>
+    </div>
+    <p style="flex-basis:100%;margin:0;color:#6B5847;font-size:15px;font-weight:600;">Auch von uns: <a href="https://vskromny.github.io/mealog-website/" style="color:inherit;font-weight:800;text-decoration:underline;">Mealog</a>, ein Ernährungstagebuch fürs iPhone.</p>
+    <span style="color:#6F604C;font-size:14px;font-weight:600;">&copy; <span data-year>2026</span> ReciPics. Alle Rechte vorbehalten. Nicht mit TikTok, Meta, ReciMe oder Paprika verbunden und nicht von ihnen unterstützt. Alle Marken gehören ihren jeweiligen Inhabern.</span>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var root = document.getElementById('rp');
+  if (!root) return;
+
+  // copyright year
+  root.querySelectorAll('[data-year]').forEach(function (e) { e.textContent = new Date().getFullYear(); });
+
+  // scroll reveal
+  var revs = Array.prototype.slice.call(root.querySelectorAll('[data-reveal]'));
+  revs.forEach(function (el) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(28px)';
+    el.style.transition = 'opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1)';
+    el.style.willChange = 'opacity, transform';
+  });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (ents) {
+      ents.forEach(function (en) {
+        if (en.isIntersecting) {
+          en.target.style.opacity = '1';
+          en.target.style.transform = 'none';
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    revs.forEach(function (el) { io.observe(el); });
+  } else {
+    revs.forEach(function (el) { el.style.opacity = '1'; el.style.transform = 'none'; });
+  }
+
+  // parallax + sticky nav state
+  var pars = Array.prototype.slice.call(root.querySelectorAll('[data-par]'));
+  var nav = root.querySelector('[data-nav]');
+  var ticking = false;
+  function apply() {
+    var y = window.scrollY || window.pageYOffset || 0;
+    pars.forEach(function (el) {
+      var s = parseFloat(el.getAttribute('data-par')) || 0;
+      el.style.transform = 'translateY(' + (y * s) + 'px)';
+    });
+    if (nav) {
+      if (y > 24) {
+        nav.style.background = 'rgba(255,248,236,.93)';
+        nav.style.boxShadow = '0 8px 30px -14px rgba(80,50,10,.28)';
+      } else {
+        nav.style.background = 'rgba(255,248,236,.6)';
+        nav.style.boxShadow = 'none';
+      }
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(apply); } }, { passive: true });
+  apply();
+
+  // hero mouse tilt (desktop only)
+  var hero = root.querySelector('[data-hero]');
+  var tilt = root.querySelector('[data-tilt]');
+  if (hero && tilt && window.matchMedia('(min-width:900px)').matches) {
+    hero.addEventListener('mousemove', function (e) {
+      var r = hero.getBoundingClientRect();
+      var cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+      var rx = ((cy - e.clientY) / (r.height / 2)) * 4;
+      var ry = ((e.clientX - cx) / (r.width / 2)) * 6;
+      tilt.style.transform = 'perspective(900px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg)';
+    });
+    hero.addEventListener('mouseleave', function () {
+      tilt.style.transform = 'perspective(900px) rotateX(0deg) rotateY(0deg)';
+    });
+  }
+
+  // meal / dietary / fitness tabs
+  var btns = Array.prototype.slice.call(root.querySelectorAll('[data-tab]'));
+  var panels = Array.prototype.slice.call(root.querySelectorAll('[data-panel]'));
+  function setTab(key) {
+    panels.forEach(function (p) { p.style.display = p.getAttribute('data-panel') === key ? 'grid' : 'none'; });
+    btns.forEach(function (b) {
+      var on = b.getAttribute('data-tab') === key;
+      b.style.background = on ? 'linear-gradient(135deg,#FF9A2E,#FF7A00)' : '#fff';
+      b.style.color = on ? '#2A1E12' : '#3B5A00';
+      b.style.boxShadow = on ? '0 12px 24px -10px rgba(214,103,0,.7)' : '0 6px 16px -10px rgba(80,50,10,.4)';
+    });
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { setTab(b.getAttribute('data-tab')); }); });
+});
+</script>
+<img src="https://recipics-pv.v-skromny.workers.dev/pv?p=home-de" width="1" height="1" alt="" referrerpolicy="no-referrer" style="position:absolute;left:-9999px">
+</body>
+</html>
