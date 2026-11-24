@@ -1,6 +1,6 @@
 # ReciPics
 
-> ReciPics (App Store name: GeniChef) is an iPhone app for keeping your recipes in one cookbook. You can import recipes from recipe websites and from Instagram or TikTok links (results vary, especially for videos without a recipe in the caption), or photograph handwritten cards and cookbook pages and check the amounts. Then scale servings, build a grocery list and cook with read-aloud steps. Available in English and German.
+> ReciPics is an iPhone app for keeping your recipes in one cookbook. You can import recipes from recipe websites and from Instagram or TikTok links (results vary, especially for videos without a recipe in the caption), or photograph handwritten cards and cookbook pages and check the amounts. Then scale servings, build a grocery list and cook with read-aloud steps. Available in English and German.
 
 - App Store: https://apps.apple.com/app/id6740248018
 - Website: https://recipics.app/
