@@ -28,6 +28,8 @@
 - [How to save a recipe on iPhone with the Share button – ReciPics](https://recipics.app/save-recipe-on-iphone.html): Save a recipe on your iPhone from Safari, TikTok or Instagram: tap Share, choose ReciPics, tap Import. The recipe lands in your cookbook with ingredients and steps. For iPhone.
 - [Grocery list from a TikTok or Instagram recipe – ReciPics](https://recipics.app/grocery-list-from-tiktok-recipe.html): Turn a recipe from a TikTok or Instagram post into a grocery list: import the link into ReciPics, then add the ingredients to your list with one tap. For iPhone.
 - [Make a printable recipe card from your recipes – ReciPics](https://recipics.app/printable-recipe-card.html): Make a printable recipe card on iPhone: save the recipe in ReciPics from a link, photo or screenshot, then share it as a PDF or print it. One recipe per PDF. For iPhone.
+- [Cook mode on iPhone: screen stays on, steps read aloud – ReciPics](https://recipics.app/cook-mode-iphone.html): Cooking from your iPhone and the screen keeps locking? In ReciPics the screen stays on while a recipe is open, and the Read button reads the steps aloud. For iPhone.
+- [Ingredient substitutes in your recipe: swap what you don't have – ReciPics](https://recipics.app/ingredient-substitutes.html): Missing an ingredient? ReciPics shows alternatives next to many ingredients; tap one to swap it in the recipe. Or ask the in-recipe assistant what to use instead. For iPhone.
 
 ## Anleitungen (Deutsch)
 
@@ -47,6 +49,8 @@
 - [Essensplaner-App: Wochenplan aus deinen eigenen Rezepten – ReciPics](https://recipics.app/essensplaner-app.html): Plane Frühstück, Mittag- und Abendessen für die Woche mit Rezepten aus deinem ReciPics-Kochbuch. Gerichte täglich oder wöchentlich wiederholen, Zutaten auf die Einkaufsliste setzen, Plan als PDF teilen. Fürs iPhone.
 - [ReciMe-Alternative fürs iPhone: ReciPics vs. ReciMe (2026) – ReciPics](https://recipics.app/recime-alternative-deutsch.html): ReciPics vs. ReciMe: Geräte, Preise, Import, Einkaufsliste. ReciPics läuft auf dem iPhone ab iOS 26, ReciMe auch auf iPad, Mac, Android und im Web.
 - [Paprika-Alternative fürs iPhone: ReciPics vs. Paprika (2026) – ReciPics](https://recipics.app/paprika-alternative-deutsch.html): ReciPics vs. Paprika 4: Geräte, Preise, Import, Kochmodus. ReciPics läuft auf dem iPhone ab iOS 26, Paprika auch auf iPad, Mac, Android und Windows.
+- [Kochmodus auf dem iPhone: Display bleibt an, Schritte vorgelesen – ReciPics](https://recipics.app/kochmodus-iphone.html): Beim Kochen geht das iPhone-Display ständig aus? In ReciPics bleibt der Bildschirm an, solange ein Rezept offen ist, und „Vorlesen“ liest die Schritte vor. Für iPhone.
+- [Zutaten ersetzen im Rezept: Ersatz für das, was fehlt – ReciPics](https://recipics.app/zutaten-ersetzen.html): Eine Zutat fehlt? ReciPics zeigt bei vielen Zutaten Alternativen; ein Tipp tauscht sie im Rezept aus. Oder frag den Assistenten im Rezept, was du stattdessen nehmen kannst. Für iPhone.
 
 ## Optional
 
